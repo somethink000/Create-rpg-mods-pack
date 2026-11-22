@@ -17,5 +17,6 @@ git add -A
 git commit -q -m "Release $VERSION" -m "$NOTES" || true
 git tag "v$VERSION"
 git push -q origin main "v$VERSION"
-gh release create "v$VERSION" "dist/Expedition-$VERSION.mrpack" --title "Expedition $VERSION" --notes "$NOTES"
+cp "dist/Expedition-$VERSION.mrpack" dist/Expedition.mrpack  # a fixed name: releases/latest/download/Expedition.mrpack
+gh release create "v$VERSION" dist/Expedition.mrpack --title "Expedition $VERSION" --notes "$NOTES"
 ./deploy-vps.sh

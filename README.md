@@ -1,12 +1,32 @@
 # Expedition — сборка NeoForge 1.21.1 вокруг Create
 
 ## Как поставить
-1. Скачайте и установите **[Prism Launcher](https://prismlauncher.org/download/)**.
-2. Скачайте файл сборки: **[Expedition.mrpack](https://github.com/somethink000/Create-rpg-mods-pack/releases/latest)** (файл `.mrpack` в последнем релизе).
-3. Перетащите этот файл в окно Prism Launcher и нажмите **OK**. Лаунчер сам скачает все моды.
-4. Запустите сборку, нажмите **«Сетевая игра» → «Добавить»** и впишите адрес сервера: **`212.22.85.153`**
 
-Вышла новая версия — повторите шаги 2–3.
+### Способ 1. Одной командой (рекомендуется)
+Команда скачает все моды и сборку в папку игры `.minecraft` (её используют TLauncher и обычный лаунчер Minecraft). Если в папке уже были моды, они сохранятся в `mods-before-expedition`.
+
+**Windows** — нажмите `Win + X` → «Терминал» (или «Windows PowerShell») и вставьте:
+```
+irm https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/install.ps1 | iex
+```
+
+**Linux / macOS** — откройте терминал и вставьте:
+```
+curl -sL https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/install.sh | sh
+```
+
+Затем в лаунчере выберите версию **NeoForge 1.21.1** (если её нет — установите её там же), выделите игре **6–8 ГБ памяти** и запустите.
+
+### Способ 2. Через Prism Launcher (Windows, Linux, macOS)
+1. Установите **[Prism Launcher](https://prismlauncher.org/download/)**.
+2. Скачайте **[Expedition.mrpack](https://github.com/somethink000/Create-rpg-mods-pack/releases/latest/download/Expedition.mrpack)**.
+3. Перетащите файл в окно Prism и нажмите **OK** — моды скачаются сами, NeoForge тоже.
+
+### Сервер
+«Сетевая игра» → «Добавить» → адрес **`212.22.85.153`**. Ник любой.
+
+### Обновление
+Вышла новая версия — повторите ту же команду (способ 1) или импортируйте новый `.mrpack` (способ 2).
 
 ## Что в репозитории
 Здесь лежит всё, из чего сделана сборка, кроме модов с Modrinth: они скачиваются лаунчером по ссылкам из `.mrpack`. Моды, которых на Modrinth нет (ядро `expedition`, порт атласа, Catalyst Wear, Twilight Forest, AllTheLeaks), лежат в `instance/mods/`.

@@ -61,7 +61,9 @@ public class ClientSummary {
 			Player player = handler.getLevel().getPlayerByUUID(uuid);
 			if (player != null) {
 				outMap.put(uuid, new PlayerSummary.PlayerEntitySummary(player));
-			} else {
+			} else if (players.get(uuid) != null) {
+				// A share-group member whose summary hasn't arrived (a player who just joined) has none yet: left out, or
+				// every map and minimap would get a null player.
 				outMap.put(uuid, players.get(uuid));
 			}
 		}

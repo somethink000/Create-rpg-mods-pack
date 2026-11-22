@@ -15,12 +15,11 @@
 -XX:G1HeapRegionSize=8M
 -XX:G1ReservePercent=20
 -XX:G1HeapWastePercent=5
--XX:G1MixedGCCountTarget=4
--XX:InitiatingHeapOccupancyPercent=15
--XX:G1MixedGCLiveThresholdPercent=90
--XX:G1RSetUpdatingPauseTimePercent=5
 -XX:SurvivorRatio=32
 -XX:+PerfDisableSharedMem
 -XX:MaxTenuringThreshold=1
 # Profiling (JFR, only while recording): whole call stacks, mods are deep in them.
 -XX:FlightRecorderOptions=stackdepth=512
+# A 3-core server: background GC marking on one thread, started by G1 itself (not at 15% of the heap,
+# which kept it running all the time and took a whole core from the game).
+-XX:ConcGCThreads=1

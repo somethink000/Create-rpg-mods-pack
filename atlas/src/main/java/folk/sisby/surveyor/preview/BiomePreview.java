@@ -7,9 +7,10 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
-import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.QuartPos;
 import net.minecraft.core.registries.Registries;
@@ -46,6 +47,28 @@ public final class BiomePreview {
 	/** Requests one player may have in flight; more are dropped (the client asks again later). */
 	private static final int MAX_PENDING = 48;
 	private static final Map<UUID, AtomicInteger> PENDING = new ConcurrentHashMap<>();
+	/**
+	 * One low-priority thread of its own: the sketch must never take the shared worker pool (Util.backgroundExecutor),
+	 * which loads and generates the chunks players stand in - on a small server it left them empty and froze the game.
+	 */
+	private static final ExecutorService EXECUTOR = Executors.newSingleThreadExecutor(runnable -> {
+		Thread thread = new Thread(runnable, "Surveyor-Preview");
+		thread.setDaemon(true);
+		thread.setPriority(Thread.MIN_PRIORITY);
+		return thread;
+	});
+	/**
+	 * A region depends only on the world's seed: computed once for everyone, requests for one in progress share it. Kept
+	 * while the server runs, at most CACHED regions (the oldest go first; ~17 KB each).
+	 */
+	private static final int CACHED = 2048;
+	private static final Map<String, CompletableFuture<Region>> REGIONS = java.util.Collections.synchronizedMap(
+		new java.util.LinkedHashMap<>(256, 0.75f, true) {
+			@Override
+			protected boolean removeEldestEntry(Map.Entry<String, CompletableFuture<Region>> eldest) {
+				return size() > CACHED;
+			}
+		});
 
 	/** Client side: where answered regions go (set by the atlas). */
 	public static volatile Consumer<Region> CLIENT = region -> {
@@ -104,9 +127,16 @@ public final class BiomePreview {
 			return;
 		}
 		ServerLevel level = player.serverLevel();
-		CompletableFuture.supplyAsync(() -> compute(level, request.regionX(), request.regionZ()), Util.backgroundExecutor())
-			.whenComplete((region, error) -> level.getServer().execute(() -> {
+		String key = level.dimension().location() + "/" + request.regionX() + "," + request.regionZ();
+		CompletableFuture<Region> future;
+		synchronized (REGIONS) {
+			future = REGIONS.computeIfAbsent(key, k -> CompletableFuture.supplyAsync(() -> compute(level, request.regionX(), request.regionZ()), EXECUTOR));
+		}
+		future.whenComplete((region, error) -> level.getServer().execute(() -> {
 				pending.decrementAndGet();
+				if (error != null) {
+					REGIONS.remove(key); // asked again later
+				}
 				if (region != null && !player.hasDisconnected()) {
 					PacketDistributor.sendToPlayer(player, region);
 				}

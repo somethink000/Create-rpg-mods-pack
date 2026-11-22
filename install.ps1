@@ -12,10 +12,15 @@ New-Item -ItemType Directory -Force -Path $target | Out-Null
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 function Get-Sha1($path) { (Get-FileHash -Algorithm SHA1 -LiteralPath $path).Hash.ToLower() }
+# .NET calls take names as they are: mod files like creategoggles-...-[NEOFORGE].jar have brackets, which PowerShell's
+# -Path/-OutFile read as wildcards.
+$web = New-Object Net.WebClient
+$web.Headers.Add('User-Agent', 'expedition-installer/1.0')
+function Get-File($url, $path) { [void][IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($path)); $web.DownloadFile($url, $path) }
 
 Write-Host 'Скачиваю сборку…'
 $tmp = Join-Path $env:TEMP 'Expedition.mrpack'
-if (Test-Path $pack) { Copy-Item $pack $tmp -Force } else { Invoke-WebRequest -UseBasicParsing $pack -OutFile $tmp }
+if (Test-Path -LiteralPath $pack) { Copy-Item -LiteralPath $pack $tmp -Force } else { Get-File $pack $tmp }
 $zip = [IO.Compression.ZipFile]::OpenRead($tmp)
 try {
     $reader = New-Object IO.StreamReader($zip.GetEntry('modrinth.index.json').Open())
@@ -35,10 +40,9 @@ try {
         $n++
         $path = Join-Path $target $f.path
         $installed.Add($f.path)
-        if ((Test-Path $path) -and (Get-Sha1 $path) -eq $f.hashes.sha1) { continue }
+        if ((Test-Path -LiteralPath $path) -and (Get-Sha1 $path) -eq $f.hashes.sha1) { continue }
         Write-Host "[$n/$($files.Count)] $(Split-Path $f.path -Leaf)"
-        New-Item -ItemType Directory -Force -Path (Split-Path $path) | Out-Null
-        Invoke-WebRequest -UseBasicParsing $f.downloads[0] -OutFile $path
+        Get-File $f.downloads[0] $path
         if ((Get-Sha1 $path) -ne $f.hashes.sha1) { throw "Файл повреждён при скачивании: $($f.path)" }
     }
     foreach ($entry in $zip.Entries) {
@@ -46,7 +50,7 @@ try {
             if ($entry.FullName.StartsWith($prefix) -and -not $entry.FullName.EndsWith('/')) {
                 $rel = $entry.FullName.Substring($prefix.Length)
                 $path = Join-Path $target $rel
-                New-Item -ItemType Directory -Force -Path (Split-Path $path) | Out-Null
+                [void][IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($path))
                 [IO.Compression.ZipFileExtensions]::ExtractToFile($entry, $path, $true)
                 $installed.Add($rel)
             }
@@ -55,7 +59,7 @@ try {
 } finally { $zip.Dispose() }
 foreach ($rel in $previous) {
     $path = Join-Path $target $rel
-    if ($rel.StartsWith('mods/') -and -not $installed.Contains($rel) -and (Test-Path $path)) { Remove-Item $path }
+    if ($rel.StartsWith('mods/') -and -not $installed.Contains($rel) -and (Test-Path -LiteralPath $path)) { Remove-Item -LiteralPath $path }
 }
 $installed | Sort-Object -Unique | Set-Content $marker
 $version = $index.dependencies.neoforge
@@ -64,7 +68,7 @@ $java = Get-Command java -ErrorAction SilentlyContinue
 if ($java) {
     Write-Host "Ставлю NeoForge $version…"
     $installer = Join-Path $env:TEMP "neoforge-$version-installer.jar"
-    Invoke-WebRequest -UseBasicParsing "https://maven.neoforged.net/releases/net/neoforged/neoforge/$version/neoforge-$version-installer.jar" -OutFile $installer
+    Get-File "https://maven.neoforged.net/releases/net/neoforged/neoforge/$version/neoforge-$version-installer.jar" $installer
     $profiles = Join-Path $target 'launcher_profiles.json'
     if (-not (Test-Path $profiles)) { Set-Content $profiles '{"profiles":{}}' }
     & $java.Source -jar $installer --install-client $target | Out-Null

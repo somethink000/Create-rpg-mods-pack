@@ -1,11 +1,12 @@
 # Expedition — сборка NeoForge 1.21.1 вокруг Create
 
 ## Как поставить
-1. Установите [Prism Launcher](https://prismlauncher.org/) или [Modrinth App](https://modrinth.com/app).
-2. Скачайте `Expedition-<версия>.mrpack` из раздела **Releases** этого репозитория.
-3. В лаунчере: «Добавить сборку» → «Импорт» → выберите файл (или вставьте ссылку на него). Моды скачаются сами.
+1. Скачайте и установите **[Prism Launcher](https://prismlauncher.org/download/)**.
+2. Скачайте файл сборки: **[Expedition.mrpack](https://github.com/somethink000/Create-rpg-mods-pack/releases/latest)** (файл `.mrpack` в последнем релизе).
+3. Перетащите этот файл в окно Prism Launcher и нажмите **OK**. Лаунчер сам скачает все моды.
+4. Запустите сборку, нажмите **«Сетевая игра» → «Добавить»** и впишите адрес сервера: **`212.22.85.153`**
 
-Обновление — так же: импортируйте `.mrpack` новой версии.
+Вышла новая версия — повторите шаги 2–3.
 
 ## Что в репозитории
 Здесь лежит всё, из чего сделана сборка, кроме модов с Modrinth: они скачиваются лаунчером по ссылкам из `.mrpack`. Моды, которых на Modrinth нет (ядро `expedition`, порт атласа, Catalyst Wear, Twilight Forest, AllTheLeaks), лежат в `instance/mods/`.

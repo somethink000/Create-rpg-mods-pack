@@ -29,6 +29,8 @@ public final class ExpeditionRegistry {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Expedition.MOD_ID);
     private static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT_MODIFIERS =
         DeferredRegister.create(NeoForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, Expedition.MOD_ID);
+    private static final DeferredRegister<MapCodec<? extends net.neoforged.neoforge.common.world.BiomeModifier>> BIOME_MODIFIERS =
+        DeferredRegister.create(NeoForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, Expedition.MOD_ID);
     private static final DeferredRegister.DataComponents COMPONENTS = DeferredRegister.createDataComponents(Registries.DATA_COMPONENT_TYPE, Expedition.MOD_ID);
 
     /** Which expedition this journal keeps (progress lives in the world's route data under this id). */
@@ -86,11 +88,13 @@ public final class ExpeditionRegistry {
         LOOT_MODIFIERS.register("remove_items", () -> RemovedItems.LootRemover.CODEC);
         LOOT_MODIFIERS.register("chest_loot", () -> ChestLoot.CODEC);
         LOOT_MODIFIERS.register("boss_hearts", () -> BossLoot.CODEC);
+        BIOME_MODIFIERS.register("nether_spawns", () -> net.expedition.world.NetherSpawns.CODEC);
     }
 
     static void register(IEventBus modBus) {
         StructureFacades.register(modBus);
         LOOT_MODIFIERS.register(modBus);
+        BIOME_MODIFIERS.register(modBus);
         ITEMS.register(modBus);
         COMPONENTS.register(modBus);
         TABS.register(modBus);

@@ -98,7 +98,9 @@ public final class Garrisons {
     static final int MIN_DUNGEON_VOLUME = 1500;
     /** Weak or out-of-place monsters never fill a garrison taken from the biome's spawn list. */
     private static final List<String> NOT_GARRISON = List.of("minecraft:slime", "minecraft:magma_cube", "minecraft:silverfish",
-        "minecraft:endermite", "minecraft:phantom", "minecraft:witch", "minecraft:bat", "minecraft:enderman");
+        "minecraft:endermite", "minecraft:phantom", "minecraft:witch", "minecraft:bat", "minecraft:enderman",
+        // A ghast in a dungeon only floats in the walls and shoots through them: never a garrison's.
+        "minecraft:ghast");
     private static final Map<String, Integer> FALLBACK_MOBS = Map.of("minecraft:zombie", 4, "minecraft:skeleton", 4, "minecraft:spider", 2);
     /** Per NG+ level: +25% mobs, +50% health, +25% damage. */
     static final double NG_BUDGET = 0.25;
@@ -600,7 +602,8 @@ public final class Garrisons {
      */
     public static Map<String, Integer> mobWeights(ServerLevel level, GarrisonRecord record, Dungeon dungeon, BlockPos pos) {
         List<String> listed = net.expedition.route.Route.garrisonFor(level.getServer(), dungeon.key()).stream()
-            .filter(id -> EntityType.byString(id).isPresent()).toList();
+            .filter(id -> EntityType.byString(id).isPresent() && !NOT_GARRISON.contains(id)).toList();
+        record.mobs.keySet().removeIf(NOT_GARRISON::contains); // a garrison saved before a kind was ruled out
         // A garrison fixed before its dungeon had a list (an older world) takes the list: none of its kinds is on it.
         if (!record.mobs.isEmpty() && (listed.isEmpty() || listed.stream().anyMatch(record.mobs::containsKey))) {
             return record.mobs;
@@ -623,7 +626,8 @@ public final class Garrisons {
         String mod = dungeon.id().contains(":") ? dungeon.id().substring(0, dungeon.id().indexOf(':')) : "minecraft";
         List<String> kin = new ArrayList<>(mod.equals("minecraft") ? List.of() : soldiers().getOrDefault(mod, List.of()));
         List<String> locals = new ArrayList<>(biome.keySet());
-        locals.removeIf(id -> id.startsWith("minecraft:") || kin.contains(id));
+        kin.removeIf(NOT_GARRISON::contains);
+        locals.removeIf(id -> id.startsWith("minecraft:") || kin.contains(id) || NOT_GARRISON.contains(id));
         Map<String, Integer> joiners = new LinkedHashMap<>();
         java.util.Collections.shuffle(kin, random);
         java.util.Collections.shuffle(locals, random);

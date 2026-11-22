@@ -28,7 +28,6 @@
     "legendary_monsters:flameborn_guard",
     "legendary_monsters:flameborn_warrior",
     "legendary_monsters:flame_drifter",
-    "minecraft:blaze",
-    "minecraft:ghast"
+    "minecraft:blaze"
   ]
 }

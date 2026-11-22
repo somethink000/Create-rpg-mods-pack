@@ -96,4 +96,17 @@ public final class RealmTests {
         }
         helper.succeed();
     }
+
+    /** The Nether's biomes (the realm lies under the sky): ghasts come rarely, blazes now and then (NetherSpawns). */
+    @GameTest(template = "empty")
+    public static void netherSpawnsFewGhastsAndSomeBlazes(GameTestHelper helper) {
+        var biome = helper.getLevel().registryAccess().registryOrThrow(net.minecraft.core.registries.Registries.BIOME)
+            .getHolderOrThrow(net.minecraft.world.level.biome.Biomes.NETHER_WASTES);
+        var monsters = biome.value().getMobSettings().getMobs(net.minecraft.world.entity.MobCategory.MONSTER).unwrap();
+        int ghast = monsters.stream().filter(d -> d.type == net.minecraft.world.entity.EntityType.GHAST).mapToInt(d -> d.getWeight().asInt()).sum();
+        int blaze = monsters.stream().filter(d -> d.type == net.minecraft.world.entity.EntityType.BLAZE).mapToInt(d -> d.getWeight().asInt()).sum();
+        helper.assertTrue(ghast > 0 && ghast <= 5, "ghast weight " + ghast);
+        helper.assertTrue(blaze > 0, "no blazes in the Nether wastes");
+        helper.succeed();
+    }
 }

@@ -1,0 +1,6 @@
+{
+  "type": "expedition:nether_spawns",
+  "biomes": { "type": "neoforge:or", "values": ["#minecraft:is_nether", "#c:is_nether"] },
+  "ghast_weight": 3,
+  "blaze_weight": 4
+}

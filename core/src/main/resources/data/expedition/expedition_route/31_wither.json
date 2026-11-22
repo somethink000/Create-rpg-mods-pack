@@ -21,7 +21,6 @@
   "garrison": [
     "minecraft:wither_skeleton",
     "minecraft:blaze",
-    "minecraft:ghast",
     "minecraft:piglin_brute"
   ],
   "guardian": {

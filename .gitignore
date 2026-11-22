@@ -40,3 +40,4 @@ testserver/config/**/*.bak*
 testserver/config/spark/
 testserver/config/chunky/tasks/
 testserver/config/resourceful-config-web.json
+*.jar.log

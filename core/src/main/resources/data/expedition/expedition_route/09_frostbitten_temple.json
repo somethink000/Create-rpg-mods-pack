@@ -1,0 +1,37 @@
+{
+  "order": 15,
+  "tier": "T2",
+  "dimension": "minecraft:overworld",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "legendary_monsters:frostbitten_temple"
+  ],
+  "boss": "legendary_monsters:frostbitten_golem",
+  "loot": [
+    "expedition:grave_dust",
+    "legendary_monsters:frozen_rune"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:ice_spikes",
+    "terralith:wintry_forest",
+    "minecraft:snowy_taiga",
+    "terralith:snowy_maple_forest",
+    "minecraft:snowy_plains"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:frostbitten_golem",
+    "health": 360,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:stray",
+    "yungscavebiomes:ice_cube",
+    "cataclysm:draugr",
+    "cataclysm:elite_draugr"
+  ]
+}

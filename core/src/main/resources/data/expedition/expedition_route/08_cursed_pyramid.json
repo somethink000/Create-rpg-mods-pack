@@ -1,0 +1,40 @@
+{
+  "order": 41,
+  "tier": "T5",
+  "dimension": "minecraft:overworld",
+  "min_distance": 8500,
+  "max_distance": 11000,
+  "structures": [
+    "cataclysm:cursed_pyramid"
+  ],
+  "boss": "cataclysm:ancient_remnant",
+  "loot": [
+    "expedition:grave_dust",
+    "cataclysm:ancient_metal_block",
+    "cataclysm:remnant_skull",
+    "cataclysm:sandstorm_in_a_bottle"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:desert",
+    "terralith:ancient_sands",
+    "terralith:desert_canyon",
+    "terralith:desert_spires"
+  ],
+  "garrison": [
+    "cataclysm:koboleton",
+    "minecraft:husk",
+    "legendary_monsters:bomber",
+    "cataclysm:kobolediator",
+    "cataclysm:wadjet"
+  ],
+  "guardian": {
+    "entity": "cataclysm:ancient_remnant",
+    "health": 840,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deep_aether"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "deep_aether:skyjade"
+    },
+    "/": {
+      "tag": "aether:skyroot_stick"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "##",
+    " /",
+    " /",
+    "P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "deep_aether:skyjade_hoe"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

@@ -1,0 +1,38 @@
+{
+  "order": 16,
+  "tier": "T2",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "block_factorys_bosses:underworld_arena"
+  ],
+  "boss": "block_factorys_bosses:underworld_knight",
+  "loot": [
+    "expedition:cinder_core"
+  ],
+  "heart": [
+    "block_factorys_bosses:knight_sword"
+  ],
+  "scenes": "T|",
+  "home_biomes": [
+    "minecraft:soul_sand_valley",
+    "minecraft:nether_wastes"
+  ],
+  "garrison": [
+    "block_factorys_bosses:soul_skeleton",
+    "block_factorys_bosses:soul_knight_wither_skeleton",
+    "block_factorys_bosses:flaming_skeleton_guard_sword",
+    "minecraft:wither_skeleton",
+    "graveyard:reaper"
+  ],
+  "guardian": {
+    "entity": "block_factorys_bosses:underworld_knight",
+    "health": 360,
+    "damage": 6,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": true
+  }
+}

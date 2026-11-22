@@ -1,0 +1,758 @@
+{
+ "expedition.story.act.1.1": {
+  "hash": "e9f700933ae2a2160ec63844c7d3b07530dc4034",
+  "ms": 8900
+ },
+ "expedition.story.act.1.2": {
+  "hash": "fbd38abe04e1552e8c3e1e8f60f9c14a9ee2b576",
+  "ms": 10600
+ },
+ "expedition.story.act.1.3": {
+  "hash": "09afce6e8dce1e87ad9aa3657766d4443887e65f",
+  "ms": 11200
+ },
+ "expedition.story.act.1.4": {
+  "hash": "34cd8d731d1078d1bbd99b01381a6c256e2073c0",
+  "ms": 9500
+ },
+ "expedition.story.act.2.1": {
+  "hash": "8a085b7d570608b8fe66d2cc925d19c41a161ca9",
+  "ms": 6900
+ },
+ "expedition.story.act.2.2": {
+  "hash": "e5ec160eb77979b6ec759549677e5e0e0b7348d8",
+  "ms": 9000
+ },
+ "expedition.story.act.2.3": {
+  "hash": "8a09649dfe30acd25c107054cc1b4882ebcad8ab",
+  "ms": 7500
+ },
+ "expedition.story.act.2.4": {
+  "hash": "117a40931bd0d4594170e2179821fa4d9814a9c6",
+  "ms": 7500
+ },
+ "expedition.story.act.2.5": {
+  "hash": "ba5e5c917c25aa0b3651bcd57fd478a94ddf4227",
+  "ms": 3900
+ },
+ "expedition.story.act.3.1": {
+  "hash": "ab0f32f25dcf58fe52a5a3fe061c7ca876196741",
+  "ms": 3900
+ },
+ "expedition.story.act.3.2": {
+  "hash": "25ada38edfca517eb17cc58c3de4fb5ca79f49c6",
+  "ms": 7800
+ },
+ "expedition.story.act.3.3": {
+  "hash": "c7d0423e919eee24fa7ab3a7e6d27606276a8bd1",
+  "ms": 6300
+ },
+ "expedition.story.act.3.4": {
+  "hash": "2f74103e3bdcd994c24ac30d2916fde878785143",
+  "ms": 4900
+ },
+ "expedition.story.act.3.5": {
+  "hash": "4daded5d5801d1ec8067b6046e1ebb2163c486f9",
+  "ms": 6900
+ },
+ "expedition.story.act.4.1": {
+  "hash": "df8ff5cf6aaac6faef2ce383c3f9c297df6e2735",
+  "ms": 6100
+ },
+ "expedition.story.act.4.2": {
+  "hash": "ef4562089a9baf5ddba428bc3da1b241d6792546",
+  "ms": 9000
+ },
+ "expedition.story.act.4.3": {
+  "hash": "79301012d7db8e8c8db1229ce578e49b10c49327",
+  "ms": 5900
+ },
+ "expedition.story.act.4.4": {
+  "hash": "a1eac779c9daaae3473c3ba4ec65a37348452cad",
+  "ms": 5100
+ },
+ "expedition.story.act.4.5": {
+  "hash": "38d4a52d747fe5efad8219a59e371a7eae2c5313",
+  "ms": 3334
+ },
+ "expedition.story.act.5.1": {
+  "hash": "835edcf7d9f7a62ff444fe447ff4b8489965b4d7",
+  "ms": 7800
+ },
+ "expedition.story.act.5.2": {
+  "hash": "c06abf0970ef5298223d841fc7d558a03220f2da",
+  "ms": 7800
+ },
+ "expedition.story.act.5.3": {
+  "hash": "f737c0a67f2d6b7fcea3d16cbe989d22f3a945fd",
+  "ms": 7500
+ },
+ "expedition.story.act.5.4": {
+  "hash": "280298f89c6a219ccf66f98ef44e25404ef9a8c1",
+  "ms": 7700
+ },
+ "expedition.story.act.5.5": {
+  "hash": "8cec9ff7dde99bbfc65eb5dc364644565edc2713",
+  "ms": 3574
+ },
+ "expedition.story.act.6.1": {
+  "hash": "b2e69e9952f8cfba298dd0c605877446a73f2bf7",
+  "ms": 6500
+ },
+ "expedition.story.act.6.2": {
+  "hash": "e3c2aebf5a56ac814a222eea8c8f6f5670556d87",
+  "ms": 6700
+ },
+ "expedition.story.act.6.3": {
+  "hash": "35e00986dfa970073ae645152be6b678b3b185d8",
+  "ms": 7600
+ },
+ "expedition.story.act.6.4": {
+  "hash": "a141040362e213e38bee08ebaef1a56b0ba0793c",
+  "ms": 6400
+ },
+ "expedition.story.act.6.5": {
+  "hash": "b15ca48f85500dbcf40ab6312fe27861be6e5655",
+  "ms": 4700
+ },
+ "expedition.story.act.7.1": {
+  "hash": "b8f91651730a6c7417be093ec555410003c2e34b",
+  "ms": 6100
+ },
+ "expedition.story.act.7.2": {
+  "hash": "ecd67d87d98c6db0df344eb6aa5b32d4fb71b563",
+  "ms": 5500
+ },
+ "expedition.story.act.7.3": {
+  "hash": "a9d434c82b73dd708da55bb4c0038f5c9da620aa",
+  "ms": 5500
+ },
+ "expedition.story.act.7.4": {
+  "hash": "e39c726705c589a73421949b6fd1a24e8be095eb",
+  "ms": 4700
+ },
+ "expedition.story.act.7.5": {
+  "hash": "ed27dcb3b16f3b2a258d5233e44acd5523867663",
+  "ms": 5800
+ },
+ "expedition.story.arrive.01_old_dungeon.1": {
+  "hash": "227e1c359b44841fa00a43f1d47413f6c9b9a44c",
+  "ms": 12800
+ },
+ "expedition.story.arrive.02_crypt.1": {
+  "hash": "004a992933b9c7c32a94098088453b23aa380288",
+  "ms": 9100
+ },
+ "expedition.story.arrive.03_wrought_chamber.1": {
+  "hash": "7bf2db2add92b80fb7d6224d62849d2f47791fc7",
+  "ms": 9100
+ },
+ "expedition.story.arrive.04_nether_fortress.1": {
+  "hash": "3a04f1288f380c2379a43b5855634546b122bf21",
+  "ms": 13500
+ },
+ "expedition.story.arrive.05_mossy_temple.1": {
+  "hash": "e1c2b90526f02a5b5df4399f5311f14ef95f0c5c",
+  "ms": 7700
+ },
+ "expedition.story.arrive.06_underworld_arena.1": {
+  "hash": "6c14f61985917647fd7886cd4cca3c9c968093fc",
+  "ms": 11900
+ },
+ "expedition.story.arrive.07_foundry.1": {
+  "hash": "cab6c5f3fef4cb2ea879b5f5d861eac6a38a31bd",
+  "ms": 10400
+ },
+ "expedition.story.arrive.08_cursed_pyramid.1": {
+  "hash": "e495875a498f97f8e61dc4b531424ec7ba81e46d",
+  "ms": 11600
+ },
+ "expedition.story.arrive.09_frostbitten_temple.1": {
+  "hash": "cc79c85b20533d639cf1363679b128446c28b910",
+  "ms": 8000
+ },
+ "expedition.story.arrive.10_ocean_monument.1": {
+  "hash": "241640def73eb5271d91b1107bd346a99e7b996d",
+  "ms": 10900
+ },
+ "expedition.story.arrive.11_pirate_ship.1": {
+  "hash": "9839200af6b01b0df4d00d329af46875fed44325",
+  "ms": 10300
+ },
+ "expedition.story.arrive.12_kraken_ship.1": {
+  "hash": "e59c0a31fc6bf024d5a0f3d98629308b187ec4ec",
+  "ms": 8200
+ },
+ "expedition.story.arrive.13_sky_whale.1": {
+  "hash": "43c6a0d22bc46a3e9ff87bc78f872e324f34df2b",
+  "ms": 7500
+ },
+ "expedition.story.arrive.14_burning_arena.1": {
+  "hash": "af45a400ba531f9951c4d41da7f81c4013b30cca",
+  "ms": 9600
+ },
+ "expedition.story.arrive.15_soul_blacksmith.1": {
+  "hash": "8ce1c208ae04e5a36312d07b6bbda10845a0d923",
+  "ms": 9700
+ },
+ "expedition.story.arrive.16_frosted_prison.1": {
+  "hash": "c2f5a39c206342ce0a6a102df66693ed52c7111f",
+  "ms": 6500
+ },
+ "expedition.story.arrive.17_stronghold.1": {
+  "hash": "cc621d0486711624739db7ab509b61e6bee93706",
+  "ms": 8920
+ },
+ "expedition.story.arrive.18_ender_dragon.1": {
+  "hash": "511910cdee54f404fbc1cc89e6e281982be4dabd",
+  "ms": 8480
+ },
+ "expedition.story.arrive.19_ruined_citadel.1": {
+  "hash": "88d0c478cc4a0f019fb8505cd5ac446a668ff0c2",
+  "ms": 8380
+ },
+ "expedition.story.arrive.20_space_station.1": {
+  "hash": "f1cc518dc35a9f5bfa32b22e454aa38b884f4dbf",
+  "ms": 8420
+ },
+ "expedition.story.arrive.21_ancient_factory.1": {
+  "hash": "b148178d6c03959d4400eb0f85e40d2398b1bba5",
+  "ms": 12400
+ },
+ "expedition.story.arrive.22_sunken_city.1": {
+  "hash": "56e391c2ba1bc2b83fe0abeb3c46b55ea56d2da7",
+  "ms": 9700
+ },
+ "expedition.story.arrive.23_acropolis.1": {
+  "hash": "27f4ccc78b96d5e8fe0ec63ce0902e5d4674c05e",
+  "ms": 8820
+ },
+ "expedition.story.arrive.24_malkuth.1": {
+  "hash": "766c69753048dd711dfe941b166a3fe29b0427ad",
+  "ms": 9480
+ },
+ "expedition.story.arrive.25_chesed.1": {
+  "hash": "270d41aac94e2c7c13b0199ce726356c89b3b912",
+  "ms": 7620
+ },
+ "expedition.story.arrive.26_geburah.1": {
+  "hash": "d8981d1e8c14f7d8b0d732c91e9e5e26e6074530",
+  "ms": 7160
+ },
+ "expedition.story.arrive.27_lich_tower.1": {
+  "hash": "aac69a6c30145ac65d384a71e99701902f6a78fb",
+  "ms": 10320
+ },
+ "expedition.story.arrive.28_void_blossom.1": {
+  "hash": "970c48e9730cd9dbab1a8b1b1fa44b701c4011ec",
+  "ms": 7760
+ },
+ "expedition.story.arrive.29_nether_gauntlet.1": {
+  "hash": "ec8c427e423290d6d61be49d5f3547ccc6e555c8",
+  "ms": 8280
+ },
+ "expedition.story.arrive.30_obsidilith.1": {
+  "hash": "4c0dc53d7374ade59c17de366cd435e08310fac7",
+  "ms": 9360
+ },
+ "expedition.story.arrive.31_wither.1": {
+  "hash": "4982e7dc49678287d1e0d6b2dade93159c558022",
+  "ms": 7720
+ },
+ "expedition.story.arrive.32_warped_nest.1": {
+  "hash": "7076f9edd05d659374009966e0d1704e81b11c3a",
+  "ms": 10680
+ },
+ "expedition.story.arrive.33_umvuthana_grove.1": {
+  "hash": "592b6b6fcd2a91ace28b9744e76fd1346045e3c7",
+  "ms": 9420
+ },
+ "expedition.story.arrive.34_monastery.1": {
+  "hash": "33eb6dbb34c2f8e98a5b6304eaf645c365f53121",
+  "ms": 8320
+ },
+ "expedition.story.arrive.35_sandworm_nest.1": {
+  "hash": "f6a77c0b2a5f9593662ee5e5339837d2f9fbece4",
+  "ms": 10520
+ },
+ "expedition.story.arrive.36_ruined_pyramid.1": {
+  "hash": "f8123fc5fa963b6e152cf0b54268da6b63c6f157",
+  "ms": 8320
+ },
+ "expedition.story.arrive.37_ancient_stronghold.1": {
+  "hash": "b5da8935bac1dcf0e3243b9dcdb3d508da19fbfe",
+  "ms": 9220
+ },
+ "expedition.story.arrive.38_lava_eater_spawn.1": {
+  "hash": "41d82358ba2d8028f35187fb7b9d97ee94b1da65",
+  "ms": 6880
+ },
+ "expedition.story.arrive.39_yeti_hideout.1": {
+  "hash": "e1f1f3121d6cc6d70753962c56e60d42eef71bef",
+  "ms": 7880
+ },
+ "expedition.story.arrive.40_frostmaw_den.1": {
+  "hash": "8bd81e3d90f3834e7abc7118e0a698b971342599",
+  "ms": 6860
+ },
+ "expedition.story.arrive.41_skeletosaurus_nest.1": {
+  "hash": "b3159ec3d5804174b7d1d319ea6f286465f529df",
+  "ms": 10160
+ },
+ "expedition.story.arrive.42_soul_fortress.1": {
+  "hash": "baf04ffefd0b722070cf75195ceb9d77a2fd9337",
+  "ms": 7620
+ },
+ "expedition.story.arrive.43_dragon_tower.1": {
+  "hash": "7d3c411ed79685aa81c97be63e147acdb690d435",
+  "ms": 8020
+ },
+ "expedition.story.arrive.44_shulker_tower.1": {
+  "hash": "34915eea8c58f952a6e77acf20bd8f8e967dd6bb",
+  "ms": 6320
+ },
+ "expedition.story.arrive.45_cloudy_temple.1": {
+  "hash": "4e87862dc4e5271e39cf9013847c022c3d21f6bc",
+  "ms": 8760
+ },
+ "expedition.story.arrive.46_collapsed_kingdom.1": {
+  "hash": "b429a1e49d6a35d5e6d52db0497e6e7642f94090",
+  "ms": 9540
+ },
+ "expedition.story.arrive.47_lich_prison.1": {
+  "hash": "9fa82b95c6904f60dc0b462adef524ff6e19e38d",
+  "ms": 6320
+ },
+ "expedition.story.arrive.48_ancient_tower.1": {
+  "hash": "e1119c39fb7f52fe8dc2a2ac91cce9f8d497b8b3",
+  "ms": 9280
+ },
+ "expedition.story.arrive.49_naga_courtyard.1": {
+  "hash": "db3a59f02c59b1f4f9873b4137cd1b572ea373a2",
+  "ms": 10900
+ },
+ "expedition.story.arrive.50_tf_lich_tower.1": {
+  "hash": "515ef0a11bfd347380235fadff756724a0a27a4e",
+  "ms": 7920
+ },
+ "expedition.story.arrive.51_labyrinth.1": {
+  "hash": "2c7bf3be2f3694a9af9ee11f08e731e241d047a4",
+  "ms": 9120
+ },
+ "expedition.story.arrive.52_hydra_lair.1": {
+  "hash": "02e33ec73ae00d25c1faef9b3c571862ffc4459b",
+  "ms": 8820
+ },
+ "expedition.story.arrive.53_knight_stronghold.1": {
+  "hash": "93b800787a5281897e651aa441fbf3ad9f8f5d5d",
+  "ms": 7900
+ },
+ "expedition.story.arrive.54_dark_tower.1": {
+  "hash": "0b2d705b70dfe62f19f581a1fd906ad69e18263b",
+  "ms": 6580
+ },
+ "expedition.story.arrive.55_yeti_cave.1": {
+  "hash": "9b15dcfafe11e01fecf7d99a67937d078ba0616d",
+  "ms": 5500
+ },
+ "expedition.story.arrive.56_aurora_palace.1": {
+  "hash": "46169425d0789ea50e3a1a65112bf0488185733f",
+  "ms": 5180
+ },
+ "expedition.story.arrive.57_bronze_dungeon.1": {
+  "hash": "c2879afbbac7d6a6156b193100864bdb35d5f132",
+  "ms": 10460
+ },
+ "expedition.story.arrive.58_silver_dungeon.1": {
+  "hash": "025ed9f3930d0f9c7ff794ba60abeece3ea4b074",
+  "ms": 8060
+ },
+ "expedition.story.arrive.59_gold_dungeon.1": {
+  "hash": "365176ddb101b9015afad3ec5c20d3e8949ae464",
+  "ms": 9180
+ },
+ "expedition.story.arrive.60_brass_dungeon.1": {
+  "hash": "689103a04a12f48fc92bb87d8c9618f12c445349",
+  "ms": 7020
+ },
+ "expedition.story.arrive.61_ancient_temple.1": {
+  "hash": "e5f58e5c95d9cf6d53f89283d7043b08683acfa3",
+  "ms": 8440
+ },
+ "expedition.story.fall.01_old_dungeon.1": {
+  "hash": "c720be6889fdfaf3b1d8c3176900738f30cd0df9",
+  "ms": 7400
+ },
+ "expedition.story.fall.02_crypt.1": {
+  "hash": "c3bc9654e5042c54fb8dba65a32ed0d2bf795a7c",
+  "ms": 6100
+ },
+ "expedition.story.fall.04_nether_fortress.1": {
+  "hash": "db95a7e207764d5c5fd79544ef082ddc5701365a",
+  "ms": 6500
+ },
+ "expedition.story.fall.07_foundry.1": {
+  "hash": "cd24a6494855154361402c1247db1cf310ebb029",
+  "ms": 4800
+ },
+ "expedition.story.fall.08_cursed_pyramid.1": {
+  "hash": "d28396c018dbca7c970c93efec34d040b4bfccee",
+  "ms": 3214
+ },
+ "expedition.story.fall.09_frostbitten_temple.1": {
+  "hash": "5855f3d5ce178856f720713615092b19fc235a84",
+  "ms": 4200
+ },
+ "expedition.story.fall.12_kraken_ship.1": {
+  "hash": "0b948006d7fd72972b1de590d137f5b10a120daa",
+  "ms": 4100
+ },
+ "expedition.story.fall.13_sky_whale.1": {
+  "hash": "c581926d179866d889c7551b977ecc1c60cba99e",
+  "ms": 4700
+ },
+ "expedition.story.fall.16_frosted_prison.1": {
+  "hash": "277c142e4681831b8241ad082cb1925ef75ece60",
+  "ms": 4000
+ },
+ "expedition.story.fall.17_stronghold.1": {
+  "hash": "af694a1ef0c2cad5cc51ee94899792cdc1509fdb",
+  "ms": 5680
+ },
+ "expedition.story.fall.20_space_station.1": {
+  "hash": "900eded0909156579e6b77cc960898b76a648ab7",
+  "ms": 3340
+ },
+ "expedition.story.fall.23_acropolis.1": {
+  "hash": "ce00e5ee9df12145eedae249ae17c143424ad3aa",
+  "ms": 3260
+ },
+ "expedition.story.fall.28_void_blossom.1": {
+  "hash": "7f8bab7069ff59a62e6dd21137fafdfdcf9748b7",
+  "ms": 3280
+ },
+ "expedition.story.fall.29_nether_gauntlet.1": {
+  "hash": "e6c964fc06bb991bbf66b610cc89c1fc461d7152",
+  "ms": 4100
+ },
+ "expedition.story.fall.30_obsidilith.1": {
+  "hash": "792ccfb46880b3a25ec16efe228dceeeecb523c8",
+  "ms": 4740
+ },
+ "expedition.story.fall.32_warped_nest.1": {
+  "hash": "4f514cdd249574ecfe7097328d1400233188915b",
+  "ms": 7660
+ },
+ "expedition.story.fall.33_umvuthana_grove.1": {
+  "hash": "e0d1c36cf172cbc66c898921546b6732f92bd548",
+  "ms": 5800
+ },
+ "expedition.story.fall.34_monastery.1": {
+  "hash": "e2612a5085de140b09c1807421dc5d234519933a",
+  "ms": 4880
+ },
+ "expedition.story.fall.35_sandworm_nest.1": {
+  "hash": "25650c4381d3b6628c67d9725f64cf19eed0e394",
+  "ms": 5700
+ },
+ "expedition.story.fall.36_ruined_pyramid.1": {
+  "hash": "b69ebbf6f7b92dc0caea881abcad3b7d6232cdeb",
+  "ms": 5880
+ },
+ "expedition.story.fall.37_ancient_stronghold.1": {
+  "hash": "c98b62b47655da0978eb119844ba0ce6a642a496",
+  "ms": 3380
+ },
+ "expedition.story.fall.38_lava_eater_spawn.1": {
+  "hash": "59a03349fa9d3cbe92c152b625b64718f623764b",
+  "ms": 4400
+ },
+ "expedition.story.fall.39_yeti_hideout.1": {
+  "hash": "554c69a04e107c7d1075b0ef78dc470deceef889",
+  "ms": 4500
+ },
+ "expedition.story.fall.40_frostmaw_den.1": {
+  "hash": "15302f038b84fb2de950ca6ed0456faa238a08a8",
+  "ms": 3640
+ },
+ "expedition.story.fall.41_skeletosaurus_nest.1": {
+  "hash": "a19df05e667462272935715252fbea33b5c64ad2",
+  "ms": 4820
+ },
+ "expedition.story.fall.42_soul_fortress.1": {
+  "hash": "a0f302ee36e34b1c5d799f6c2cfb570784d983ba",
+  "ms": 4520
+ },
+ "expedition.story.fall.43_dragon_tower.1": {
+  "hash": "dd2dc050eb50b002285794a15ca5ba40dc794020",
+  "ms": 3820
+ },
+ "expedition.story.fall.44_shulker_tower.1": {
+  "hash": "2b78799e6d71670481c22119242a039cc8fd9c42",
+  "ms": 4220
+ },
+ "expedition.story.fall.45_cloudy_temple.1": {
+  "hash": "becf49d8e31ca0ff85602e02e5c50394b3b38837",
+  "ms": 2140
+ },
+ "expedition.story.fall.46_collapsed_kingdom.1": {
+  "hash": "89d94ea4c40533cab3311d6b66b7ba8aa2be3314",
+  "ms": 4040
+ },
+ "expedition.story.fall.47_lich_prison.1": {
+  "hash": "2443666e6241a50b470ece22150f2178fef11c59",
+  "ms": 4120
+ },
+ "expedition.story.fall.48_ancient_tower.1": {
+  "hash": "f276546bfa0fc07e948d1f2f6259412f3c69aa85",
+  "ms": 4600
+ },
+ "expedition.story.fall.49_naga_courtyard.1": {
+  "hash": "de485ea46a175843d5cbde44afab018cc979af14",
+  "ms": 6340
+ },
+ "expedition.story.fall.50_tf_lich_tower.1": {
+  "hash": "4d896cd8c6cec265e60e11b4cbf09e2033144da3",
+  "ms": 5100
+ },
+ "expedition.story.fall.51_labyrinth.1": {
+  "hash": "9335fb8e3914c62eec4580129b0072428e9a4d85",
+  "ms": 3360
+ },
+ "expedition.story.fall.52_hydra_lair.1": {
+  "hash": "322f59fc20b7a745f7396a9609fcee5c842e70ae",
+  "ms": 4660
+ },
+ "expedition.story.fall.53_knight_stronghold.1": {
+  "hash": "f7094a35017591edce0886625c301e5f434a9375",
+  "ms": 3460
+ },
+ "expedition.story.fall.54_dark_tower.1": {
+  "hash": "2d21c832a04f2d8499098fcca7b142dbf64ef66f",
+  "ms": 3540
+ },
+ "expedition.story.fall.55_yeti_cave.1": {
+  "hash": "59cefa83c6475263edd7ab892f08d93eabcda58d",
+  "ms": 3180
+ },
+ "expedition.story.fall.56_aurora_palace.1": {
+  "hash": "f75da0344120aeb0dc3ab199c87d487f238c6e4b",
+  "ms": 3320
+ },
+ "expedition.story.fall.57_bronze_dungeon.1": {
+  "hash": "97c03cbdef5cbf7d461a4ff64032f88e81f87fe3",
+  "ms": 6020
+ },
+ "expedition.story.fall.58_silver_dungeon.1": {
+  "hash": "4b1b6e0ccf0437ab124ffaf7c08d7eae7d512f63",
+  "ms": 4240
+ },
+ "expedition.story.fall.59_gold_dungeon.1": {
+  "hash": "d89105e6bf2932c518b9427c3b9980936436709f",
+  "ms": 3940
+ },
+ "expedition.story.fall.60_brass_dungeon.1": {
+  "hash": "57429f899758de0f48f3fed4b276c5804e2cc026",
+  "ms": 3880
+ },
+ "expedition.story.fall.61_ancient_temple.1": {
+  "hash": "4e9c9167c53170167f0b92cbb3f626a1a660dc3b",
+  "ms": 4520
+ },
+ "expedition.story.finale.1": {
+  "hash": "f2827818abfee5e19c73a5e0b44d26b041fef7d6",
+  "ms": 1931
+ },
+ "expedition.story.finale.2": {
+  "hash": "8933f3e7101ef839ebb190fe106cc884c31f5aff",
+  "ms": 5600
+ },
+ "expedition.story.finale.3": {
+  "hash": "ec6130d30fb92ef9315866239c23055634bdc3e4",
+  "ms": 4800
+ },
+ "expedition.story.finale.4": {
+  "hash": "d7a845bc460237c7847e435ef68302f385abd6bd",
+  "ms": 5400
+ },
+ "expedition.story.finale.5": {
+  "hash": "a916f291afb85cfb82aa2bb5df1cf47836c312bb",
+  "ms": 4500
+ },
+ "expedition.story.finale.6": {
+  "hash": "12ea8dbbb8f9540ac0c522729a0f5e638032b9e4",
+  "ms": 8300
+ },
+ "expedition.story.outro.03_wrought_chamber.1": {
+  "hash": "02f008a3923b4ca482be71fc4ad0ad87f7047408",
+  "ms": 5900
+ },
+ "expedition.story.outro.03_wrought_chamber.2": {
+  "hash": "74dc208c3f43e658781bdfdd05b93802314b63ca",
+  "ms": 7000
+ },
+ "expedition.story.outro.05_mossy_temple.1": {
+  "hash": "29085a1e96c6c0c2998cd4ce102e28724d893b02",
+  "ms": 5900
+ },
+ "expedition.story.outro.05_mossy_temple.2": {
+  "hash": "7a4dc4b501592bf35ee28db1bc278a09eb4cd506",
+  "ms": 4900
+ },
+ "expedition.story.outro.06_underworld_arena.1": {
+  "hash": "434af4655bc213975c7e4a0fa3dfc1822ad1ca9d",
+  "ms": 3900
+ },
+ "expedition.story.outro.06_underworld_arena.2": {
+  "hash": "ece698f5379400de1fe2df8d01f687c4c64e91fd",
+  "ms": 6400
+ },
+ "expedition.story.outro.10_ocean_monument.1": {
+  "hash": "ddad5514434d4034a3d0382a16c7c8d6bdded70e",
+  "ms": 4600
+ },
+ "expedition.story.outro.10_ocean_monument.2": {
+  "hash": "5aa3689557f73504d1a0f610dbb53d9bf0c5adc4",
+  "ms": 6000
+ },
+ "expedition.story.outro.11_pirate_ship.1": {
+  "hash": "40e39de7e1e0e6b45e64fea22962fe849c13c2f7",
+  "ms": 4600
+ },
+ "expedition.story.outro.11_pirate_ship.2": {
+  "hash": "e487b707fe55775ed5bf81dfbc79cc6cb3a1a519",
+  "ms": 3074
+ },
+ "expedition.story.outro.14_burning_arena.1": {
+  "hash": "6e63ae5ab8ab8ed15abff55c82ab751cdf33f281",
+  "ms": 3014
+ },
+ "expedition.story.outro.14_burning_arena.2": {
+  "hash": "df19127a6e89eddbecfacb0df4aa84b3decd9985",
+  "ms": 4300
+ },
+ "expedition.story.outro.15_soul_blacksmith.1": {
+  "hash": "23600f7b98371410ba2f5f1dbc6ede75f8a5e6d5",
+  "ms": 5400
+ },
+ "expedition.story.outro.15_soul_blacksmith.2": {
+  "hash": "a6bd6319bd593b8196c5b820bfec1bed2ab14b1c",
+  "ms": 5500
+ },
+ "expedition.story.outro.18_ender_dragon.1": {
+  "hash": "d310901cdabb5ce5e11749cb0bb5c7a75c4102c6",
+  "ms": 1251
+ },
+ "expedition.story.outro.18_ender_dragon.2": {
+  "hash": "9777f2e34e850e3acfabac6592f5603155b04659",
+  "ms": 4900
+ },
+ "expedition.story.outro.18_ender_dragon.3": {
+  "hash": "a9e32b67f41a48922b51c2c02d313f9b293c83ac",
+  "ms": 5100
+ },
+ "expedition.story.outro.19_ruined_citadel.1": {
+  "hash": "97188bf471cc1f6bb157f9c88e6db8e67c191117",
+  "ms": 3800
+ },
+ "expedition.story.outro.19_ruined_citadel.2": {
+  "hash": "8b79a55a6b70a9427fe7c9ae50d8dda68f1ae3c8",
+  "ms": 6300
+ },
+ "expedition.story.outro.21_ancient_factory.1": {
+  "hash": "c1ee452057c0a2c9f94f0cab06c4efe577817e60",
+  "ms": 4400
+ },
+ "expedition.story.outro.21_ancient_factory.2": {
+  "hash": "31c2917503d13b6e8a915aad1166ea60bb8c6ea5",
+  "ms": 3800
+ },
+ "expedition.story.outro.22_sunken_city.1": {
+  "hash": "450ee82643741ebd2800bb5df59066539c3c62ba",
+  "ms": 2051
+ },
+ "expedition.story.outro.22_sunken_city.2": {
+  "hash": "5aca8e0227fca9043e6fa2cbd10a30f69462e5af",
+  "ms": 3274
+ },
+ "expedition.story.outro.24_malkuth.1": {
+  "hash": "d3839e14d8745eaf8b7c4ae3186ce11166d60b52",
+  "ms": 1451
+ },
+ "expedition.story.outro.24_malkuth.2": {
+  "hash": "8ccd129ac0ab9c827ad21b8aa5e63089b8effc89",
+  "ms": 3534
+ },
+ "expedition.story.outro.25_chesed.1": {
+  "hash": "bebff70a4f625c9dcd14c05851d70e7a866873e1",
+  "ms": 1431
+ },
+ "expedition.story.outro.25_chesed.2": {
+  "hash": "b339ab7b89fe9008c558e20274d5f21cc89831a0",
+  "ms": 3414
+ },
+ "expedition.story.outro.26_geburah.1": {
+  "hash": "a8e55cd6566dea109476a346d6a875850b431d54",
+  "ms": 1591
+ },
+ "expedition.story.outro.26_geburah.2": {
+  "hash": "e55abd0d814249fcdf2d23bd4d4c3a42bebf4015",
+  "ms": 1851
+ },
+ "expedition.story.outro.27_lich_tower.1": {
+  "hash": "db5c936c68e13e26c4047e9a863ba8c9276869bc",
+  "ms": 4700
+ },
+ "expedition.story.outro.27_lich_tower.2": {
+  "hash": "5917e284ae1705160d8aa57cc032a7cf7cbd1721",
+  "ms": 2611
+ },
+ "expedition.story.outro.31_wither.1": {
+  "hash": "0083be372b90540c750b513b414549f8239a5b78",
+  "ms": 3800
+ },
+ "expedition.story.outro.31_wither.2": {
+  "hash": "baf6521898fa1ad93c2e528879847c6d720fa198",
+  "ms": 3294
+ },
+ "expedition.story.prologue.aether.1": {
+  "hash": "3a75aebbbdfba9fcc810f835215150b89801f7b3",
+  "ms": 7200
+ },
+ "expedition.story.prologue.camp.1": {
+  "hash": "825c97ea9cc5ab53a9e3b3c890ab891749beb65c",
+  "ms": 7200
+ },
+ "expedition.story.prologue.end.1": {
+  "hash": "bd8edd6362979b064b61174c18ac4a3f18cb8c08",
+  "ms": 7800
+ },
+ "expedition.story.prologue.nether.1": {
+  "hash": "43b222923c08e4b6a620f18d3ea7f01576c2464d",
+  "ms": 6400
+ },
+ "expedition.story.prologue.overworld.1": {
+  "hash": "165ee551f065ca84c81569e48e17a0ddaee320f0",
+  "ms": 9000
+ },
+ "expedition.story.prologue.seam.1": {
+  "hash": "cc00ad6583d6a2d7346ae0d6c7103b3958eb52e8",
+  "ms": 9300
+ },
+ "expedition.story.prologue.twilight.1": {
+  "hash": "ce0f1f799f63064624c93de7d681c3eef7dcffd5",
+  "ms": 7400
+ },
+ "expedition.story.wrath.1.1": {
+  "hash": "0180af3ac77b9a9580378759c8bc6f2b49af12b1",
+  "ms": 5040
+ },
+ "expedition.story.wrath.2.1": {
+  "hash": "eba293fa38b1d5667cecf3be714bcaaeb07dd0cd",
+  "ms": 4000
+ },
+ "expedition.story.wrath.3.1": {
+  "hash": "56f4455d48c8e4eb5a28ce67d722aaf0e6a6af5a",
+  "ms": 3200
+ }
+}

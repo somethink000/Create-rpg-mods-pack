@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "block_factorys_bosses:underworld_knight"
+      }
+    },
+    "S": {
+      "item": "tfmg:heavy_plate"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "result": {
+    "id": "block_factorys_bosses:warrior_sword",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

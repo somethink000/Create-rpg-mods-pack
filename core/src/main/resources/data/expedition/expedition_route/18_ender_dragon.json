@@ -1,0 +1,24 @@
+{
+  "order": 19,
+  "tier": "T2",
+  "dimension": "minecraft:the_end",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "boss": "minecraft:ender_dragon",
+  "loot": [
+    "expedition:void_shard",
+    "minecraft:dragon_head",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:end_portal_frame",
+    "minecraft:ender_eye"
+  ],
+  "structures": [
+    "nova_structures:end_castle"
+  ],
+  "summon": true,
+  "scenes": "T|",
+  "home_biomes": [
+    "minecraft:end_highlands",
+    "minecraft:end_midlands"
+  ]
+}

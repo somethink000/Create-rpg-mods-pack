@@ -1,0 +1,240 @@
+{
+  "type": "expedition:boss_hearts",
+  "conditions": [],
+  "bosses": [
+    {
+      "entity": "cataclysm:netherite_monstrosity",
+      "items": [
+        "cataclysm:infernal_forge",
+        "cataclysm:monstrous_horn"
+      ]
+    },
+    {
+      "entity": "cataclysm:the_leviathan",
+      "items": [
+        "cataclysm:tidal_claws"
+      ]
+    },
+    {
+      "entity": "cataclysm:ender_guardian",
+      "items": [
+        "cataclysm:gauntlet_of_guard"
+      ]
+    },
+    {
+      "entity": "mowziesmobs:ferrous_wroughtnaut",
+      "items": [
+        "mowziesmobs:wrought_axe",
+        "mowziesmobs:wrought_helmet"
+      ]
+    },
+    {
+      "entity": "mowziesmobs:umvuthi",
+      "items": [
+        "mowziesmobs:sol_visage"
+      ]
+    },
+    {
+      "entity": "block_factorys_bosses:underworld_knight",
+      "items": [
+        "block_factorys_bosses:knight_sword"
+      ]
+    },
+    {
+      "entity": "block_factorys_bosses:yeti",
+      "items": [
+        "block_factorys_bosses:ice_gauntlet"
+      ]
+    },
+    {
+      "entity": "block_factorys_bosses:sandworm",
+      "items": [
+        "block_factorys_bosses:sandworm_gauntlet"
+      ]
+    },
+    {
+      "entity": "aquamirae:captain_cornelia",
+      "items": [
+        "aquamirae:salvager_helmet"
+      ]
+    },
+    {
+      "entity": "legendary_monsters:cloud_golem",
+      "items": [
+        "legendary_monsters:atmospheric_boots"
+      ]
+    },
+    {
+      "entity": "legendary_monsters:posessed_paladin",
+      "items": [
+        "legendary_monsters:soul_great_sword"
+      ]
+    },
+    {
+      "entity": "twilightforest:lich",
+      "items": [
+        "twilightforest:fortification_scepter",
+        "twilightforest:lifedrain_scepter",
+        "twilightforest:twilight_scepter",
+        "twilightforest:zombie_scepter"
+      ]
+    },
+    {
+      "entity": "twilightforest:minoshroom",
+      "items": [
+        "twilightforest:diamond_minotaur_axe"
+      ]
+    },
+    {
+      "entity": "twilightforest:knight_phantom",
+      "items": [
+        "twilightforest:knightmetal_axe",
+        "twilightforest:knightmetal_pickaxe",
+        "twilightforest:knightmetal_sword",
+        "twilightforest:phantom_chestplate",
+        "twilightforest:phantom_helmet"
+      ]
+    },
+    {
+      "entity": "twilightforest:snow_queen",
+      "items": [
+        "twilightforest:seeker_bow",
+        "twilightforest:triple_bow"
+      ]
+    },
+    {
+      "entity": "legendary_monsters:overgrown_colossus",
+      "items": []
+    },
+    {
+      "entity": "cataclysm:ancient_remnant",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:frostbitten_golem",
+      "items": []
+    },
+    {
+      "entity": "minecraft:elder_guardian",
+      "items": []
+    },
+    {
+      "entity": "block_factorys_bosses:kraken",
+      "items": []
+    },
+    {
+      "entity": "cataclysm:ignis",
+      "items": []
+    },
+    {
+      "entity": "cataclysm:maledictus",
+      "items": []
+    },
+    {
+      "entity": "minecraft:ender_dragon",
+      "items": []
+    },
+    {
+      "entity": "cataclysm:the_harbinger",
+      "items": []
+    },
+    {
+      "entity": "cataclysm:scylla",
+      "items": []
+    },
+    {
+      "entity": "fdbosses:malkuth",
+      "items": []
+    },
+    {
+      "entity": "fdbosses:chesed",
+      "items": []
+    },
+    {
+      "entity": "fdbosses:geburah",
+      "items": []
+    },
+    {
+      "entity": "bosses_of_mass_destruction:lich",
+      "items": []
+    },
+    {
+      "entity": "bosses_of_mass_destruction:void_blossom",
+      "items": [
+        "bosses_of_mass_destruction:void_thorn"
+      ]
+    },
+    {
+      "entity": "bosses_of_mass_destruction:gauntlet",
+      "items": []
+    },
+    {
+      "entity": "bosses_of_mass_destruction:obsidilith",
+      "items": []
+    },
+    {
+      "entity": "minecraft:wither",
+      "items": []
+    },
+    {
+      "entity": "graveyard:lich",
+      "items": [
+        "graveyard:black_bone_staff",
+        "graveyard:cyan_bone_staff",
+        "graveyard:purple_bone_staff",
+        "graveyard:red_bone_staff",
+        "graveyard:white_bone_staff"
+      ]
+    },
+    {
+      "entity": "mowziesmobs:sculptor",
+      "items": [
+        "mowziesmobs:geomancer_beads",
+        "mowziesmobs:geomancer_belt",
+        "mowziesmobs:geomancer_robe",
+        "mowziesmobs:geomancer_sandals",
+        "mowziesmobs:sculptor_staff"
+      ]
+    },
+    {
+      "entity": "legendary_monsters:withered_abomination",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:lava_eater",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:ancient_guardian",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:the_obliterator",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:skeletosaurus",
+      "items": []
+    },
+    {
+      "entity": "mowziesmobs:frostmaw",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:dune_sentinel",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:endersent",
+      "items": []
+    },
+    {
+      "entity": "block_factorys_bosses:infernal_dragon",
+      "items": []
+    },
+    {
+      "entity": "legendary_monsters:warped_fungussus",
+      "items": []
+    }
+  ]
+}

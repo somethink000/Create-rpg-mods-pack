@@ -1,0 +1,34 @@
+{
+  "order": 22,
+  "tier": "T3",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 4500,
+  "max_distance": 7000,
+  "structures": [
+    "legendary_monsters:skeletosaurus_nest"
+  ],
+  "boss": "legendary_monsters:skeletosaurus",
+  "loot": [
+    "expedition:grave_dust",
+    "expedition:cinder_core"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "incendium:withered_forest",
+    "minecraft:soul_sand_valley"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:skeletosaurus",
+    "health": 350,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:wither_skeleton",
+    "block_factorys_bosses:soul_skeleton",
+    "minecraft:skeleton",
+    "legendary_monsters:stratling"
+  ]
+}

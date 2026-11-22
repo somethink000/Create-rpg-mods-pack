@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:iron_sheet"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "M": {
+      "item": "apotheosis:mysterious_scrap_metal"
+    },
+    "B": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:whoopee_cushion",
+    "count": 1
+  }
+}

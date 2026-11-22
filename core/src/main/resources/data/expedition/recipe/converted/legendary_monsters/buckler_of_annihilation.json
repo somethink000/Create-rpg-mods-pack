@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "legendary_monsters:enderitium_gem"
+    },
+    "C": {
+      "item": "legendary_monsters:eye_crystal"
+    },
+    "N": {
+      "item": "minecraft:end_stone"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "NCN",
+    "EEE",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:buckler_of_annihilation"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "0": {
+      "item": "create:shaft"
+    },
+    "1": {
+      "item": "aquamirae:sharp_bones"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "  1",
+    "21 ",
+    "0  ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aquamirae:remnant_saber"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

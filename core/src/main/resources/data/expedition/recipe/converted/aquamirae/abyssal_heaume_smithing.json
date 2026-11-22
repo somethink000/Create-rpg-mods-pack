@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "aquamirae:abyssal_upgrade_smithing_template"
+    },
+    "B": {
+      "item": "minecraft:diamond_helmet"
+    },
+    "A": {
+      "item": "aquamirae:abyssal_amethyst"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "TBA",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aquamirae:abyssal_heaume"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

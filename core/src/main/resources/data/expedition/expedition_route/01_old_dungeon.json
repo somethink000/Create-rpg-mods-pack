@@ -1,0 +1,42 @@
+{
+  "order": 1,
+  "tier": "T0",
+  "dimension": "minecraft:overworld",
+  "min_distance": 500,
+  "max_distance": 1600,
+  "structures": [
+    "betterdungeons:zombie_dungeon",
+    "betterdungeons:skeleton_dungeon",
+    "betterdungeons:spider_dungeon"
+  ],
+  "loot": [
+    "expedition:grave_dust",
+    "expedition:chitin_plate"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "terralith:moonlight_grove",
+    "minecraft:old_growth_pine_taiga",
+    "terralith:shield",
+    "minecraft:taiga",
+    "minecraft:forest"
+  ],
+  "guardian": {
+    "entity": "graveyard:ghoul",
+    "health": 170,
+    "damage": 7,
+    "scale": 1.4,
+    "armor": 4,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:creeper",
+    "graveyard:skeleton_creeper",
+    "graveyard:revenant",
+    "minecraft:zombie_villager"
+  ]
+}

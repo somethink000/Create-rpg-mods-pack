@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:seeds"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "tag": "minecraft:coals"
+    }
+  ],
+  "result": {
+    "id": "expedition:guiding_seed",
+    "count": 2
+  }
+}

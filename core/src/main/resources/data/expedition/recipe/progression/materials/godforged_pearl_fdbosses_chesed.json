@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "pattern": [
+    "SVS",
+    "VHV",
+    "SVS"
+  ],
+  "key": {
+    "S": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "V": {
+      "item": "expedition:void_shard"
+    },
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "fdbosses:chesed"
+      }
+    }
+  },
+  "result": {
+    "id": "apotheosis:godforged_pearl",
+    "count": 2
+  }
+}

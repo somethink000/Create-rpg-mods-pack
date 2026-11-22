@@ -1,0 +1,161 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#expedition:removed",
+      "required": false
+    },
+    {
+      "id": "ntgl:classic10mm",
+      "required": false
+    },
+    {
+      "id": "ntgl:deathclaw_gauntlet",
+      "required": false
+    },
+    {
+      "id": "ntgl:fatman",
+      "required": false
+    },
+    {
+      "id": "ntgl:flamer",
+      "required": false
+    },
+    {
+      "id": "ntgl:fuel",
+      "required": false
+    },
+    {
+      "id": "ntgl:gatling",
+      "required": false
+    },
+    {
+      "id": "ntgl:grenade",
+      "required": false
+    },
+    {
+      "id": "ntgl:hammer",
+      "required": false
+    },
+    {
+      "id": "ntgl:minigun",
+      "required": false
+    },
+    {
+      "id": "ntgl:mini_nuke",
+      "required": false
+    },
+    {
+      "id": "ntgl:missile",
+      "required": false
+    },
+    {
+      "id": "ntgl:pipepistol",
+      "required": false
+    },
+    {
+      "id": "ntgl:piperevolver",
+      "required": false
+    },
+    {
+      "id": "ntgl:pistol10mm",
+      "required": false
+    },
+    {
+      "id": "ntgl:powdergun",
+      "required": false
+    },
+    {
+      "id": "ntgl:revolver",
+      "required": false
+    },
+    {
+      "id": "ntgl:round10mm",
+      "required": false
+    },
+    {
+      "id": "ntgl:round127",
+      "required": false
+    },
+    {
+      "id": "ntgl:round22",
+      "required": false
+    },
+    {
+      "id": "ntgl:round38",
+      "required": false
+    },
+    {
+      "id": "ntgl:round380",
+      "required": false
+    },
+    {
+      "id": "ntgl:round44",
+      "required": false
+    },
+    {
+      "id": "ntgl:round45",
+      "required": false
+    },
+    {
+      "id": "ntgl:round50",
+      "required": false
+    },
+    {
+      "id": "ntgl:round556",
+      "required": false
+    },
+    {
+      "id": "ntgl:round5mm",
+      "required": false
+    },
+    {
+      "id": "ntgl:scout10mm",
+      "required": false
+    },
+    {
+      "id": "ntgl:shotgun",
+      "required": false
+    },
+    {
+      "id": "ntgl:shotshell",
+      "required": false
+    },
+    {
+      "id": "ntgl:silencer",
+      "required": false
+    },
+    {
+      "id": "ntgl:stun_grenade",
+      "required": false
+    },
+    {
+      "id": "ntgl:t45_body",
+      "required": false
+    },
+    {
+      "id": "ntgl:t45_helmet",
+      "required": false
+    },
+    {
+      "id": "ntgl:t45_left_arm",
+      "required": false
+    },
+    {
+      "id": "ntgl:t45_left_leg",
+      "required": false
+    },
+    {
+      "id": "ntgl:t45_right_arm",
+      "required": false
+    },
+    {
+      "id": "ntgl:t45_right_leg",
+      "required": false
+    },
+    {
+      "id": "ntgl:workbench",
+      "required": false
+    }
+  ]
+}

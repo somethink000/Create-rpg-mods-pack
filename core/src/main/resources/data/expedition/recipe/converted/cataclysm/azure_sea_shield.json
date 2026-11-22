@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "X": {
+      "item": "create:golden_sheet"
+    },
+    "Z": {
+      "item": "cataclysm:lacrima"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "ZXZ",
+    "#Z#",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cataclysm:azure_sea_shield"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

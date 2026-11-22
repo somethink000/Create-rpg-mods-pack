@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "expedition:boss_heart"
+    },
+    "title": {
+      "translate": "expedition.route.21_ancient_factory.title"
+    },
+    "description": {
+      "translate": "expedition.route.21_ancient_factory.text"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "expedition:story/act_6"
+}

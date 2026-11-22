@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:iron_sheet"
+    },
+    "T": {
+      "item": "expedition:abyssal_scale"
+    },
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "B": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:charm_of_sinking",
+    "count": 1
+  }
+}

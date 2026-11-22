@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:copper_sheet"
+    },
+    "T": {
+      "item": "expedition:abyssal_scale"
+    },
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "B": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:shock_pendant",
+    "count": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "c:storage_blocks/knightmetal"
+    },
+    "B": {
+      "tag": "c:ingots/knightmetal"
+    },
+    "C": {
+      "tag": "c:ingots/knightmetal"
+    },
+    "D": {
+      "tag": "c:ingots/knightmetal"
+    },
+    "E": {
+      "item": "twilightforest:knightmetal_ring"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DE ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:block_and_chain"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

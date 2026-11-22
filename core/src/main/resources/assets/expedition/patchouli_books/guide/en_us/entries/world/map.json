@@ -1,0 +1,16 @@
+{
+  "name": "expedition.guide.map",
+  "icon": "minecraft:map",
+  "category": "expedition:world",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.map.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.map.page1"
+    }
+  ]
+}

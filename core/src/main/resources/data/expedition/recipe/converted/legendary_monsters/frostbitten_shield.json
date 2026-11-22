@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "legendary_monsters:frozen_rune"
+    },
+    "A": {
+      "item": "legendary_monsters:primal_ice_shard"
+    },
+    "S": {
+      "item": "minecraft:shield"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    " # ",
+    "ASA",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:frostbitten_shield"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

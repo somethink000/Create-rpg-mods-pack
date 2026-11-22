@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "graveyard"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "equipment",
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "graveyard:lich"
+      }
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "item": "create:brass_sheet"
+    }
+  },
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "graveyard:cyan_bone_staff"
+  },
+  "show_notification": true
+}

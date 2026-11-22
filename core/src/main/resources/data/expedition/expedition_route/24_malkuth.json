@@ -1,0 +1,33 @@
+{
+  "order": 46,
+  "tier": "T6",
+  "dimension": "minecraft:overworld",
+  "min_distance": 10500,
+  "max_distance": 13500,
+  "structures": [
+    "fdbosses:malkuth_arena"
+  ],
+  "boss": "fdbosses:malkuth",
+  "loot": [
+    "expedition:feral_fang",
+    "expedition:cinder_core",
+    "fdbosses:fire_and_ice_core",
+    "fdbosses:malkuth_fist",
+    "fdbosses:malkuth_trophy"
+  ],
+  "scenes": "T|",
+  "home_biomes": [
+    "minecraft:deep_ocean",
+    "terralith:deep_warm_ocean",
+    "minecraft:deep_cold_ocean"
+  ],
+  "guardian": {
+    "entity": "fdbosses:malkuth",
+    "health": 0,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

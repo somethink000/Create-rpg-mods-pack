@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "processing_time": 200,
+  "ingredients": [
+    {
+      "item": "apotheosis:luminous_crystal_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "apotheosis:gem_dust",
+      "count": 2
+    },
+    {
+      "id": "apotheosis:gem_dust",
+      "chance": 0.5
+    }
+  ]
+}

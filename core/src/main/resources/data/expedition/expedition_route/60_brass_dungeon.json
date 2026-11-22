@@ -1,0 +1,33 @@
+{
+  "order": 111,
+  "tier": "T3",
+  "dimension": "aether:the_aether",
+  "min_distance": 4500,
+  "max_distance": 7000,
+  "structures": [
+    "deep_aether:brass_dungeon"
+  ],
+  "loot": [
+    "expedition:void_shard"
+  ],
+  "boss": "deep_aether:eots_controller",
+  "scenes": "T|T",
+  "home_biomes": [
+    "deep_aether:mystic_aerglow_forest",
+    "deep_aether:blue_aerglow_forest"
+  ],
+  "guardian": {
+    "entity": "deep_aether:eots_controller",
+    "health": 480,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  },
+  "garrison": [
+    "aether:sentry",
+    "aether:mimic",
+    "aether:valkyrie"
+  ]
+}

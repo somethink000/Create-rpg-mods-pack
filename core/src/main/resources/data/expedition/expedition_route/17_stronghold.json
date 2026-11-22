@@ -1,0 +1,37 @@
+{
+  "order": 18,
+  "tier": "T2",
+  "dimension": "minecraft:overworld",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "betterstrongholds:stronghold"
+  ],
+  "loot": [
+    "expedition:grave_dust",
+    "expedition:feral_fang"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "terralith:steppe",
+    "terralith:shield_clearing",
+    "terralith:valley_clearing",
+    "minecraft:plains"
+  ],
+  "guardian": {
+    "entity": "cataclysm:ender_golem",
+    "health": 270,
+    "damage": 12,
+    "scale": 1.0,
+    "armor": 4,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:enderman",
+    "cataclysm:endermaptera",
+    "minecraft:skeleton",
+    "minecraft:zombie",
+    "minecraft:witch",
+    "minecraft:cave_spider"
+  ]
+}

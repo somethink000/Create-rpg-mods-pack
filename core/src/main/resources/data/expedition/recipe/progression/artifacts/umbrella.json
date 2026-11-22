@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:andesite_alloy"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "M": {
+      "item": "apotheosis:timeworn_fabric"
+    },
+    "B": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:umbrella",
+    "count": 1
+  }
+}

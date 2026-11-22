@@ -1,0 +1,13 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"cataclysm:cursium_chestplate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:ignitium_boots"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:sticky_gloves"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:bone_reptile_helmet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:bone_reptile_chestplate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:bloom_stone_pauldrons"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:soul_render"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"deep_aether:skyjade_pickaxe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"deep_aether:storm_bow"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"deep_aether:blade_of_luck"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

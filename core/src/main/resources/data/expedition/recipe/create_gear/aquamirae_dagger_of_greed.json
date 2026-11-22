@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "aquamirae:captain_cornelia"
+      }
+    },
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result": {
+    "id": "aquamirae:dagger_of_greed",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

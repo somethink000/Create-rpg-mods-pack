@@ -1,0 +1,38 @@
+{
+  "order": 38,
+  "tier": "T5",
+  "dimension": "minecraft:overworld",
+  "min_distance": 8500,
+  "max_distance": 11000,
+  "structures": [
+    "cataclysm:ancient_factory"
+  ],
+  "boss": "cataclysm:the_harbinger",
+  "loot": [
+    "expedition:raider_insignia",
+    "expedition:feral_fang",
+    "cataclysm:witherite_block"
+  ],
+  "scenes": "T|",
+  "home_biomes": [
+    "terralith:ashen_savanna",
+    "terralith:hot_shrubland",
+    "terralith:gravel_desert",
+    "minecraft:savanna"
+  ],
+  "garrison": [
+    "cataclysm:the_watcher",
+    "cataclysm:the_prowler",
+    "minecraft:vindicator",
+    "minecraft:pillager"
+  ],
+  "guardian": {
+    "entity": "cataclysm:the_harbinger",
+    "health": 910,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

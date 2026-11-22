@@ -1,0 +1,27 @@
+#Create Warnautics — Veil effects
+[veil]
+	#Real dynamic light from detonations, through Veil's light renderer.
+	#Veil draws a point light as an inverted cube; if one of those cubes
+	#is ever rasterised into the scene it shows up as a flat white sheet
+	#and can leave the first-person hand drawn at the wrong transform.
+	#Turn this off to rule the lights out.
+	bombLights = true
+	#Let detonation lights cast shadows (Veil voxel occlusion).
+	#Traces every lit pixel through a voxel grid for as long as the light lives;
+	#with a large charge that is the whole screen for seconds, which stutters
+	#badly with Sodium or shader packs. Off: lights shine without shadows.
+	bombLightShadows = false
+	#Veil post-processing: the long-range flash and the concussion blur.
+	#Disables camera effects, including the fallback overlay; dynamic lights are controlled separately.
+	screenEffects = true
+	#Volumetric cruise missile exhaust through Veil. Falls back to particles when disabled.
+	missilePlume = true
+	#Dynamic light following cruise missile engines.
+	missileLights = true
+	#Draw rocket exhaust as a violet plasma jet with white shock diamonds
+	#instead of a realistic yellow-orange propellant flame.
+	plasmaPlume = false
+	#Prepare Veil's normal/albedo buffers when joining a world and retain them while dynamic lights are enabled.
+	#Avoids shader recompilation when a rocket/explosion light enters or leaves view.
+	#Uses additional GPU buffer memory/bandwidth between effects; disable on bandwidth-limited GPUs.
+	stableLightingBuffers = true

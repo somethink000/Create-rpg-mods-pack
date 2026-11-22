@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "legendary_monsters:chorus_crystal"
+    },
+    "C": {
+      "item": "legendary_monsters:infected_chorus_fruit"
+    },
+    "I": {
+      "item": "minecraft:iron_sword"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    " # ",
+    "CIC",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:chorus_blade"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

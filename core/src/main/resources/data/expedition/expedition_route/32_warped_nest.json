@@ -1,0 +1,33 @@
+{
+  "order": 7,
+  "tier": "T1",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 1400,
+  "max_distance": 3200,
+  "structures": [
+    "legendary_monsters:warped_fungussus_nest"
+  ],
+  "boss": "legendary_monsters:warped_fungussus",
+  "loot": [
+    "expedition:cinder_core"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:warped_forest"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:warped_fungussus",
+    "health": 220,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:hoglin",
+    "minecraft:zoglin",
+    "minecraft:piglin",
+    "legendary_monsters:spiky_bug",
+    "legendary_monsters:ambusher"
+  ]
+}

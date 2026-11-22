@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "cataclysm:cursium_upgrade_smithing_template"
+    },
+    "B": {
+      "item": "minecraft:netherite_boots"
+    },
+    "A": {
+      "item": "cataclysm:cursium_ingot"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "TBA",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cataclysm:cursium_boots"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "twilightforest:maze_map"
+    },
+    "B": {
+      "tag": "c:storage_blocks/diamond"
+    },
+    "C": {
+      "tag": "c:storage_blocks/gold"
+    },
+    "D": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "D  ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:ore_map"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

@@ -1,0 +1,1825 @@
+[
+ {
+  "id": "aether:gravitite_boots",
+  "result": "aether:gravitite_boots",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "tag": "aether:processed/gravitite"
+    }
+   },
+   "pattern": [
+    "# #",
+    "# #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "aether:gravitite_boots"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "aether:gravitite_chestplate",
+  "result": "aether:gravitite_chestplate",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "tag": "aether:processed/gravitite"
+    }
+   },
+   "pattern": [
+    "# #",
+    "###",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "aether:gravitite_chestplate"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "aether:gravitite_helmet",
+  "result": "aether:gravitite_helmet",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "tag": "aether:processed/gravitite"
+    }
+   },
+   "pattern": [
+    "###",
+    "# #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "aether:gravitite_helmet"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "aether:gravitite_leggings",
+  "result": "aether:gravitite_leggings",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "tag": "aether:processed/gravitite"
+    }
+   },
+   "pattern": [
+    "###",
+    "# #",
+    "# #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "aether:gravitite_leggings"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "aether:skyroot_iron_vanilla_shield",
+  "result": "minecraft:shield",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "group": "minecraft:shield",
+   "key": {
+    "I": {
+     "tag": "c:ingots/iron"
+    },
+    "P": {
+     "tag": "aether:planks_crafting"
+    }
+   },
+   "pattern": [
+    "PIP",
+    "PPP",
+    " P "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:shield"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "aether:skyroot_zanite_vanilla_shield",
+  "result": "minecraft:shield",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "group": "minecraft:shield",
+   "key": {
+    "P": {
+     "tag": "aether:planks_crafting"
+    },
+    "Z": {
+     "tag": "aether:gems/zanite"
+    }
+   },
+   "pattern": [
+    "PZP",
+    "PPP",
+    " P "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:shield"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "aether:wood_zanite_vanilla_shield",
+  "result": "minecraft:shield",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "group": "minecraft:shield",
+   "key": {
+    "P": {
+     "tag": "minecraft:planks"
+    },
+    "Z": {
+     "tag": "aether:gems/zanite"
+    }
+   },
+   "pattern": [
+    "PZP",
+    "PPP",
+    " P "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:shield"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "aquamirae:remnant_saber",
+  "result": "aquamirae:remnant_saber",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "pattern": [
+    "  1",
+    "21 ",
+    "0  "
+   ],
+   "key": {
+    "0": {
+     "item": "minecraft:stick"
+    },
+    "1": {
+     "item": "aquamirae:sharp_bones"
+    },
+    "2": {
+     "item": "minecraft:string"
+    }
+   },
+   "result": {
+    "id": "aquamirae:remnant_saber",
+    "count": 1
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "aquamirae:shatterblade",
+  "result": "aquamirae:shatterblade",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "pattern": [
+    "321",
+    "212",
+    "023"
+   ],
+   "key": {
+    "0": {
+     "item": "minecraft:stick"
+    },
+    "1": {
+     "item": "minecraft:diamond"
+    },
+    "2": {
+     "item": "aquamirae:abyssal_amethyst"
+    },
+    "3": {
+     "item": "aquamirae:ship_graveyard_echo"
+    }
+   },
+   "result": {
+    "id": "aquamirae:shatterblade",
+    "count": 1
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "aquamirae:shatterspike",
+  "result": "aquamirae:shatterspike",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "pattern": [
+    " 21",
+    "302",
+    "03 "
+   ],
+   "key": {
+    "0": {
+     "item": "minecraft:stick"
+    },
+    "1": {
+     "item": "minecraft:diamond"
+    },
+    "2": {
+     "item": "aquamirae:abyssal_amethyst"
+    },
+    "3": {
+     "item": "aquamirae:ship_graveyard_echo"
+    }
+   },
+   "result": {
+    "id": "aquamirae:shatterspike",
+    "count": 1
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "aquamirae:terrible_blade",
+  "result": "aquamirae:terrible_blade",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "pattern": [
+    " 31",
+    "213",
+    "02 "
+   ],
+   "key": {
+    "0": {
+     "item": "minecraft:stick"
+    },
+    "1": {
+     "item": "minecraft:iron_ingot"
+    },
+    "2": {
+     "item": "aquamirae:fin"
+    },
+    "3": {
+     "item": "aquamirae:esca"
+    }
+   },
+   "result": {
+    "id": "aquamirae:terrible_blade",
+    "count": 1
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "aquamirae:terrible_cleaver",
+  "result": "aquamirae:terrible_cleaver",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "pattern": [
+    " 31",
+    "213",
+    "02 "
+   ],
+   "key": {
+    "0": {
+     "item": "minecraft:stick"
+    },
+    "1": {
+     "item": "minecraft:iron_ingot"
+    },
+    "2": {
+     "item": "aquamirae:fin"
+    },
+    "3": {
+     "item": "aquamirae:ship_graveyard_echo"
+    }
+   },
+   "result": {
+    "id": "aquamirae:terrible_cleaver",
+    "count": 1
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "aquamirae:terrible_fang",
+  "result": "aquamirae:terrible_fang",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "pattern": [
+    " 31",
+    "213",
+    "02 "
+   ],
+   "key": {
+    "0": {
+     "item": "minecraft:stick"
+    },
+    "1": {
+     "item": "minecraft:iron_ingot"
+    },
+    "2": {
+     "item": "aquamirae:fin"
+    },
+    "3": {
+     "item": "aquamirae:angler_fang"
+    }
+   },
+   "result": {
+    "id": "aquamirae:terrible_fang",
+    "count": 1
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "create_deep_dark:echo_boots_smithing",
+  "result": "create_deep_dark:echo_armor_boots",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "create_deep_dark:echo_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "minecraft:netherite_boots"
+   },
+   "addition": {
+    "item": "create_deep_dark:echo_ingot"
+   },
+   "result": {
+    "id": "create_deep_dark:echo_armor_boots"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "create_deep_dark:echo_chestplate_smithing",
+  "result": "create_deep_dark:echo_armor_chestplate",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "create_deep_dark:echo_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "minecraft:netherite_chestplate"
+   },
+   "addition": {
+    "item": "create_deep_dark:echo_ingot"
+   },
+   "result": {
+    "id": "create_deep_dark:echo_armor_chestplate"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "create_deep_dark:echo_helmet_smithing",
+  "result": "create_deep_dark:echo_armor_helmet",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "create_deep_dark:echo_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "minecraft:netherite_helmet"
+   },
+   "addition": {
+    "item": "create_deep_dark:echo_ingot"
+   },
+   "result": {
+    "id": "create_deep_dark:echo_armor_helmet"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "create_deep_dark:echo_leggings_smithing",
+  "result": "create_deep_dark:echo_armor_leggings",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "create_deep_dark:echo_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "minecraft:netherite_leggings"
+   },
+   "addition": {
+    "item": "create_deep_dark:echo_ingot"
+   },
+   "result": {
+    "id": "create_deep_dark:echo_armor_leggings"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "create_deep_dark:echo_sword_smithing",
+  "result": "create_deep_dark:echo_sword",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "create_deep_dark:echo_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "minecraft:netherite_sword"
+   },
+   "addition": {
+    "item": "create_deep_dark:echo_ingot"
+   },
+   "result": {
+    "id": "create_deep_dark:echo_sword"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stormforged_boots_smithing",
+  "result": "deep_aether:stormforged_boots",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:squall_plate"
+   },
+   "base": {
+    "item": "deep_aether:skyjade_boots"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stormforged_boots"
+   },
+   "template": {
+    "item": "deep_aether:stormforged_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stormforged_chestplate_smithing",
+  "result": "deep_aether:stormforged_chestplate",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:squall_plate"
+   },
+   "base": {
+    "item": "deep_aether:skyjade_chestplate"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stormforged_chestplate"
+   },
+   "template": {
+    "item": "deep_aether:stormforged_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stormforged_helmet_smithing",
+  "result": "deep_aether:stormforged_helmet",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:squall_plate"
+   },
+   "base": {
+    "item": "deep_aether:skyjade_helmet"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stormforged_helmet"
+   },
+   "template": {
+    "item": "deep_aether:stormforged_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stormforged_leggings_smithing",
+  "result": "deep_aether:stormforged_leggings",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:squall_plate"
+   },
+   "base": {
+    "item": "deep_aether:skyjade_leggings"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stormforged_leggings"
+   },
+   "template": {
+    "item": "deep_aether:stormforged_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stratus_boots_smithing",
+  "result": "deep_aether:stratus_boots",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:stratus_ingot"
+   },
+   "base": {
+    "item": "aether:gravitite_boots"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stratus_boots"
+   },
+   "template": {
+    "item": "deep_aether:stratus_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stratus_chestplate_smithing",
+  "result": "deep_aether:stratus_chestplate",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:stratus_ingot"
+   },
+   "base": {
+    "item": "aether:gravitite_chestplate"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stratus_chestplate"
+   },
+   "template": {
+    "item": "deep_aether:stratus_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stratus_helmet_smithing",
+  "result": "deep_aether:stratus_helmet",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:stratus_ingot"
+   },
+   "base": {
+    "item": "aether:gravitite_helmet"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stratus_helmet"
+   },
+   "template": {
+    "item": "deep_aether:stratus_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "deep_aether:stratus_leggings_smithing",
+  "result": "deep_aether:stratus_leggings",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "deep_aether:stratus_ingot"
+   },
+   "base": {
+    "item": "aether:gravitite_leggings"
+   },
+   "result": {
+    "count": 1,
+    "id": "deep_aether:stratus_leggings"
+   },
+   "template": {
+    "item": "deep_aether:stratus_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "farmersdelight:diamond_knife",
+  "result": "farmersdelight:diamond_knife",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "m": {
+     "item": "minecraft:diamond"
+    },
+    "s": {
+     "item": "minecraft:stick"
+    }
+   },
+   "pattern": [
+    "m",
+    "s"
+   ],
+   "result": {
+    "count": 1,
+    "id": "farmersdelight:diamond_knife"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "farmersdelight:golden_knife",
+  "result": "farmersdelight:golden_knife",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "m": {
+     "item": "minecraft:gold_ingot"
+    },
+    "s": {
+     "item": "minecraft:stick"
+    }
+   },
+   "pattern": [
+    "m",
+    "s"
+   ],
+   "result": {
+    "count": 1,
+    "id": "farmersdelight:golden_knife"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "farmersdelight:iron_knife",
+  "result": "farmersdelight:iron_knife",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "m": {
+     "tag": "c:ingots/iron"
+    },
+    "s": {
+     "item": "minecraft:stick"
+    }
+   },
+   "pattern": [
+    "m",
+    "s"
+   ],
+   "result": {
+    "count": 1,
+    "id": "farmersdelight:iron_knife"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "farmersdelight:netherite_knife_smithing",
+  "result": "farmersdelight:netherite_knife",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "farmersdelight:diamond_knife"
+   },
+   "result": {
+    "count": 1,
+    "id": "farmersdelight:netherite_knife"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "farmersdelight:skillet",
+  "result": "farmersdelight:skillet",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "tag": "c:ingots/iron"
+    },
+    "/": {
+     "item": "minecraft:brick"
+    }
+   },
+   "pattern": [
+    " ##",
+    " ##",
+    "/  "
+   ],
+   "result": {
+    "count": 1,
+    "id": "farmersdelight:skillet"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "legendary_monsters:enderitium_netherite_axe",
+  "result": "minecraft:netherite_axe",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "legendary_monsters:enderitium_axe"
+   },
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "result": {
+    "id": "minecraft:netherite_axe"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "legendary_monsters:enderitium_netherite_hoe",
+  "result": "minecraft:netherite_hoe",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "legendary_monsters:enderitium_hoe"
+   },
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "result": {
+    "id": "minecraft:netherite_hoe"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "legendary_monsters:enderitium_netherite_pickaxe",
+  "result": "minecraft:netherite_pickaxe",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "legendary_monsters:enderitium_pickaxe"
+   },
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "result": {
+    "id": "minecraft:netherite_pickaxe"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "legendary_monsters:enderitium_netherite_shovel",
+  "result": "minecraft:netherite_shovel",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "legendary_monsters:enderitium_shovel"
+   },
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "result": {
+    "id": "minecraft:netherite_shovel"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "legendary_monsters:enderitium_netherite_sword",
+  "result": "minecraft:netherite_sword",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   },
+   "base": {
+    "item": "legendary_monsters:enderitium_sword"
+   },
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "result": {
+    "id": "minecraft:netherite_sword"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:bow",
+  "result": "minecraft:bow",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:string"
+    }
+   },
+   "pattern": [
+    " #X",
+    "# X",
+    " #X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:bow"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:crossbow",
+  "result": "minecraft:crossbow",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "$": {
+     "item": "minecraft:tripwire_hook"
+    },
+    "&": {
+     "item": "minecraft:iron_ingot"
+    },
+    "~": {
+     "item": "minecraft:string"
+    }
+   },
+   "pattern": [
+    "#&#",
+    "~$~",
+    " # "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:crossbow"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:diamond_axe",
+  "result": "minecraft:diamond_axe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "XX",
+    "X#",
+    " #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_axe"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_boots",
+  "result": "minecraft:diamond_boots",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "X X",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_boots"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_chestplate",
+  "result": "minecraft:diamond_chestplate",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_chestplate"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_helmet",
+  "result": "minecraft:diamond_helmet",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "XXX",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_helmet"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_hoe",
+  "result": "minecraft:diamond_hoe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "XX",
+    " #",
+    " #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_hoe"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_leggings",
+  "result": "minecraft:diamond_leggings",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_leggings"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_pickaxe",
+  "result": "minecraft:diamond_pickaxe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "XXX",
+    " # ",
+    " # "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_pickaxe"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_shovel",
+  "result": "minecraft:diamond_shovel",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "X",
+    "#",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_shovel"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:diamond_sword",
+  "result": "minecraft:diamond_sword",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "pattern": [
+    "X",
+    "X",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:diamond_sword"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:golden_axe",
+  "result": "minecraft:golden_axe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "XX",
+    "X#",
+    " #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_axe"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_boots",
+  "result": "minecraft:golden_boots",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "X X",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_boots"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_chestplate",
+  "result": "minecraft:golden_chestplate",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_chestplate"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_helmet",
+  "result": "minecraft:golden_helmet",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "XXX",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_helmet"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_hoe",
+  "result": "minecraft:golden_hoe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "XX",
+    " #",
+    " #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_hoe"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_leggings",
+  "result": "minecraft:golden_leggings",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_leggings"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_pickaxe",
+  "result": "minecraft:golden_pickaxe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "XXX",
+    " # ",
+    " # "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_pickaxe"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_shovel",
+  "result": "minecraft:golden_shovel",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "X",
+    "#",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_shovel"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:golden_sword",
+  "result": "minecraft:golden_sword",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "X",
+    "X",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:golden_sword"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_axe",
+  "result": "minecraft:iron_axe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "XX",
+    "X#",
+    " #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_axe"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_boots",
+  "result": "minecraft:iron_boots",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "X X",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_boots"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_chestplate",
+  "result": "minecraft:iron_chestplate",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_chestplate"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_helmet",
+  "result": "minecraft:iron_helmet",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "XXX",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_helmet"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_hoe",
+  "result": "minecraft:iron_hoe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "XX",
+    " #",
+    " #"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_hoe"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_leggings",
+  "result": "minecraft:iron_leggings",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_leggings"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_pickaxe",
+  "result": "minecraft:iron_pickaxe",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "XXX",
+    " # ",
+    " # "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_pickaxe"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_shovel",
+  "result": "minecraft:iron_shovel",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "X",
+    "#",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_shovel"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_sword",
+  "result": "minecraft:iron_sword",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:stick"
+    },
+    "X": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "X",
+    "X",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:iron_sword"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:netherite_axe_smithing",
+  "result": "minecraft:netherite_axe",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_axe"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_axe"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_boots_smithing",
+  "result": "minecraft:netherite_boots",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_boots"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_boots"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_chestplate_smithing",
+  "result": "minecraft:netherite_chestplate",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_chestplate"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_chestplate"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_helmet_smithing",
+  "result": "minecraft:netherite_helmet",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_helmet"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_helmet"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_hoe_smithing",
+  "result": "minecraft:netherite_hoe",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_hoe"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_hoe"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_ingot",
+  "result": "minecraft:netherite_ingot",
+  "recipe": {
+   "type": "minecraft:crafting_shapeless",
+   "category": "misc",
+   "group": "netherite_ingot",
+   "ingredients": [
+    {
+     "item": "minecraft:netherite_scrap"
+    },
+    {
+     "item": "minecraft:netherite_scrap"
+    },
+    {
+     "item": "minecraft:netherite_scrap"
+    },
+    {
+     "item": "minecraft:netherite_scrap"
+    },
+    {
+     "item": "minecraft:gold_ingot"
+    },
+    {
+     "item": "minecraft:gold_ingot"
+    },
+    {
+     "item": "minecraft:gold_ingot"
+    },
+    {
+     "item": "minecraft:gold_ingot"
+    }
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_ingot"
+   }
+  },
+  "mode": "mixing"
+ },
+ {
+  "id": "minecraft:netherite_leggings_smithing",
+  "result": "minecraft:netherite_leggings",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_leggings"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_leggings"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_pickaxe_smithing",
+  "result": "minecraft:netherite_pickaxe",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_pickaxe"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_pickaxe"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_shovel_smithing",
+  "result": "minecraft:netherite_shovel",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_shovel"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_shovel"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:netherite_sword_smithing",
+  "result": "minecraft:netherite_sword",
+  "recipe": {
+   "type": "minecraft:smithing_transform",
+   "addition": {
+    "item": "minecraft:netherite_ingot"
+   },
+   "base": {
+    "item": "minecraft:diamond_sword"
+   },
+   "result": {
+    "count": 1,
+    "id": "minecraft:netherite_sword"
+   },
+   "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+   }
+  },
+  "part": "tfmg:steel_mechanism"
+ },
+ {
+  "id": "minecraft:shield",
+  "result": "minecraft:shield",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "W": {
+     "tag": "minecraft:planks"
+    },
+    "o": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "WoW",
+    "WWW",
+    " W "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:shield"
+   }
+  },
+  "mode": "table"
+ }
+]

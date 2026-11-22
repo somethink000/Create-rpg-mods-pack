@@ -1,0 +1,54 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cgs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    {
+      "item": "expedition:round_revolver_black_steel"
+    },
+    [
+      {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      {
+        "item": "minecraft:netherite_ingot"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "id": "expedition:round_revolver_ignitium",
+      "count": 8
+    }
+  ]
+}

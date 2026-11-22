@@ -1,0 +1,17 @@
+{
+  "name": "expedition.guide.act_3",
+  "icon": "minecraft:filled_map",
+  "category": "expedition:story",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.act_3.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.act_3.page1"
+    }
+  ],
+  "advancement": "expedition:story/act_3"
+}

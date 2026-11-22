@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:brass_sheet"
+    },
+    "T": {
+      "item": "expedition:grave_dust"
+    },
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "B": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "relics:ghostly_mantle",
+    "count": 1
+  }
+}

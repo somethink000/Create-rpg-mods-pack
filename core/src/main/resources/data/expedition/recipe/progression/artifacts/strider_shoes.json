@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:golden_sheet"
+    },
+    "T": {
+      "item": "expedition:cinder_core"
+    },
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "B": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:strider_shoes",
+    "count": 1
+  }
+}

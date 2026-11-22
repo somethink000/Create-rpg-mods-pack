@@ -1,0 +1,16 @@
+{
+  "name": "expedition.guide.apotheosis",
+  "icon": "minecraft:enchanting_table",
+  "category": "expedition:gear",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.apotheosis.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.apotheosis.page1"
+    }
+  ]
+}

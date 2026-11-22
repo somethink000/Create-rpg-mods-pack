@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "expedition:gold_facade",
+    "expedition:iron_facade",
+    "expedition:diamond_facade",
+    "expedition:emerald_facade",
+    "expedition:lapis_facade",
+    "expedition:redstone_facade",
+    "expedition:netherite_facade"
+  ]
+}

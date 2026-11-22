@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "create:shaft"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_pickaxe"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

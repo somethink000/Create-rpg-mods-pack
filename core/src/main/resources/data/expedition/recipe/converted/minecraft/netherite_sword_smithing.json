@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "B": {
+      "item": "minecraft:diamond_sword"
+    },
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "TBA",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:netherite_sword"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

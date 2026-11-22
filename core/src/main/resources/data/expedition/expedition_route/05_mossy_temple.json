@@ -1,0 +1,40 @@
+{
+  "order": 9,
+  "tier": "T1",
+  "dimension": "minecraft:overworld",
+  "min_distance": 1400,
+  "max_distance": 3200,
+  "structures": [
+    "legendary_monsters:mossy_temple"
+  ],
+  "boss": "legendary_monsters:overgrown_colossus",
+  "loot": [
+    "expedition:feral_fang",
+    "expedition:chitin_plate",
+    "legendary_monsters:nature_crystal"
+  ],
+  "scenes": "T|",
+  "home_biomes": [
+    "minecraft:jungle",
+    "terralith:tropical_jungle",
+    "minecraft:sparse_jungle",
+    "terralith:rocky_jungle",
+    "terralith:jungle_mountains",
+    "minecraft:bamboo_jungle"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:overgrown_colossus",
+    "health": 230,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "legendary_monsters:mossy_golem",
+    "legendary_monsters:ambusher",
+    "mowziesmobs:foliaath",
+    "minecraft:cave_spider",
+    "minecraft:bogged"
+  ]
+}

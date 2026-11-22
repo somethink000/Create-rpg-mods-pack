@@ -1,0 +1,837 @@
+{
+  "config_version": "2.0.43",
+  "config_datetime": "2026-11-06_19-17-21",
+  "general": {
+    "enable_global_spacing_and_separation_modifier": false,
+    "global_spacing_and_separation_modifier": 2.5
+  },
+  "structure_namespaces": [],
+  "structures": [
+    {
+      "name": "aquamirae:pirate_ship",
+      "is_disabled": true
+    },
+    {
+      "name": "betterdungeons:skeleton_dungeon",
+      "is_disabled": true
+    },
+    {
+      "name": "betterdungeons:spider_dungeon",
+      "is_disabled": true
+    },
+    {
+      "name": "betterdungeons:zombie_dungeon",
+      "is_disabled": true
+    },
+    {
+      "name": "betterfortresses:fortress",
+      "is_disabled": true
+    },
+    {
+      "name": "betteroceanmonuments:ocean_monument",
+      "is_disabled": true
+    },
+    {
+      "name": "betterstrongholds:stronghold",
+      "is_disabled": true
+    },
+    {
+      "name": "block_factorys_bosses:kraken_ship",
+      "is_disabled": true
+    },
+    {
+      "name": "block_factorys_bosses:underworld_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "bosses_of_mass_destruction:gauntlet_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "bosses_of_mass_destruction:lich_tower",
+      "is_disabled": true
+    },
+    {
+      "name": "bosses_of_mass_destruction:obsidilith_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "bosses_of_mass_destruction:void_blossom",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:acropolis",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:ancient_factory",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:burning_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:cursed_pyramid",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:frosted_prison",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:ruined_citadel",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:soul_black_smith",
+      "is_disabled": true
+    },
+    {
+      "name": "cataclysm:sunken_city",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_arise:foundry",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_arise:mining_complex",
+      "is_disabled": true
+    },
+    {
+      "name": "fdbosses:chesed_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "fdbosses:geburah_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "fdbosses:malkuth_arena",
+      "is_disabled": true
+    },
+    {
+      "name": "graveyard:crypt",
+      "is_disabled": true
+    },
+    {
+      "name": "legendary_monsters:frostbitten_temple",
+      "is_disabled": true
+    },
+    {
+      "name": "legendary_monsters:mossy_temple",
+      "is_disabled": true
+    },
+    {
+      "name": "legendary_monsters:space_station",
+      "is_disabled": true
+    },
+    {
+      "name": "mowziesmobs:wrought_chamber",
+      "is_disabled": true
+    },
+    {
+      "name": "sky_whale_ship:whale",
+      "is_disabled": true
+    }
+  ],
+  "structure_sets": [
+    {
+      "name": "aether:bronze_dungeon",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "aether:large_aercloud",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "aether:silver_and_gold_dungeons",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "apotheosis:towers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "aquamirae:shipwreck",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "aquamirae:surface",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterdungeons:skeleton_dungeons",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterdungeons:small_dungeons",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterdungeons:small_nether_dungeons",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterdungeons:spider_dungeons",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterdungeons:zombie_dungeons",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterfortresses:fortress",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "bettermineshafts:mineshafts",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betteroceanmonuments:ocean_monument",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterwitchhuts:witch_circle",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "betterwitchhuts:witch_hut",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "block_factorys_bosses:kraken_ship",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "block_factorys_bosses:sandworm_nest",
+      "spacing": 64,
+      "separation": 30
+    },
+    {
+      "name": "block_factorys_bosses:underworld_arena",
+      "spacing": 64,
+      "separation": 40
+    },
+    {
+      "name": "block_factorys_bosses:yeti_hideout",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "bosses_of_mass_destruction:gauntlet_arena",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "cataclysm:abandoned_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "cataclysm:amethyst_nest",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "cataclysm:desert_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "cataclysm:ruined_citadel",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "cataclysm:soul_black_smith",
+      "spacing": 64,
+      "separation": 50
+    },
+    {
+      "name": "create_easy_structures:big_1",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:big_2",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:camp_1",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:camp_2",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:camp_3",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:camp_4",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:camp_5",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:factory_1",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:factory_2",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:foresttracks",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:freight_station",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:house_2",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:house_3",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:house_4",
+      "spacing": 64,
+      "separation": 25
+    },
+    {
+      "name": "create_easy_structures:undergroundtrain",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_easy_structures:windmill",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:birch_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:cave_ruins",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:cherry_house",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:dark_forest_house",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:desert_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:jungle_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:mangrove_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:nether_roof_house",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:plains_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:ruins",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:snow_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:spruce_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_ltab:water_pre",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "create_structures_overhaul:structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:bunker_rarity",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_cold",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_desert",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_jungle",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_nether",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_nether_basalt",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_nether_crimson",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_nether_warped",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_snowy",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_temperate",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:depot_warm",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "createmissiles:lab_rarity",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "deep_aether:brass_dungeon",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "deeperdarker:ancient_temples",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "dungeons_arise:major_structures",
+      "spacing": 64,
+      "separation": 45
+    },
+    {
+      "name": "dungeons_arise:minor_structures",
+      "spacing": 64,
+      "separation": 40
+    },
+    {
+      "name": "formationsnether:common",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "formationsnether:ore_shards",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "formationsnether:rare",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "galosphere:forgotten_ruins",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "galosphere:pink_salt_shrine",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:altar_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:crypt_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:dead_tree_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:giant_mushroom_structure",
+      "spacing": 64,
+      "separation": 26
+    },
+    {
+      "name": "graveyard:haunted_house_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:large_graveyard_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:medium_graveyard_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:memorial_tree_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:mushroom_grave_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:ruins_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:small_desert_grave_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:small_desert_graveyard_structure",
+      "spacing": 64,
+      "separation": 28
+    },
+    {
+      "name": "graveyard:small_grave_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:small_graveyard_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:small_mountain_grave_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "graveyard:small_savanna_grave_structure",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "incendium:greater_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "incendium:lesser_structures",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "legendary_monsters:frostbitten_temple",
+      "spacing": 64,
+      "separation": 28
+    },
+    {
+      "name": "legendary_monsters:lava_eater_spawn",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "legendary_monsters:mossy_temple",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "legendary_monsters:ruined_pyramid",
+      "spacing": 64,
+      "separation": 30
+    },
+    {
+      "name": "legendary_monsters:skeletosaurus_nest",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "legendary_monsters:soul_fortress_remains",
+      "spacing": 64,
+      "separation": 26
+    },
+    {
+      "name": "legendary_monsters:warped_fungussus_nest",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "minecraft:end_cities",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "minecraft:nether_complexes",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "mowziesmobs:frostmaw_spawns",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "mowziesmobs:monasteries",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "mowziesmobs:umvuthana_groves",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "mowziesmobs:wrought_chambers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:badlands_miner_outpost",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:badlands_miner_outpost_mineshafts",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:bunker",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:deepslate_camp",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:end_lighthouses",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:end_ship",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:firewatch_towers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:illager_camp",
+      "spacing": 64,
+      "separation": 32
+    },
+    {
+      "name": "nova_structures:mangrove_witch_hut",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:nether_camps",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:nether_skeleton_towers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:shrines",
+      "spacing": 64,
+      "separation": 26
+    },
+    {
+      "name": "nova_structures:taverns",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:underground_house",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:wells",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nova_structures:wild_ruin",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nullscape:dragon_skeleton",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "nullscape:rift",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory:mid_rare_ruin",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory:old_manor",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory:ruin",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory:ruin_quiet",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory_towers:nether_towers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory_towers:rare_towers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "structory_towers:towers",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "terralith:mage",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "terralith:rare_dungeon",
+      "spacing": 64,
+      "separation": 28
+    },
+    {
+      "name": "terralith:regular",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "terralith:rubble",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "terralith:underground",
+      "spacing": 64,
+      "separation": 24
+    },
+    {
+      "name": "terralith:underground_dungeon",
+      "spacing": 64,
+      "separation": 24
+    }
+  ],
+  "structure_template_pools": []
+}

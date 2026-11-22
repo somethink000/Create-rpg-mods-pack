@@ -1,0 +1,35 @@
+{
+  "order": 23,
+  "tier": "T3",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 4500,
+  "max_distance": 7000,
+  "structures": [
+    "legendary_monsters:soul_fortress_remains"
+  ],
+  "boss": "legendary_monsters:withered_abomination",
+  "loot": [
+    "expedition:grave_dust",
+    "expedition:cinder_core"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "incendium:weeping_valley",
+    "minecraft:soul_sand_valley"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:withered_abomination",
+    "health": 400,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "block_factorys_bosses:soul_knight_wither_skeleton",
+    "minecraft:wither_skeleton",
+    "minecraft:blaze",
+    "minecraft:ghast",
+    "graveyard:nightmare"
+  ]
+}

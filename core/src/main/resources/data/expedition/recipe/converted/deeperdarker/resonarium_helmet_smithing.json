@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deeperdarker"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "deeperdarker:resonarium_upgrade_smithing_template"
+    },
+    "B": {
+      "item": "minecraft:diamond_helmet"
+    },
+    "A": {
+      "item": "deeperdarker:resonarium_plate"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "TBA",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "deeperdarker:resonarium_helmet"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

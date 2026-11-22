@@ -1,0 +1,39 @@
+#How often each fan checks its current, in ticks. Lower is more precise but costs more.
+# Default: 20
+# Range: 1 ~ 200
+scanIntervalTicks = 20
+
+#Minutes of airflow (from a running encased fan) a catalyst survives before it is used up.
+[lifetimes]
+	#Fire, soul fire and enriching fire
+	# Default: 10
+	# Range: 1 ~ 1440
+	fireLifetimeMinutes = 10
+	#Lit campfires of any kind (they go out and can be relit)
+	# Default: 20
+	# Range: 1 ~ 1440
+	campfireLifetimeMinutes = 20
+	#Water source blocks used for washing (they evaporate)
+	# Default: 20
+	# Range: 1 ~ 1440
+	waterLifetimeMinutes = 20
+	#Flowing water at its fullest level (turns into packed ice); thinner flows last quadratically less, the thinnest almost nothing
+	# Default: 2
+	# Range: 1 ~ 1440
+	flowingWaterLifetimeMinutes = 2
+	#Lava source blocks used for blasting (they turn into obsidian)
+	# Default: 40
+	# Range: 1 ~ 1440
+	lavaLifetimeMinutes = 40
+	#Flowing lava at its fullest level (turns into cobblestone); thinner flows last quadratically less, the thinnest almost nothing
+	# Default: 2
+	# Range: 1 ~ 1440
+	flowingLavaLifetimeMinutes = 2
+	#Crafted catalyst blocks such as Create: Connected catalysts and Dreams & Desires sails
+	# Default: 40
+	# Range: 1 ~ 1440
+	craftedCatalystLifetimeMinutes = 40
+	#Sand, quicksand and powder snow used as catalysts
+	# Default: 20
+	# Range: 1 ~ 1440
+	naturalBlockLifetimeMinutes = 20

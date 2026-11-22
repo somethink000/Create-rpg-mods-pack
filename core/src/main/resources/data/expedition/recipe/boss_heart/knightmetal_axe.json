@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "equipment",
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "twilightforest:knight_phantom"
+      }
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:knightmetal_axe"
+  },
+  "show_notification": true
+}

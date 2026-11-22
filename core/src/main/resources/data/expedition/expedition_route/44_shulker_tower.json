@@ -1,0 +1,33 @@
+{
+  "order": 30,
+  "tier": "T3",
+  "dimension": "minecraft:the_end",
+  "min_distance": 4500,
+  "max_distance": 7000,
+  "structures": [
+    "legendary_monsters:shulker_tower"
+  ],
+  "boss": "legendary_monsters:endersent",
+  "loot": [
+    "expedition:void_shard"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "nullscape:crystal_peaks",
+    "minecraft:end_highlands"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:endersent",
+    "health": 460,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:shulker",
+    "legendary_monsters:chorusling",
+    "legendary_monsters:fractured",
+    "minecraft:enderman"
+  ]
+}

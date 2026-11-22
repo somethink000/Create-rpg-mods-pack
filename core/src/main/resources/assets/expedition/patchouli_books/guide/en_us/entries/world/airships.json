@@ -1,0 +1,20 @@
+{
+  "name": "expedition.guide.airships",
+  "icon": "aeronautics:white_envelope",
+  "category": "expedition:world",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.airships.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.airships.page1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.airships.page2"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "values": [
+    { "id": "create:analog_lever", "required": false },
+    { "id": "simulated:throttle_lever", "required": false }
+  ]
+}

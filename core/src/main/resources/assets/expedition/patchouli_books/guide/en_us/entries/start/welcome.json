@@ -1,0 +1,24 @@
+{
+  "name": "expedition.guide.welcome",
+  "icon": "minecraft:compass",
+  "category": "expedition:start",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.welcome.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.welcome.page1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.welcome.page2"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.welcome.page3"
+    }
+  ]
+}

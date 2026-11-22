@@ -1,0 +1,28 @@
+{
+  "_comment": "Combat stats by route tier (shown values: damage includes the base 1, speed = attacks per second). Weapons: best DPS ~ T2 12.6, T3 13.8, T4 15, T5 16-17, T6 19. Armor sets: netherite 20/12, ignitium (T4) 26/12, cursium (T5) 30/14. Tools that are not weapons hit like tools.",
+  "weapons": {
+    "dndesires:handheld_saw": [3, 1.0],
+    "dndesires:handheld_drill": [3, 1.0],
+    "block_factorys_bosses:kraken_trident": [11, 1.25],
+    "cataclysm:the_incinerator": [12, 1.25],
+    "cataclysm:the_immolator": [8.5, 1.6],
+    "cataclysm:infernal_forge": [14, 1.05],
+    "cataclysm:ancient_spear": [11, 1.5],
+    "cataclysm:meat_shredder": [9, 1.8],
+    "cataclysm:tidal_claws": [9.5, 1.7],
+    "cataclysm:the_annihilator": [10, 1.6],
+    "cataclysm:soul_render": [15, 1.15],
+    "cataclysm:astrape": [12.5, 1.5],
+    "cataclysm:ceraunus": [19, 1.0],
+    "aquamirae:terrible_blade": [5, 2.0],
+    "aquamirae:dagger_of_greed": [5.5, 2.0],
+    "aquamirae:tidepiercer": [9, 1.2],
+    "aquamirae:jawbreaker": [9, 1.2],
+    "aquamirae:tempest_trident": [9, 1.2],
+    "block_factorys_bosses:pirate_saber": [10, 1.4]
+  },
+  "armor": {
+    "cataclysm:ignitium_helmet": [5, 3], "cataclysm:ignitium_chestplate": [9, 3], "cataclysm:ignitium_elytra_chestplate": [7, 2], "cataclysm:ignitium_leggings": [7, 3], "cataclysm:ignitium_boots": [5, 3],
+    "cataclysm:cursium_helmet": [6, 3.5], "cataclysm:cursium_chestplate": [10, 3.5], "cataclysm:cursium_leggings": [8, 3.5], "cataclysm:cursium_boots": [6, 3.5]
+  }
+}

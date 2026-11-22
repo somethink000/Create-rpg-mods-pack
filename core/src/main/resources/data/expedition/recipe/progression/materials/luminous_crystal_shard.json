@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    [
+      {
+        "item": "expedition:abyssal_scale"
+      },
+      {
+        "item": "expedition:raider_insignia"
+      }
+    ],
+    {
+      "item": "apotheosis:timeworn_fabric"
+    },
+    {
+      "item": "create:polished_rose_quartz"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "apotheosis:luminous_crystal_shard",
+      "count": 1
+    }
+  ],
+  "heat_requirement": "heated"
+}

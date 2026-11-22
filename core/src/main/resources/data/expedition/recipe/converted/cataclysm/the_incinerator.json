@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:blaze_rod"
+    },
+    "#": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_sword"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    " /#",
+    "/#/",
+    "N/ ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cataclysm:the_incinerator"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

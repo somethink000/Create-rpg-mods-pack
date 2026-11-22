@@ -1,0 +1,35 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    [
+      {
+        "item": "expedition:chitin_plate"
+      },
+      {
+        "item": "expedition:feral_fang"
+      },
+      {
+        "item": "expedition:grave_dust"
+      }
+    ],
+    {
+      "item": "apotheosis:mysterious_scrap_metal"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "results": [
+    {
+      "id": "apotheosis:timeworn_fabric",
+      "count": 1
+    }
+  ],
+  "heat_requirement": "heated"
+}

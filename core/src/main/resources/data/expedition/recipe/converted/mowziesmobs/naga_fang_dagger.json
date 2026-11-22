@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mowziesmobs"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "mowziesmobs:naga_fang"
+    },
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "F",
+    "I",
+    "S",
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mowziesmobs:naga_fang_dagger"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

@@ -1,0 +1,34 @@
+{
+  "order": 103,
+  "tier": "T3",
+  "dimension": "twilightforest:twilight_forest",
+  "min_distance": 4500,
+  "max_distance": 7000,
+  "structures": [
+    "twilightforest:hydra_lair"
+  ],
+  "loot": [
+    "expedition:feral_fang"
+  ],
+  "boss": "twilightforest:hydra",
+  "scenes": "T|T",
+  "home_biomes": [
+    "twilightforest:fire_swamp"
+  ],
+  "guardian": {
+    "entity": "twilightforest:hydra",
+    "health": 840,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  },
+  "garrison": [
+    "twilightforest:fire_beetle",
+    "twilightforest:mosquito_swarm",
+    "twilightforest:pinch_beetle",
+    "twilightforest:slime_beetle",
+    "twilightforest:king_spider"
+  ]
+}

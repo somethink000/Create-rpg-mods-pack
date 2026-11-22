@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:moss_block"
+    },
+    "i": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "E": {
+      "item": "legendary_monsters:nature_crystal"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "# #",
+    "iEi",
+    "iIi",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:mossy_chestplate"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

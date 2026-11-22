@@ -1,0 +1,35 @@
+{
+  "order": 44,
+  "tier": "T5",
+  "dimension": "minecraft:the_end",
+  "min_distance": 8500,
+  "max_distance": 11000,
+  "structures": [
+    "legendary_monsters:ancient_tower_remains"
+  ],
+  "boss": "legendary_monsters:the_obliterator",
+  "loot": [
+    "expedition:void_shard"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "nullscape:shadowlands",
+    "minecraft:end_midlands"
+  ],
+  "garrison": [
+    "legendary_monsters:fractured",
+    "legendary_monsters:fractured_apostle",
+    "legendary_monsters:wandering_eye",
+    "cataclysm:endermaptera",
+    "minecraft:shulker"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:the_obliterator",
+    "health": 300,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": true
+  }
+}

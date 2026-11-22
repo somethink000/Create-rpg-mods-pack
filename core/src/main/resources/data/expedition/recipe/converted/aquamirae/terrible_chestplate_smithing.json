@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "aquamirae:terrible_upgrade_smithing_template"
+    },
+    "B": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "A": {
+      "item": "aquamirae:fin"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "TBA",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aquamirae:terrible_chestplate"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

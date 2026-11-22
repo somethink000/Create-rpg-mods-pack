@@ -1,0 +1,16 @@
+{
+  "name": "expedition.guide.loot",
+  "icon": "minecraft:chest",
+  "category": "expedition:dungeons",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.loot.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.loot.page1"
+    }
+  ]
+}

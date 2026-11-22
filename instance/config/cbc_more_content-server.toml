@@ -1,0 +1,217 @@
+#Create Warnautics — detonation behaviour
+[detonation]
+	#Allow close, exposed Warnautics blasts to damage armed airborne fuzes.
+	#Peripheral pressure deflects munitions instead of igniting them.
+	#Explosive blocks destroyed by a blast always chain-detonate, regardless of this setting.
+	friendlyChainDetonation = true
+	#Allow external damage to ignite airborne bombs, and fire/lava/projectile
+	#hits to cook off placed bombs. Explosive blocks destroyed by any blast
+	#always chain-detonate, regardless of this setting.
+	externalChainDetonation = true
+
+#Create Warnautics — performance limits
+[performance]
+	#Radius in which a bomb blast shatters exposed glass, as a multiple of
+	#the blast's own crater radius. Glass too far below the surface or too
+	#deep behind solid cover survives; anything in the open breaks even far
+	#outside the crater itself.
+	# Default: 6.0
+	# Range: 1.0 ~ 16.0
+	glassShatterRadiusMultiplier = 6.0
+	#Maximum blocks a single detonation may change. Carpet bombing with
+	#unbounded craters is the main cause of client stalls and out-of-memory
+	#crashes, because every changed block is meshed again by the renderer.
+	# Default: 2600
+	# Range: 128 ~ 60000
+	maxBlocksPerDetonation = 2600
+	#Multiplier on the amount of blast particles and flash packets sent to
+	#clients. Lower this on servers where players run heavy shader setups.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	blastFxScale = 1.0
+	#Multiplier on the release impulse that throws a bomb onto its arc.
+	#The impulse is forward along the bomb's nose plus a slight downward
+	#bias, and never has an upward component at any value.
+	#Set to 0.0 for a pure drop that only inherits carrier velocity.
+	# Default: 1.0
+	# Range: 0.0 ~ 3.0
+	releaseImpulse = 1.0
+
+#Create Warnautics — cruise missile
+[cruiseMissile]
+	#Sustainer fuel in seconds of powered flight. Range is roughly
+	#fuel x 80 blocks for the direct profile; arc and weave burn faster.
+	# Default: 24
+	# Range: 5 ~ 120
+	fuelSeconds = 24
+	#Fly low over the ground and the sea (terrain following) during cruise.
+	#When off, the missile flies a straight line at its launch altitude.
+	terrainFollowing = true
+
+#Create Warnautics — explosion strength.
+#Power multipliers stack: global x type. 1.0 is the mod as designed; 0 turns
+#that part of a blast off entirely (no crater, or no damage).
+[explosions]
+	#Crater size of every Warnautics explosion.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	blockPowerMultiplier = 1.0
+	#Damage and pressure reach of every Warnautics explosion.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	entityPowerMultiplier = 1.0
+	#Dropped bombs of every size, MOAB and torpedoes included.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	bombPowerMultiplier = 1.0
+	#Cruise missile warheads.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	missilePowerMultiplier = 1.0
+	#C4 charges and bomb vests.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	c4PowerMultiplier = 1.0
+	#Land mines, sea mines and the claymore back-blast.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	minePowerMultiplier = 1.0
+	#Unguided rockets from rocket pods.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	rocketPowerMultiplier = 1.0
+	#Whether explosions dig craters and break blocks. Off: blasts still hurt,
+	#push and throw, but leave the world as it was.
+	destroyTerrain = true
+	#Whether blasts scar the ground around them (grass to dirt and coarse dirt,
+	#scorched stone). Turn off to keep lawns green, or alongside Explosion't.
+	scorchGround = true
+
+#Create Warnautics — C4 keypad
+[c4]
+	#Wrong codes allowed before the keypad locks. 0 = never locks (unlimited
+	#guessing, as before).
+	# Default: 3
+	# Range: 0 ~ 100
+	codeAttempts = 3
+	#How long the first lockout lasts, in seconds.
+	# Default: 10.0
+	# Range: 0.5 ~ 86400.0
+	lockoutSeconds = 10.0
+	#Each further lockout on the same charge lasts this many times longer.
+	#1.0 = always the same; 2.0 = 10 s, 20 s, 40 s ...
+	# Default: 1.0
+	# Range: 1.0 ~ 10.0
+	lockoutGrowth = 1.0
+	#Longest a lockout may grow to, in seconds.
+	# Default: 300.0
+	# Range: 0.5 ~ 86400.0
+	maxLockoutSeconds = 300.0
+	#Seconds without a wrong code after which the keypad forgets earlier
+	#failures and lockouts. 0 = never forgets.
+	# Default: 120.0
+	# Range: 0.0 ~ 86400.0
+	forgetFailuresSeconds = 120.0
+	#true: every player has their own attempts and lockout on a charge.
+	#false: the charge itself locks for everyone, so a team cannot take turns.
+	lockoutPerPlayer = false
+	#Anti-tamper: the charge goes off after this many lockouts in a row.
+	#0 = never.
+	# Default: 0
+	# Range: 0 ~ 100
+	detonateAfterLockouts = 0
+	#Whether a C4 stack can be set up before the throw (sneak + use it in the air):
+	#code, timer or detonator, and when it goes live.
+	presets = true
+	#Whether a preset may make the charge live the moment it is thrown. When false,
+	#preset charges land set up but idle and are started with the settings key.
+	armOnThrow = true
+	#Whether a preset detonator charge pairs itself, on landing live, with a detonator
+	#in the thrower's inventory.
+	presetAutoPair = true
+
+#Create Warnautics — detonator
+[detonator]
+	#How far, in blocks, the firing device reaches its charges.
+	# Default: 250.0
+	# Range: 8.0 ~ 4096.0
+	range = 250.0
+	#Charges and claymores one detonator can be paired with.
+	# Default: 12
+	# Range: 1 ~ 128
+	maxCharges = 12
+
+#Create Warnautics — mines
+[mines]
+	#Seconds after placing before a land mine is live.
+	# Default: 1.0
+	# Range: 0.0 ~ 600.0
+	armSeconds = 1.0
+	#Seconds after placing before a claymore can be fired.
+	# Default: 3.0
+	# Range: 0.0 ~ 600.0
+	claymoreArmSeconds = 3.0
+	#Steel balls a claymore throws. Each one is traced in flight: more is deadlier
+	#and denser, and costs more when many fire at once.
+	# Default: 120
+	# Range: 8 ~ 600
+	claymoreBalls = 120
+	#Width of the claymore's fan, in degrees (real M18A1: 60).
+	# Default: 60.0
+	# Range: 5.0 ~ 180.0
+	claymoreFanDegrees = 60.0
+	#Ball speed in blocks per tick. Balls live one second, so the lethal reach is
+	#about speed x 20 blocks.
+	# Default: 3.0
+	# Range: 0.5 ~ 8.0
+	claymoreBallSpeed = 3.0
+	#true: a claymore that has not finished arming ignores wires and signals.
+	#false: it can be fired from the moment it is set down.
+	claymoreOnlyWhenArmed = true
+	#Damage of one claymore ball before armour. How many balls strike someone
+	#depends on how much of the fan they fill: dozens point-blank, one or two at
+	#the edge of its reach. They all land as one blow, so armour cannot shrug off
+	#a hail of small hits one at a time.
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	claymoreBallDamage = 5.0
+
+#Create Warnautics — tripwires
+[tripwire]
+	#Tripwires that can be tied to one post.
+	# Default: 4
+	# Range: 1 ~ 32
+	wiresPerPost = 4
+
+#Create Warnautics — rocket pod (unguided rockets)
+[rockets]
+	#Rockets one pod holds.
+	# Default: 8
+	# Range: 1 ~ 64
+	podCapacity = 8
+	#Rockets fired by one redstone pulse on a pod not yet set with the settings key.
+	#0 = everything loaded.
+	# Default: 0
+	# Range: 0 ~ 64
+	rocketsPerSalvo = 0
+	#Ticks between rockets in a salvo, for a pod not yet set with the settings key.
+	#0 fires the whole salvo at once.
+	# Default: 6
+	# Range: 0 ~ 40
+	rippleTicks = 6
+	#Top speed of a rocket under thrust, in blocks per tick.
+	# Default: 4.0
+	# Range: 0.5 ~ 12.0
+	speed = 4.0
+	#Ticks the motor burns. After burnout the rocket coasts and drops.
+	# Default: 30
+	# Range: 1 ~ 400
+	burnTicks = 30
+	#Random spread of each rocket off the pod's axis, in degrees. 0 = laser straight.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	dispersionDegrees = 1.0
+	#Seconds before a rocket that hit nothing is gone.
+	# Default: 10.0
+	# Range: 1.0 ~ 120.0
+	lifetimeSeconds = 10.0

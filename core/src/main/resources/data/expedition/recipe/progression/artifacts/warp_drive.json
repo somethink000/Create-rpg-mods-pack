@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "T": {
+      "item": "expedition:void_shard"
+    },
+    "M": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "B": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:warp_drive",
+    "count": 1
+  }
+}

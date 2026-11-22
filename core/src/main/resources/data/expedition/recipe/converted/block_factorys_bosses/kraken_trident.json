@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "create:shaft"
+    },
+    "a": {
+      "item": "block_factorys_bosses:kraken_tooth"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    " aa",
+    " /a",
+    "/  ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "block_factorys_bosses:kraken_trident"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

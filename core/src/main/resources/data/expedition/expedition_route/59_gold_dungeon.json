@@ -1,0 +1,33 @@
+{
+  "order": 110,
+  "tier": "T4",
+  "dimension": "aether:the_aether",
+  "min_distance": 6500,
+  "max_distance": 9000,
+  "structures": [
+    "aether:gold_dungeon"
+  ],
+  "loot": [
+    "expedition:cinder_core"
+  ],
+  "boss": "aether:sun_spirit",
+  "scenes": "T|T",
+  "home_biomes": [
+    "deep_aether:golden_heights",
+    "deep_aether:golden_grove"
+  ],
+  "guardian": {
+    "entity": "aether:sun_spirit",
+    "health": 1150,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  },
+  "garrison": [
+    "aether:valkyrie",
+    "aether:sentry",
+    "aether:mimic"
+  ]
+}

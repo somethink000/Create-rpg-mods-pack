@@ -1,0 +1,44 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.expedition.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StructurePlacementMixin",
+    "ChunkGeneratorInvoker",
+    "HolderReferenceInvoker",
+    "LootTableFillMixin",
+    "MinecraftServerMixin",
+    "NoiseChunkMixin",
+    "PiglinMixin",
+    "ChunkGeneratorFeaturesAccessor",
+    "GeburahArenaMixin",
+    "DepositStructureMixin",
+    "ShaolibChunkCacheMixin",
+    "StructureTemplateMixin",
+    "StructureStartMixin",
+    "ChunkBlockMixin",
+    "StructureLiftMixin",
+    "TwilightTerrainMixin",
+    "TectonicNoiseMixin",
+    "SurveyorPrologueMixin",
+    "EmbeddedOrdnanceMixin",
+    "ApotheosisTickMixin",
+    "RadiationThrottleMixin",
+    "AccessoriesThrottleMixin",
+    "WitherFleeThrottleMixin",
+    "ConductorShipLeverMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "StarPlasmaThrottleMixin",
+    "GogglesOncePerTickMixin",
+    "NtglTickersMixin",
+    "ParticleSablePoolMixin",
+    "ClientLevelSkyMixin",
+    "LevelRendererSkyMixin"
+  ],
+  "plugin": "net.expedition.compat.ExpeditionMixinPlugin"
+}

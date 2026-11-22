@@ -1,0 +1,54 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cgs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    {
+      "item": "expedition:round_shotgun_ignitium"
+    },
+    [
+      {
+        "item": "cataclysm:cursium_ingot"
+      },
+      {
+        "item": "minecraft:nether_star"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "id": "expedition:round_shotgun_cursium",
+      "count": 8
+    }
+  ]
+}

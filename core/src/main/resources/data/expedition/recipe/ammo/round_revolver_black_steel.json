@@ -1,0 +1,54 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cgs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    {
+      "item": "cgs:round_revolver_piercing"
+    },
+    [
+      {
+        "item": "cataclysm:black_steel_ingot"
+      },
+      {
+        "item": "minecraft:netherite_scrap"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "id": "expedition:round_revolver_black_steel",
+      "count": 8
+    }
+  ]
+}

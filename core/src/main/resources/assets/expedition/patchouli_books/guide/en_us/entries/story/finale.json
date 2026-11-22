@@ -1,0 +1,17 @@
+{
+  "name": "expedition.guide.finale",
+  "icon": "minecraft:nether_star",
+  "category": "expedition:story",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.finale.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.finale.page1"
+    }
+  ],
+  "advancement": "expedition:story/finale"
+}

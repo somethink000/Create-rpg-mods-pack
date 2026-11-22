@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "cataclysm:black_steel_ingot"
+    },
+    "X": {
+      "item": "cataclysm:cursium_ingot"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    " XS",
+    "X S",
+    " #S",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cataclysm:cursed_bow"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

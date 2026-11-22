@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "m": {
+      "item": "minecraft:diamond"
+    },
+    "s": {
+      "item": "create:shaft"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "m",
+    "s",
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:diamond_knife"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

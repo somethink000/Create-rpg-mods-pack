@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:brass_sheet"
+    },
+    "T": {
+      "item": "expedition:raider_insignia"
+    },
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "B": {
+      "item": "create:sturdy_sheet"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "relics:shield_of_retaliation",
+    "count": 1
+  }
+}

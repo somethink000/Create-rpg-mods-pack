@@ -1,0 +1,16 @@
+{
+  "name": "expedition.guide.bosses",
+  "icon": "expedition:boss_heart",
+  "category": "expedition:dungeons",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.bosses.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.bosses.page1"
+    }
+  ]
+}

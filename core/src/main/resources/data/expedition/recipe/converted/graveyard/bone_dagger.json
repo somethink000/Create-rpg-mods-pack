@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "graveyard"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:bone"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "graveyard:bone_dagger"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

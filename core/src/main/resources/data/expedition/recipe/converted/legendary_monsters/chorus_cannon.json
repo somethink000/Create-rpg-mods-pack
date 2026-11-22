@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "create:golden_sheet"
+    },
+    "#": {
+      "item": "legendary_monsters:chorus_crystal"
+    },
+    "B": {
+      "item": "legendary_monsters:sand_cannon"
+    },
+    "C": {
+      "item": "legendary_monsters:infected_chorus_fruit"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " BC",
+    " CG",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:chorus_cannon"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

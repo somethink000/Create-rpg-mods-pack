@@ -1,0 +1,625 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aether:chainmail_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:diamond_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:golden_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:iron_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:leather_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:netherite_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:zanite_gloves",
+      "required": false
+    },
+    {
+      "id": "aether:zanite_helmet",
+      "required": false
+    },
+    {
+      "id": "aether:zanite_chestplate",
+      "required": false
+    },
+    {
+      "id": "aether:zanite_leggings",
+      "required": false
+    },
+    {
+      "id": "aether:zanite_boots",
+      "required": false
+    },
+    {
+      "id": "twilightforest:arctic_helmet",
+      "required": false
+    },
+    {
+      "id": "twilightforest:arctic_chestplate",
+      "required": false
+    },
+    {
+      "id": "twilightforest:arctic_leggings",
+      "required": false
+    },
+    {
+      "id": "twilightforest:arctic_boots",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_helmet",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_chestplate",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_leggings",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_boots",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_axe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_shovel",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_hoe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_helmet",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_chestplate",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_leggings",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_boots",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_axe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_shovel",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_hoe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_helmet",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_chestplate",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_leggings",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_boots",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_shield",
+      "required": false
+    },
+    {
+      "id": "twilightforest:naga_chestplate",
+      "required": false
+    },
+    {
+      "id": "twilightforest:naga_leggings",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_sword",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_axe",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_shovel",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_hoe",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_sickle",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:knights_sword",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:shattered_greatsword",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:void_sword",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:dinosaur_bone_shield",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:dino_shield",
+      "required": false
+    },
+    {
+      "id": "tfmg:aluminum_sword",
+      "required": false
+    },
+    {
+      "id": "tfmg:aluminum_pickaxe",
+      "required": false
+    },
+    {
+      "id": "tfmg:aluminum_axe",
+      "required": false
+    },
+    {
+      "id": "tfmg:aluminum_shovel",
+      "required": false
+    },
+    {
+      "id": "tfmg:aluminum_hoe",
+      "required": false
+    },
+    {
+      "id": "tfmg:lead_pickaxe",
+      "required": false
+    },
+    {
+      "id": "tfmg:lead_shovel",
+      "required": false
+    },
+    {
+      "id": "tfmg:lead_hoe",
+      "required": false
+    },
+    {
+      "id": "tfmg:steel_sword",
+      "required": false
+    },
+    {
+      "id": "tfmg:steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "tfmg:steel_axe",
+      "required": false
+    },
+    {
+      "id": "tfmg:steel_shovel",
+      "required": false
+    },
+    {
+      "id": "tfmg:steel_hoe",
+      "required": false
+    },
+    {
+      "id": "deep_aether:skyjade_shield",
+      "required": false
+    },
+    {
+      "id": "deep_aether:stratus_shield",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_sword",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_axe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_shovel",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_hoe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_sword",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_axe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_shovel",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_hoe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_sword",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_axe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_shovel",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_hoe",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_sword",
+      "required": false
+    },
+    {
+      "id": "create_the_air_wars:titanium_axe",
+      "required": false
+    },
+    {
+      "id": "create_the_air_wars:titanium_hoe",
+      "required": false
+    },
+    {
+      "id": "create_the_air_wars:titaniumpickaxe",
+      "required": false
+    },
+    {
+      "id": "create_the_air_wars:titaniumshovel",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:enhanced_shield",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:chorus_mask",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:shulker_helmet",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:ender_hammer",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:sharp_battle_axe",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:sickle_of_harvest",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:spiky_spear",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_chestplate",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_helmet",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_chestplate",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_leggings",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_boots",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_guard_shield",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:knight_helmet",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:knight_leggings",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:knight_boots",
+      "required": false
+    },
+    {
+      "id": "ntgl:pistol10mm",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:candy_cane_sword",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:candy_cane_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:candy_cane_axe",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:candy_cane_shovel",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:candy_cane_hoe",
+      "required": false
+    },
+    {
+      "id": "create_things_and_misc:copper_knife",
+      "required": false
+    },
+    {
+      "id": "create_things_and_misc:zinc_knife",
+      "required": false
+    },
+    {
+      "id": "create_things_and_misc:brass_knife",
+      "required": false
+    },
+    {
+      "id": "tfmg:lead_sword",
+      "required": false
+    },
+    {
+      "id": "tfmg:lead_axe",
+      "required": false
+    },
+    {
+      "id": "apotheosis:ascent_spawner_upgrade_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:burning_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:echoing_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:frontier_spawner_upgrade_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:ignore_conditions_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:ignore_light_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:ignore_players_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:infused_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:initial_health_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:no_ai_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:pinnacle_spawner_upgrade_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:redstone_control_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:silent_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:spawn_range_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:spawner_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:summit_spawner_upgrade_rune",
+      "required": false
+    },
+    {
+      "id": "apotheosis:youthful_spawner_rune",
+      "required": false
+    },
+    {
+      "id": "cataclysm:abyss_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursed_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:desert_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:flame_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:mech_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:monstrous_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:storm_eye",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_eye",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_air",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_annihilation",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_bones",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_chorus",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_frost",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_ghost",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_magma",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_many_ribs",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_moss",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_sandstorm",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_shulker",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:eye_of_soul",
+      "required": false
+    },
+    {
+      "id": "fdbosses:eye_of_chesed",
+      "required": false
+    },
+    {
+      "id": "fdbosses:eye_of_geburah",
+      "required": false
+    },
+    {
+      "id": "fdbosses:eye_of_malkuth",
+      "required": false
+    }
+  ]
+}

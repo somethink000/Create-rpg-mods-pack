@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "expedition:cinder_core"
+    },
+    {
+      "item": "expedition:void_shard"
+    },
+    {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "create:experience_nugget"
+    },
+    {
+      "item": "create:experience_nugget"
+    }
+  ],
+  "results": [
+    {
+      "id": "apotheosis:arcane_sands",
+      "count": 1
+    }
+  ],
+  "heat_requirement": "superheated"
+}

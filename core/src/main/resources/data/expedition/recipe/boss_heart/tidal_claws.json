@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "equipment",
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "cataclysm:the_leviathan"
+      }
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    },
+    "S": {
+      "item": "tfmg:heavy_plate"
+    }
+  },
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cataclysm:tidal_claws"
+  },
+  "show_notification": true
+}

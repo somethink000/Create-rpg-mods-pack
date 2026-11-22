@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mowziesmobs"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "equipment",
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "mowziesmobs:sculptor"
+      }
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "item": "create:brass_sheet"
+    }
+  },
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mowziesmobs:geomancer_belt"
+  },
+  "show_notification": true
+}

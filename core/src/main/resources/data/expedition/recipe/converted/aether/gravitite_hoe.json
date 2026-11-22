@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "aether:processed/gravitite"
+    },
+    "/": {
+      "tag": "aether:skyroot_stick"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "##",
+    " /",
+    " /",
+    "P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aether:gravitite_hoe"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

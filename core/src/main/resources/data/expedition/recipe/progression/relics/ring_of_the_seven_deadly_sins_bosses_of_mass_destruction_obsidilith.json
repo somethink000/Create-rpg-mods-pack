@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "T": {
+      "item": "expedition:cinder_core"
+    },
+    "M": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "bosses_of_mass_destruction:obsidilith"
+      }
+    }
+  },
+  "result": {
+    "id": "relics:ring_of_the_seven_deadly_sins",
+    "count": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "order": 6,
+  "tier": "T1",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 1400,
+  "max_distance": 3200,
+  "structures": [
+    "betterfortresses:fortress"
+  ],
+  "loot": [
+    "expedition:cinder_core",
+    "expedition:grave_dust"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:nether_wastes",
+    "incendium:infernal_dunes"
+  ],
+  "guardian": {
+    "entity": "cataclysm:ignited_revenant",
+    "health": 140,
+    "damage": 10,
+    "scale": 1.3,
+    "armor": 6,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:blaze",
+    "minecraft:wither_skeleton",
+    "block_factorys_bosses:soul_skeleton",
+    "cataclysm:ignited_berserker",
+    "minecraft:ghast",
+    "minecraft:zombified_piglin"
+  ]
+}

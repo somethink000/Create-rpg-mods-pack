@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deeperdarker"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "deeperdarker:sculk_bone"
+    },
+    "C": {
+      "item": "deeperdarker:soul_crystal"
+    },
+    "H": {
+      "item": "deeperdarker:heart_of_the_deep"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    " CH",
+    " BC",
+    "B  ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "deeperdarker:sonorous_staff"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

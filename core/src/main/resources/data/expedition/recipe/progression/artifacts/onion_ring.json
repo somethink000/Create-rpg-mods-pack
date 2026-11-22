@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:golden_sheet"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "M": {
+      "item": "apotheosis:timeworn_fabric"
+    },
+    "B": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:onion_ring",
+    "count": 1
+  }
+}

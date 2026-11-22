@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bosses_of_mass_destruction"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "create:shaft"
+    },
+    "V": {
+      "item": "bosses_of_mass_destruction:void_thorn"
+    },
+    "H": {
+      "item": "bosses_of_mass_destruction:obsidian_heart"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "H",
+    "V",
+    "S",
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bosses_of_mass_destruction:earthdive_spear"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

@@ -1,0 +1,54 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "expedition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "pattern": [
+    "MTM",
+    "SBS",
+    " P "
+  ],
+  "key": {
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "S": {
+      "item": "tfmg:heavy_plate"
+    },
+    "B": {
+      "item": "aether:silver_dungeon_key"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "result": {
+    "id": "aether:valkyrie_pickaxe",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

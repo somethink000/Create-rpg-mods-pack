@@ -1,0 +1,59 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_leggings"
+    },
+    "B": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "C": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "D": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "E": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "F": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "G": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "H": {
+      "tag": "twilightforest:fiery_vial"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GH ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:fiery_leggings"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

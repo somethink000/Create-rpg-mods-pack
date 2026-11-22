@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "legendary_monsters:ancient_spike"
+    },
+    "B": {
+      "item": "minecraft:shield"
+    },
+    "C": {
+      "item": "legendary_monsters:molten_metal_ingot"
+    },
+    "D": {
+      "item": "legendary_monsters:chiseled_ancient_dripstone_shard"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "D  ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:spiky_shield"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

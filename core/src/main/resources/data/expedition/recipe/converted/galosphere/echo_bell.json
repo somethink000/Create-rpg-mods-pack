@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "galosphere"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "galosphere:broken_echo_bell"
+    },
+    "C": {
+      "item": "minecraft:echo_shard"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "X": {
+      "item": "galosphere:allurite_shard"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    " # ",
+    "CXC",
+    " S ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "galosphere:echo_bell"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

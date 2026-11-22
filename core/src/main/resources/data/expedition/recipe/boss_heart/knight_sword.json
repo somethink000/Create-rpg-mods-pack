@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "equipment",
+  "key": {
+    "H": {
+      "type": "neoforge:components",
+      "items": "expedition:boss_heart",
+      "components": {
+        "expedition:boss": "block_factorys_bosses:underworld_knight"
+      }
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    " H ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "block_factorys_bosses:knight_sword"
+  },
+  "show_notification": true
+}

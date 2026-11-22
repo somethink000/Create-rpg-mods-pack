@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "n": {
+      "item": "cataclysm:witherite_ingot"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    " #I",
+    " n#",
+    "n  ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cataclysm:meat_shredder"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

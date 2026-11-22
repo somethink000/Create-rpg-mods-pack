@@ -1,0 +1,1230 @@
+[
+ {
+  "id": "advancedperipherals:block_reader",
+  "result": "advancedperipherals:block_reader",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    },
+    "M": {
+     "item": "computercraft:wired_modem_full"
+    },
+    "O": {
+     "item": "minecraft:observer"
+    },
+    "R": {
+     "tag": "c:storage_blocks/redstone"
+    }
+   },
+   "pattern": [
+    "IRI",
+    "MAO",
+    "IRI"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:block_reader"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:chat_box",
+  "result": "advancedperipherals:chat_box",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "G": {
+     "tag": "c:ingots/gold"
+    },
+    "P": {
+     "tag": "minecraft:logs"
+    }
+   },
+   "pattern": [
+    "PPP",
+    "PAP",
+    "PGP"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:chat_box"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:chunk_controller",
+  "result": "advancedperipherals:chunk_controller",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "minecraft:ender_eye"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    },
+    "R": {
+     "tag": "c:dusts/redstone"
+    }
+   },
+   "pattern": [
+    "IRI",
+    "RAR",
+    "IRI"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:chunk_controller"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:computer_tool",
+  "result": "advancedperipherals:computer_tool",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "B": {
+     "item": "minecraft:blue_terracotta"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    }
+   },
+   "pattern": [
+    "I I",
+    "IBI",
+    " B "
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:computer_tool"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:energy_detector",
+  "result": "advancedperipherals:energy_detector",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "B": {
+     "tag": "c:storage_blocks/redstone"
+    },
+    "C": {
+     "item": "minecraft:comparator"
+    },
+    "G": {
+     "tag": "c:ingots/gold"
+    },
+    "R": {
+     "item": "minecraft:redstone_torch"
+    }
+   },
+   "pattern": [
+    "BRB",
+    "CAC",
+    "BGB"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:energy_detector"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:environment_detector",
+  "result": "advancedperipherals:environment_detector",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "C": {
+     "tag": "c:crops"
+    },
+    "L": {
+     "tag": "minecraft:leaves"
+    },
+    "S": {
+     "tag": "minecraft:saplings"
+    },
+    "W": {
+     "tag": "minecraft:wool"
+    }
+   },
+   "pattern": [
+    "WSW",
+    "LAL",
+    "WCW"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:environment_detector"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:fluid_detector",
+  "result": "advancedperipherals:fluid_detector",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "B": {
+     "tag": "c:buckets/empty"
+    },
+    "C": {
+     "item": "minecraft:comparator"
+    },
+    "G": {
+     "tag": "c:ingots/gold"
+    },
+    "P": {
+     "item": "minecraft:piston"
+    }
+   },
+   "pattern": [
+    "BPB",
+    "CAC",
+    "BGB"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:fluid_detector"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:geo_scanner",
+  "result": "advancedperipherals:geo_scanner",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "C": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "D": {
+     "tag": "c:gems/diamond"
+    },
+    "M": {
+     "item": "computercraft:wired_modem_full"
+    },
+    "O": {
+     "item": "minecraft:observer"
+    },
+    "R": {
+     "tag": "c:storage_blocks/redstone"
+    }
+   },
+   "pattern": [
+    "DMD",
+    "DCD",
+    "ROR"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:geo_scanner"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:hotkey_module",
+  "result": "advancedperipherals:hotkey_module",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "B": {
+     "tag": "minecraft:buttons"
+    }
+   },
+   "pattern": [
+    "B",
+    "A"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:hotkey_module"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:inventory_manager",
+  "result": "advancedperipherals:inventory_manager",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "C": {
+     "tag": "c:chests"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    }
+   },
+   "pattern": [
+    "ICI",
+    "CAC",
+    "ICI"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:inventory_manager"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:keyboard",
+  "result": "advancedperipherals:keyboard",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "B": {
+     "tag": "minecraft:buttons"
+    },
+    "G": {
+     "tag": "c:ingots/gold"
+    }
+   },
+   "pattern": [
+    "BBB",
+    "BGB",
+    "BAB"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:keyboard"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:memory_card",
+  "result": "advancedperipherals:memory_card",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "G": {
+     "tag": "c:ingots/gold"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    },
+    "O": {
+     "item": "minecraft:observer"
+    },
+    "W": {
+     "tag": "c:glass_blocks/cheap"
+    }
+   },
+   "pattern": [
+    "IWI",
+    "IOI",
+    " G "
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:memory_card"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:nbt_storage",
+  "result": "advancedperipherals:nbt_storage",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "C": {
+     "tag": "c:chests"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    },
+    "R": {
+     "tag": "c:storage_blocks/redstone"
+    }
+   },
+   "pattern": [
+    "ICI",
+    "CAC",
+    "RCR"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:nbt_storage"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:nightvision_module",
+  "result": "advancedperipherals:nightvision_module",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "N": {
+     "type": "neoforge:components",
+     "components": {
+      "minecraft:potion_contents": {
+       "potion": "minecraft:night_vision"
+      }
+     },
+     "items": "minecraft:potion"
+    }
+   },
+   "pattern": [
+    "N",
+    "A"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:nightvision_module"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:overlay_module",
+  "result": "advancedperipherals:overlay_module",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "M": {
+     "item": "computercraft:monitor_advanced"
+    }
+   },
+   "pattern": [
+    "MAM"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:overlay_module"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:overpowered_end_automata_core",
+  "result": "advancedperipherals:overpowered_end_automata_core",
+  "recipe": {
+   "type": "minecraft:crafting_shapeless",
+   "category": "redstone",
+   "ingredients": [
+    {
+     "item": "advancedperipherals:end_automata_core"
+    },
+    {
+     "item": "minecraft:nether_star"
+    }
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:overpowered_end_automata_core"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:overpowered_husbandry_automata_core",
+  "result": "advancedperipherals:overpowered_husbandry_automata_core",
+  "recipe": {
+   "type": "minecraft:crafting_shapeless",
+   "category": "redstone",
+   "ingredients": [
+    {
+     "item": "advancedperipherals:husbandry_automata_core"
+    },
+    {
+     "item": "minecraft:nether_star"
+    }
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:overpowered_husbandry_automata_core"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:overpowered_weak_automata_core",
+  "result": "advancedperipherals:overpowered_weak_automata_core",
+  "recipe": {
+   "type": "minecraft:crafting_shapeless",
+   "category": "redstone",
+   "ingredients": [
+    {
+     "item": "advancedperipherals:weak_automata_core"
+    },
+    {
+     "item": "minecraft:nether_star"
+    }
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:overpowered_weak_automata_core"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:peripheral_casing",
+  "result": "advancedperipherals:peripheral_casing",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "B": {
+     "item": "minecraft:iron_bars"
+    },
+    "I": {
+     "tag": "c:ingots/iron"
+    },
+    "R": {
+     "tag": "c:storage_blocks/redstone"
+    }
+   },
+   "pattern": [
+    "IBI",
+    "BRB",
+    "IBI"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:peripheral_casing"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:player_detector",
+  "result": "advancedperipherals:player_detector",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "R": {
+     "tag": "c:storage_blocks/redstone"
+    },
+    "S": {
+     "item": "minecraft:smooth_stone"
+    }
+   },
+   "pattern": [
+    "SSS",
+    "SAS",
+    "SRS"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:player_detector"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:smart_rail",
+  "result": "advancedperipherals:smart_rail",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "minecraft:activator_rail"
+    },
+    "D": {
+     "item": "minecraft:detector_rail"
+    },
+    "M": {
+     "item": "computercraft:wired_modem_full"
+    },
+    "P": {
+     "item": "minecraft:powered_rail"
+    }
+   },
+   "pattern": [
+    "D ",
+    "PM",
+    "A "
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:smart_rail"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "advancedperipherals:weak_automata_core",
+  "result": "advancedperipherals:weak_automata_core",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "A": {
+     "item": "advancedperipherals:peripheral_casing"
+    },
+    "D": {
+     "tag": "c:gems/diamond"
+    },
+    "L": {
+     "type": "neoforge:components",
+     "components": {
+      "minecraft:potion_contents": {
+       "potion": "minecraft:long_regeneration"
+      }
+     },
+     "items": "minecraft:potion"
+    },
+    "R": {
+     "tag": "c:storage_blocks/redstone"
+    },
+    "S": {
+     "item": "minecraft:soul_lantern"
+    }
+   },
+   "pattern": [
+    "RAR",
+    "DSD",
+    "RLR"
+   ],
+   "result": {
+    "count": 1,
+    "id": "advancedperipherals:weak_automata_core"
+   }
+  },
+  "part": "create:electron_tube"
+ },
+ {
+  "id": "aether:holystone_stonecutter",
+  "result": "minecraft:stonecutter",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "group": "minecraft:stonecutter",
+   "key": {
+    "#": {
+     "item": "aether:holystone"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    " I ",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:stonecutter"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "cgs:axe_iron",
+  "result": "cgs:axe_iron",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "B": {
+     "item": "minecraft:iron_block"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "II",
+    "IB",
+    "I "
+   ],
+   "result": {
+    "count": 1,
+    "id": "cgs:axe_iron"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "cgs:hammer_iron",
+  "result": "cgs:hammer_iron",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "B": {
+     "item": "minecraft:iron_block"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "II ",
+    "IBI",
+    "II "
+   ],
+   "result": {
+    "count": 1,
+    "id": "cgs:hammer_iron"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:anvil",
+  "result": "minecraft:anvil",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "I": {
+     "item": "minecraft:iron_block"
+    },
+    "i": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "III",
+    " i ",
+    "iii"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:anvil"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:beacon",
+  "result": "minecraft:beacon",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "G": {
+     "item": "minecraft:glass"
+    },
+    "O": {
+     "item": "minecraft:obsidian"
+    },
+    "S": {
+     "item": "minecraft:nether_star"
+    }
+   },
+   "pattern": [
+    "GGG",
+    "GSG",
+    "OOO"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:beacon"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:blast_furnace",
+  "result": "minecraft:blast_furnace",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:smooth_stone"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    },
+    "X": {
+     "item": "minecraft:furnace"
+    }
+   },
+   "pattern": [
+    "III",
+    "IXI",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:blast_furnace"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:cauldron",
+  "result": "minecraft:cauldron",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "# #",
+    "# #",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:cauldron"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:clock",
+  "result": "minecraft:clock",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:gold_ingot"
+    },
+    "X": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "pattern": [
+    " # ",
+    "#X#",
+    " # "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:clock"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:compass",
+  "result": "minecraft:compass",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:iron_ingot"
+    },
+    "X": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "pattern": [
+    " # ",
+    "#X#",
+    " # "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:compass"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:conduit",
+  "result": "minecraft:conduit",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:nautilus_shell"
+    },
+    "X": {
+     "item": "minecraft:heart_of_the_sea"
+    }
+   },
+   "pattern": [
+    "###",
+    "#X#",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:conduit"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:end_crystal",
+  "result": "minecraft:end_crystal",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "E": {
+     "item": "minecraft:ender_eye"
+    },
+    "G": {
+     "item": "minecraft:glass"
+    },
+    "T": {
+     "item": "minecraft:ghast_tear"
+    }
+   },
+   "pattern": [
+    "GGG",
+    "GEG",
+    "GTG"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:end_crystal"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:flint_and_steel",
+  "result": "minecraft:flint_and_steel",
+  "recipe": {
+   "type": "minecraft:crafting_shapeless",
+   "category": "equipment",
+   "ingredients": [
+    {
+     "item": "minecraft:iron_ingot"
+    },
+    {
+     "item": "minecraft:flint"
+    }
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:flint_and_steel"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:heavy_weighted_pressure_plate",
+  "result": "minecraft:heavy_weighted_pressure_plate",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "#": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "##"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:heavy_weighted_pressure_plate"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:hopper",
+  "result": "minecraft:hopper",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "C": {
+     "item": "minecraft:chest"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "I I",
+    "ICI",
+    " I "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:hopper"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:iron_bars",
+  "result": "minecraft:iron_bars",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "###",
+    "###"
+   ],
+   "result": {
+    "count": 16,
+    "id": "minecraft:iron_bars"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:light_weighted_pressure_plate",
+  "result": "minecraft:light_weighted_pressure_plate",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "#": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "pattern": [
+    "##"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:light_weighted_pressure_plate"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:lightning_rod",
+  "result": "minecraft:lightning_rod",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "redstone",
+   "key": {
+    "#": {
+     "item": "minecraft:copper_ingot"
+    }
+   },
+   "pattern": [
+    "#",
+    "#",
+    "#"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:lightning_rod"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:lodestone",
+  "result": "minecraft:lodestone",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+     "item": "minecraft:chiseled_stone_bricks"
+    }
+   },
+   "pattern": [
+    "SSS",
+    "S#S",
+    "SSS"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:lodestone"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:minecart",
+  "result": "minecraft:minecart",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    "# #",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:minecart"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:recovery_compass",
+  "result": "minecraft:recovery_compass",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "C": {
+     "item": "minecraft:compass"
+    },
+    "S": {
+     "item": "minecraft:echo_shard"
+    }
+   },
+   "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:recovery_compass"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:respawn_anchor",
+  "result": "minecraft:respawn_anchor",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "G": {
+     "item": "minecraft:glowstone"
+    },
+    "O": {
+     "item": "minecraft:crying_obsidian"
+    }
+   },
+   "pattern": [
+    "OOO",
+    "GGG",
+    "OOO"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:respawn_anchor"
+   }
+  },
+  "part": "create:precision_mechanism"
+ },
+ {
+  "id": "minecraft:shears",
+  "result": "minecraft:shears",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "equipment",
+   "key": {
+    "#": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    " #",
+    "# "
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:shears"
+   }
+  },
+  "mode": "table"
+ },
+ {
+  "id": "minecraft:stonecutter",
+  "result": "minecraft:stonecutter",
+  "recipe": {
+   "type": "minecraft:crafting_shaped",
+   "category": "misc",
+   "key": {
+    "#": {
+     "item": "minecraft:stone"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "pattern": [
+    " I ",
+    "###"
+   ],
+   "result": {
+    "count": 1,
+    "id": "minecraft:stonecutter"
+   }
+  },
+  "mode": "table"
+ }
+]

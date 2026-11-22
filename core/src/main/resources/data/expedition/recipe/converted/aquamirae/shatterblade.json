@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "0": {
+      "item": "create:shaft"
+    },
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "aquamirae:abyssal_amethyst"
+    },
+    "3": {
+      "item": "aquamirae:ship_graveyard_echo"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "321",
+    "212",
+    "023",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aquamirae:shatterblade"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

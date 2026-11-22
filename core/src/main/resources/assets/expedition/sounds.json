@@ -1,0 +1,1514 @@
+{
+  "voice.en.act.1.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.1.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.1.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.1.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.1.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.1.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.1.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.1.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.2.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.2.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.2.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.2.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.2.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.2.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.2.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.2.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.2.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.2.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.3.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.3.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.3.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.3.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.3.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.3.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.3.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.3.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.3.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.3.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.4.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.4.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.4.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.4.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.4.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.4.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.4.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.4.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.4.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.4.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.5.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.5.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.5.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.5.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.5.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.5.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.5.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.5.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.5.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.5.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.6.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.6.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.6.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.6.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.6.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.6.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.6.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.6.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.6.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.6.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.7.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.7.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.7.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.7.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.7.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.7.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.7.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.7.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.act.7.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/act.7.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.01_old_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.01_old_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.02_crypt.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.02_crypt.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.03_wrought_chamber.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.03_wrought_chamber.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.04_nether_fortress.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.04_nether_fortress.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.05_mossy_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.05_mossy_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.06_underworld_arena.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.06_underworld_arena.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.07_foundry.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.07_foundry.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.08_cursed_pyramid.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.08_cursed_pyramid.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.09_frostbitten_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.09_frostbitten_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.10_ocean_monument.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.10_ocean_monument.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.11_pirate_ship.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.11_pirate_ship.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.12_kraken_ship.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.12_kraken_ship.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.13_sky_whale.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.13_sky_whale.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.14_burning_arena.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.14_burning_arena.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.15_soul_blacksmith.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.15_soul_blacksmith.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.16_frosted_prison.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.16_frosted_prison.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.17_stronghold.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.17_stronghold.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.18_ender_dragon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.18_ender_dragon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.19_ruined_citadel.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.19_ruined_citadel.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.20_space_station.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.20_space_station.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.21_ancient_factory.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.21_ancient_factory.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.22_sunken_city.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.22_sunken_city.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.23_acropolis.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.23_acropolis.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.24_malkuth.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.24_malkuth.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.25_chesed.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.25_chesed.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.26_geburah.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.26_geburah.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.27_lich_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.27_lich_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.28_void_blossom.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.28_void_blossom.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.29_nether_gauntlet.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.29_nether_gauntlet.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.30_obsidilith.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.30_obsidilith.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.31_wither.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.31_wither.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.32_warped_nest.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.32_warped_nest.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.33_umvuthana_grove.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.33_umvuthana_grove.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.34_monastery.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.34_monastery.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.35_sandworm_nest.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.35_sandworm_nest.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.36_ruined_pyramid.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.36_ruined_pyramid.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.37_ancient_stronghold.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.37_ancient_stronghold.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.38_lava_eater_spawn.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.38_lava_eater_spawn.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.39_yeti_hideout.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.39_yeti_hideout.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.40_frostmaw_den.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.40_frostmaw_den.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.41_skeletosaurus_nest.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.41_skeletosaurus_nest.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.42_soul_fortress.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.42_soul_fortress.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.43_dragon_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.43_dragon_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.44_shulker_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.44_shulker_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.45_cloudy_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.45_cloudy_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.46_collapsed_kingdom.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.46_collapsed_kingdom.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.47_lich_prison.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.47_lich_prison.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.48_ancient_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.48_ancient_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.49_naga_courtyard.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.49_naga_courtyard.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.50_tf_lich_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.50_tf_lich_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.51_labyrinth.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.51_labyrinth.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.52_hydra_lair.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.52_hydra_lair.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.53_knight_stronghold.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.53_knight_stronghold.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.54_dark_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.54_dark_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.55_yeti_cave.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.55_yeti_cave.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.56_aurora_palace.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.56_aurora_palace.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.57_bronze_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.57_bronze_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.58_silver_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.58_silver_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.59_gold_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.59_gold_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.60_brass_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.60_brass_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.arrive.61_ancient_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/arrive.61_ancient_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.01_old_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.01_old_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.02_crypt.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.02_crypt.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.04_nether_fortress.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.04_nether_fortress.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.07_foundry.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.07_foundry.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.08_cursed_pyramid.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.08_cursed_pyramid.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.09_frostbitten_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.09_frostbitten_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.12_kraken_ship.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.12_kraken_ship.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.13_sky_whale.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.13_sky_whale.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.16_frosted_prison.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.16_frosted_prison.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.17_stronghold.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.17_stronghold.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.20_space_station.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.20_space_station.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.23_acropolis.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.23_acropolis.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.28_void_blossom.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.28_void_blossom.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.29_nether_gauntlet.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.29_nether_gauntlet.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.30_obsidilith.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.30_obsidilith.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.32_warped_nest.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.32_warped_nest.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.33_umvuthana_grove.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.33_umvuthana_grove.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.34_monastery.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.34_monastery.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.35_sandworm_nest.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.35_sandworm_nest.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.36_ruined_pyramid.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.36_ruined_pyramid.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.37_ancient_stronghold.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.37_ancient_stronghold.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.38_lava_eater_spawn.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.38_lava_eater_spawn.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.39_yeti_hideout.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.39_yeti_hideout.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.40_frostmaw_den.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.40_frostmaw_den.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.41_skeletosaurus_nest.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.41_skeletosaurus_nest.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.42_soul_fortress.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.42_soul_fortress.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.43_dragon_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.43_dragon_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.44_shulker_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.44_shulker_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.45_cloudy_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.45_cloudy_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.46_collapsed_kingdom.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.46_collapsed_kingdom.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.47_lich_prison.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.47_lich_prison.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.48_ancient_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.48_ancient_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.49_naga_courtyard.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.49_naga_courtyard.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.50_tf_lich_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.50_tf_lich_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.51_labyrinth.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.51_labyrinth.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.52_hydra_lair.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.52_hydra_lair.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.53_knight_stronghold.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.53_knight_stronghold.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.54_dark_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.54_dark_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.55_yeti_cave.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.55_yeti_cave.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.56_aurora_palace.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.56_aurora_palace.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.57_bronze_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.57_bronze_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.58_silver_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.58_silver_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.59_gold_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.59_gold_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.60_brass_dungeon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.60_brass_dungeon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.fall.61_ancient_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/fall.61_ancient_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.finale.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/finale.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.finale.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/finale.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.finale.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/finale.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.finale.4": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/finale.4",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.finale.5": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/finale.5",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.finale.6": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/finale.6",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.03_wrought_chamber.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.03_wrought_chamber.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.03_wrought_chamber.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.03_wrought_chamber.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.05_mossy_temple.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.05_mossy_temple.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.05_mossy_temple.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.05_mossy_temple.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.06_underworld_arena.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.06_underworld_arena.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.06_underworld_arena.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.06_underworld_arena.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.10_ocean_monument.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.10_ocean_monument.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.10_ocean_monument.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.10_ocean_monument.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.11_pirate_ship.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.11_pirate_ship.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.11_pirate_ship.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.11_pirate_ship.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.14_burning_arena.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.14_burning_arena.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.14_burning_arena.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.14_burning_arena.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.15_soul_blacksmith.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.15_soul_blacksmith.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.15_soul_blacksmith.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.15_soul_blacksmith.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.18_ender_dragon.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.18_ender_dragon.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.18_ender_dragon.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.18_ender_dragon.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.18_ender_dragon.3": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.18_ender_dragon.3",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.19_ruined_citadel.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.19_ruined_citadel.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.19_ruined_citadel.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.19_ruined_citadel.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.21_ancient_factory.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.21_ancient_factory.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.21_ancient_factory.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.21_ancient_factory.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.22_sunken_city.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.22_sunken_city.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.22_sunken_city.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.22_sunken_city.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.24_malkuth.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.24_malkuth.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.24_malkuth.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.24_malkuth.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.25_chesed.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.25_chesed.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.25_chesed.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.25_chesed.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.26_geburah.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.26_geburah.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.26_geburah.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.26_geburah.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.27_lich_tower.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.27_lich_tower.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.27_lich_tower.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.27_lich_tower.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.31_wither.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.31_wither.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.outro.31_wither.2": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/outro.31_wither.2",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.aether.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.aether.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.camp.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.camp.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.end.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.end.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.nether.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.nether.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.overworld.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.overworld.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.seam.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.seam.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.prologue.twilight.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/prologue.twilight.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.wrath.1.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/wrath.1.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.wrath.2.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/wrath.2.1",
+        "stream": true
+      }
+    ]
+  },
+  "voice.en.wrath.3.1": {
+    "sounds": [
+      {
+        "name": "expedition:voice/en/wrath.3.1",
+        "stream": true
+      }
+    ]
+  }
+}

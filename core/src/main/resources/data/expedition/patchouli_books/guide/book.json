@@ -1,0 +1,9 @@
+{
+  "name": "expedition.guide.name",
+  "landing_text": "expedition.guide.landing",
+  "i18n": true,
+  "use_resource_pack": true,
+  "model": "patchouli:book_brown",
+  "show_progress": false,
+  "version": 1
+}

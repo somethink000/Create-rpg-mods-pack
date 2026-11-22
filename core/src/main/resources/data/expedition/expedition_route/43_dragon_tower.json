@@ -1,0 +1,36 @@
+{
+  "order": 27,
+  "tier": "T3",
+  "dimension": "minecraft:overworld",
+  "min_distance": 4500,
+  "max_distance": 7000,
+  "structures": [
+    "block_factorys_bosses:dragon_tower"
+  ],
+  "boss": "block_factorys_bosses:infernal_dragon",
+  "loot": [
+    "expedition:feral_fang"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "terralith:volcanic_peaks",
+    "terralith:scarlet_mountains",
+    "minecraft:windswept_hills",
+    "terralith:rocky_mountains"
+  ],
+  "garrison": [
+    "block_factorys_bosses:dragon_guard_sword",
+    "block_factorys_bosses:flaming_skeleton_guard_sword",
+    "minecraft:blaze",
+    "minecraft:ghast"
+  ],
+  "guardian": {
+    "entity": "block_factorys_bosses:infernal_dragon",
+    "health": 340,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

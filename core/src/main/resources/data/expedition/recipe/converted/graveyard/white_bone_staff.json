@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "graveyard"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "U": {
+      "item": "graveyard:upper_bone_staff"
+    },
+    "M": {
+      "item": "graveyard:middle_bone_staff"
+    },
+    "L": {
+      "item": "graveyard:lower_bone_staff"
+    },
+    "D": {
+      "item": "minecraft:white_dye"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    " U ",
+    "DM ",
+    " L ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "graveyard:white_bone_staff"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

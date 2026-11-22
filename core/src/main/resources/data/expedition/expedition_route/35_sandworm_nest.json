@@ -1,0 +1,37 @@
+{
+  "order": 11,
+  "tier": "T2",
+  "dimension": "minecraft:overworld",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "block_factorys_bosses:sandworm_nest"
+  ],
+  "boss": "block_factorys_bosses:sandworm",
+  "loot": [
+    "expedition:chitin_plate"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "terralith:desert_spires",
+    "terralith:ancient_sands",
+    "terralith:gravel_desert",
+    "minecraft:desert"
+  ],
+  "garrison": [
+    "minecraft:husk",
+    "yungscavebiomes:sand_snapper",
+    "cataclysm:koboleton",
+    "legendary_monsters:bomber",
+    "cataclysm:kobolediator"
+  ],
+  "guardian": {
+    "entity": "block_factorys_bosses:sandworm",
+    "health": 260,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

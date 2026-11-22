@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "c": {
+      "tag": "c:gems/carminite"
+    },
+    "g": {
+      "item": "create:golden_sheet"
+    },
+    "i": {
+      "item": "create:copper_sheet"
+    },
+    "l": {
+      "item": "twilightforest:tanned_leather"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "g g",
+    "ili",
+    "ici",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:travellers_wings"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

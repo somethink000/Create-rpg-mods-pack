@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "expedition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "pattern": [
+    "MTM",
+    "SBS",
+    " P "
+  ],
+  "key": {
+    "M": {
+      "item": "apotheosis:timeworn_fabric"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "B": {
+      "item": "minecraft:golden_axe"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result": {
+    "id": "twilightforest:gold_minotaur_axe",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

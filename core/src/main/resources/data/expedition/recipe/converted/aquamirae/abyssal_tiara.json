@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "0": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "1": {
+      "item": "aquamirae:abyssal_amethyst"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "101",
+    "1 1",
+    "   ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aquamirae:abyssal_tiara"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

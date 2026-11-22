@@ -1,0 +1,16 @@
+{
+  "name": "expedition.guide.garrisons",
+  "icon": "minecraft:spawner",
+  "category": "expedition:dungeons",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.garrisons.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.garrisons.page1"
+    }
+  ]
+}

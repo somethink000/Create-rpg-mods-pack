@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "T": {
+      "item": "expedition:void_shard"
+    },
+    "M": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "B": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:crystal_heart",
+    "count": 1
+  }
+}

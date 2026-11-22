@@ -1,0 +1,36 @@
+{
+  "order": 40,
+  "tier": "T5",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 8500,
+  "max_distance": 11000,
+  "boss": "minecraft:wither",
+  "loot": [
+    "expedition:grave_dust",
+    "expedition:cinder_core",
+    "minecraft:nether_star"
+  ],
+  "structures": [
+    "incendium:sanctum"
+  ],
+  "summon": true,
+  "scenes": "T|",
+  "home_biomes": [
+    "incendium:quartz_flats"
+  ],
+  "garrison": [
+    "minecraft:wither_skeleton",
+    "minecraft:blaze",
+    "minecraft:ghast",
+    "minecraft:piglin_brute"
+  ],
+  "guardian": {
+    "entity": "minecraft:wither",
+    "health": 1480,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

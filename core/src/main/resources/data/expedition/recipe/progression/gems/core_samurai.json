@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "D": {
+      "item": "apotheosis:gem_dust"
+    },
+    "M": {
+      "item": "apotheosis:luminous_crystal_shard"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "B": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "pattern": [
+    "DMD",
+    "TBT",
+    "DMD"
+  ],
+  "result": {
+    "id": "apotheosis:gem",
+    "count": 1,
+    "components": {
+      "apotheosis:gem": "apotheosis:core/samurai",
+      "apotheosis:purity": "cracked"
+    }
+  }
+}

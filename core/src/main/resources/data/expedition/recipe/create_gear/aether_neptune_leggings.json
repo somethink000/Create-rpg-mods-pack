@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "expedition"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "pattern": [
+    "MTM",
+    "SBS",
+    " P "
+  ],
+  "key": {
+    "M": {
+      "item": "apotheosis:timeworn_fabric"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "B": {
+      "item": "aether:bronze_dungeon_key"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result": {
+    "id": "aether:neptune_leggings",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

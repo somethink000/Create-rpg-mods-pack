@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "i": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "M": {
+      "item": "minecraft:moss_block"
+    },
+    "E": {
+      "item": "legendary_monsters:nature_crystal"
+    },
+    "/": {
+      "item": "create:shaft"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    "iMi",
+    "iEi",
+    " / ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "legendary_monsters:mossy_hammer"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

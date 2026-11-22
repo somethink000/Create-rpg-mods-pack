@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "T": {
+      "item": "expedition:abyssal_scale"
+    },
+    "M": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "B": {
+      "item": "minecraft:heart_of_the_sea"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "relics:sphere_of_self_sacrifice",
+    "count": 1
+  }
+}

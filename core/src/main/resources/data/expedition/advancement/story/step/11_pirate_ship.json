@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "expedition:boss_heart"
+    },
+    "title": {
+      "translate": "expedition.route.11_pirate_ship.title"
+    },
+    "description": {
+      "translate": "expedition.route.11_pirate_ship.text"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "expedition:story/act_2"
+}

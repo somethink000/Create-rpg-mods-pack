@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "T": {
+      "item": "expedition:raider_insignia"
+    },
+    "M": {
+      "item": "apotheosis:arcane_sands"
+    },
+    "B": {
+      "item": "minecraft:lodestone"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:universal_attractor",
+    "count": 1
+  }
+}

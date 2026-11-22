@@ -1,0 +1,42 @@
+# The repository holds what the pack itself is made of; mods hosted on Modrinth are downloaded by link (release-modrinth.py).
+
+# Build output, IDE and local tools
+**/build/
+**/.gradle/
+**/run/
+dist/
+.claude/
+*.code-workspace
+__pycache__/
+
+# The launcher instance: only the pack's own config, scripts and the jars Modrinth doesn't host
+instance/*
+!instance/config/
+!instance/defaultconfigs/
+!instance/kubejs/
+!instance/modpack-docs/
+!instance/mods/
+instance/mods/*
+!instance/mods/expedition-*.jar
+!instance/mods/antique_atlas-*.jar
+!instance/mods/catalystwear-*.jar
+!instance/mods/twilightforest-*.jar
+!instance/mods/alltheleaks-*.jar
+instance/config/**/*.bak*
+instance/config/jei/world/
+instance/config/spark/
+instance/config/resourceful-config-web.json
+
+# The test server: its config, scripts and tools (worlds, libraries, logs and the server's own files stay local)
+testserver/*
+!testserver/config/
+!testserver/defaultconfigs/
+!testserver/kubejs/
+!testserver/tools/
+!testserver/pregen.sh
+!testserver/run.sh
+!testserver/user_jvm_args.txt
+testserver/config/**/*.bak*
+testserver/config/spark/
+testserver/config/chunky/tasks/
+testserver/config/resourceful-config-web.json

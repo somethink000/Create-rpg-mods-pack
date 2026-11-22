@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "LGPL-3.0-or-later"
+issueTrackerURL = "https://github.com/sleepingdragoninn/antique-atlas/issues"
+
+[[mods]]
+modId = "surveyor"
+version = "1.2.4-neo.1"
+displayName = "Surveyor (NeoForge port)"
+authors = "Sisby folk; NeoForge port for the Expedition pack"
+description = "Map data library: terrain, structures and landmarks, synced to clients."
+
+[[mods]]
+modId = "antique_atlas"
+version = "3.1.2-neo.1"
+displayName = "Antique Atlas (NeoForge port)"
+authors = "Hunternif, tyra314, Sisby folk; NeoForge port for the Expedition pack"
+description = "A hand-drawn world map with biomes, structures, waypoints, and less!"
+logoFile = "assets/antique_atlas/icon.png"
+
+[[mixins]]
+config = "surveyor.mixins.json"
+
+[[dependencies.antique_atlas]]
+modId = "surveyor"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.antique_atlas]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"

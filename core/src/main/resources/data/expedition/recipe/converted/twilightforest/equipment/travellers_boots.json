@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "l": {
+      "item": "twilightforest:tanned_leather"
+    },
+    "s": {
+      "tag": "c:strings"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "s s",
+    "l l",
+    "l l",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:travellers_boots"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

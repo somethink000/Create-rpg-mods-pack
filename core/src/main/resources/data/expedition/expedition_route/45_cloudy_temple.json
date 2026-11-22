@@ -1,0 +1,36 @@
+{
+  "order": 33,
+  "tier": "T4",
+  "dimension": "minecraft:overworld",
+  "min_distance": 6500,
+  "max_distance": 9000,
+  "structures": [
+    "legendary_monsters:cloudy_temple"
+  ],
+  "boss": "legendary_monsters:cloud_golem",
+  "loot": [
+    "expedition:feral_fang"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "terralith:cloud_forest",
+    "terralith:haze_mountain",
+    "minecraft:meadow",
+    "minecraft:cherry_grove"
+  ],
+  "garrison": [
+    "legendary_monsters:hovering_hurricane",
+    "minecraft:breeze",
+    "minecraft:phantom",
+    "legendary_monsters:stratling"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:cloud_golem",
+    "health": 260,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

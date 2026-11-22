@@ -1,0 +1,37 @@
+{
+  "order": 13,
+  "tier": "T2",
+  "dimension": "minecraft:overworld",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "legendary_monsters:ancient_stronghold"
+  ],
+  "boss": "legendary_monsters:ancient_guardian",
+  "loot": [
+    "expedition:grave_dust",
+    "expedition:feral_fang"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:taiga",
+    "terralith:siberian_taiga",
+    "minecraft:dark_forest"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:ancient_guardian",
+    "health": 310,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "legendary_monsters:haunted_knight",
+    "legendary_monsters:haunted_guard",
+    "graveyard:revenant",
+    "legendary_monsters:beheaded_knight",
+    "legendary_monsters:resurrected_knight"
+  ]
+}

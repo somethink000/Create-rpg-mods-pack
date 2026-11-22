@@ -1,0 +1,35 @@
+{
+  "order": 37,
+  "tier": "T4",
+  "dimension": "minecraft:overworld",
+  "min_distance": 6500,
+  "max_distance": 9000,
+  "structures": [
+    "legendary_monsters:space_station"
+  ],
+  "loot": [
+    "expedition:void_shard",
+    "expedition:feral_fang"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "terralith:amethyst_canyon",
+    "terralith:amethyst_rainforest",
+    "terralith:white_mesa",
+    "terralith:bryce_canyon"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:annihilation_pursuer",
+    "health": 370,
+    "damage": 16,
+    "scale": 1.0,
+    "armor": 8,
+    "bar": true
+  },
+  "garrison": [
+    "legendary_monsters:wandering_eye",
+    "legendary_monsters:flame_drifter",
+    "legendary_monsters:fractured_apostle",
+    "cataclysm:endermaptera"
+  ]
+}

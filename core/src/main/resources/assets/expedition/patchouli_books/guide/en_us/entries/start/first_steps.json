@@ -1,0 +1,16 @@
+{
+  "name": "expedition.guide.first_steps",
+  "icon": "create:andesite_alloy",
+  "category": "expedition:start",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.first_steps.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "expedition.guide.first_steps.page1"
+    }
+  ]
+}

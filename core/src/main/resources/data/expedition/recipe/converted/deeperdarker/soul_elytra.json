@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deeperdarker"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "deeperdarker:sculk_bone"
+    },
+    "C": {
+      "item": "deeperdarker:soul_crystal"
+    },
+    "D": {
+      "item": "deeperdarker:soul_dust"
+    },
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "DED",
+    "B B",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "deeperdarker:soul_elytra"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

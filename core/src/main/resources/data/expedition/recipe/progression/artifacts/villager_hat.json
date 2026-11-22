@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:iron_sheet"
+    },
+    "T": {
+      "item": "expedition:raider_insignia"
+    },
+    "M": {
+      "item": "apotheosis:mysterious_scrap_metal"
+    },
+    "B": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:villager_hat",
+    "count": 1
+  }
+}

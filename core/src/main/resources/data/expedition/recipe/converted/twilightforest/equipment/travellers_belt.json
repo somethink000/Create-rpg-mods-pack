@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "category": "equipment",
+  "key": {
+    "i": {
+      "tag": "c:nuggets/iron"
+    },
+    "l": {
+      "item": "twilightforest:tanned_leather"
+    },
+    "x": {
+      "type": "neoforge:difference",
+      "base": {
+        "tag": "c:chests/wooden"
+      },
+      "subtracted": {
+        "tag": "c:chests/trapped"
+      }
+    },
+    "P": {
+      "item": "tfmg:steel_mechanism"
+    }
+  },
+  "pattern": [
+    "lll",
+    "ixi",
+    "lll",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "twilightforest:travellers_belt"
+  },
+  "accept_mirrored": false,
+  "show_notification": true
+}

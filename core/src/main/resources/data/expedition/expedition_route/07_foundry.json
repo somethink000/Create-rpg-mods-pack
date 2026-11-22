@@ -1,0 +1,36 @@
+{
+  "order": 17,
+  "tier": "T2",
+  "dimension": "minecraft:overworld",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "dungeons_arise:foundry",
+    "dungeons_arise:mining_complex"
+  ],
+  "loot": [
+    "expedition:raider_insignia"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:badlands",
+    "terralith:savanna_badlands",
+    "terralith:hot_shrubland",
+    "terralith:rocky_shrubland"
+  ],
+  "guardian": {
+    "entity": "cataclysm:the_prowler",
+    "health": 280,
+    "damage": 12,
+    "scale": 1.0,
+    "armor": 4,
+    "bar": true
+  },
+  "garrison": [
+    "minecraft:pillager",
+    "minecraft:vindicator",
+    "minecraft:evoker",
+    "cataclysm:the_watcher",
+    "minecraft:ravager"
+  ]
+}

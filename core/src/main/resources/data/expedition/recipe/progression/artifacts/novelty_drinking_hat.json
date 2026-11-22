@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "show_notification": false,
+  "key": {
+    "P": {
+      "item": "create:copper_sheet"
+    },
+    "T": {
+      "item": "expedition:feral_fang"
+    },
+    "M": {
+      "item": "apotheosis:timeworn_fabric"
+    },
+    "B": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "MBM",
+    "PTP"
+  ],
+  "result": {
+    "id": "artifacts:novelty_drinking_hat",
+    "count": 1
+  }
+}

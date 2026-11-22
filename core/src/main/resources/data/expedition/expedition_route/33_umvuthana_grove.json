@@ -1,0 +1,38 @@
+{
+  "order": 8,
+  "tier": "T1",
+  "dimension": "minecraft:overworld",
+  "min_distance": 1400,
+  "max_distance": 3200,
+  "structures": [
+    "mowziesmobs:umvuthana_grove"
+  ],
+  "boss": "mowziesmobs:umvuthi",
+  "loot": [
+    "expedition:feral_fang",
+    "expedition:raider_insignia"
+  ],
+  "biome_tag": "c:is_savanna",
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:savanna",
+    "terralith:ashen_savanna",
+    "terralith:fractured_savanna",
+    "minecraft:savanna_plateau",
+    "terralith:savanna_slopes"
+  ],
+  "garrison": [
+    "mowziesmobs:umvuthana",
+    "mowziesmobs:umvuthana_raptor",
+    "minecraft:husk"
+  ],
+  "guardian": {
+    "entity": "mowziesmobs:umvuthi",
+    "health": 220,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

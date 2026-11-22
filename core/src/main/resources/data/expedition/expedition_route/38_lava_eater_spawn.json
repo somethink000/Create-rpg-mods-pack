@@ -1,0 +1,34 @@
+{
+  "order": 14,
+  "tier": "T2",
+  "dimension": "minecraft:the_nether",
+  "min_distance": 2800,
+  "max_distance": 5000,
+  "structures": [
+    "legendary_monsters:lava_eater_spawn"
+  ],
+  "boss": "legendary_monsters:lava_eater",
+  "loot": [
+    "expedition:cinder_core"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:basalt_deltas",
+    "minecraft:nether_wastes"
+  ],
+  "guardian": {
+    "entity": "legendary_monsters:lava_eater",
+    "health": 280,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": true
+  },
+  "garrison": [
+    "legendary_monsters:flameborn_guard",
+    "legendary_monsters:flameborn_warrior",
+    "legendary_monsters:flame_drifter",
+    "minecraft:blaze",
+    "minecraft:ghast"
+  ]
+}

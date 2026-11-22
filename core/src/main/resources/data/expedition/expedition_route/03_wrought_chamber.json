@@ -1,0 +1,41 @@
+{
+  "order": 3,
+  "tier": "T0",
+  "dimension": "minecraft:overworld",
+  "min_distance": 500,
+  "max_distance": 1600,
+  "structures": [
+    "mowziesmobs:wrought_chamber"
+  ],
+  "boss": "mowziesmobs:ferrous_wroughtnaut",
+  "loot": [
+    "expedition:feral_fang"
+  ],
+  "heart": [
+    "mowziesmobs:wrought_axe",
+    "mowziesmobs:wrought_helmet"
+  ],
+  "scenes": "T|",
+  "home_biomes": [
+    "terralith:rocky_shrubland",
+    "terralith:cold_shrubland",
+    "terralith:steppe",
+    "minecraft:plains"
+  ],
+  "garrison": [
+    "cataclysm:the_watcher",
+    "minecraft:vindicator",
+    "minecraft:pillager",
+    "minecraft:spider",
+    "minecraft:creeper"
+  ],
+  "guardian": {
+    "entity": "mowziesmobs:ferrous_wroughtnaut",
+    "health": 290,
+    "damage": 0,
+    "scale": 1.0,
+    "armor": 0,
+    "bar": false,
+    "rise": false
+  }
+}

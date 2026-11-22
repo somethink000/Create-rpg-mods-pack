@@ -1,0 +1,38 @@
+{
+  "order": 2,
+  "tier": "T0",
+  "dimension": "minecraft:overworld",
+  "min_distance": 500,
+  "max_distance": 1600,
+  "structures": [
+    "graveyard:crypt"
+  ],
+  "loot": [
+    "expedition:grave_dust"
+  ],
+  "scenes": "T|T",
+  "home_biomes": [
+    "minecraft:dark_forest",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:taiga",
+    "terralith:siberian_taiga"
+  ],
+  "guardian": {
+    "entity": "graveyard:nightmare",
+    "health": 220,
+    "damage": 6,
+    "scale": 1.2,
+    "armor": 2,
+    "bar": true
+  },
+  "garrison": [
+    "graveyard:acolyte",
+    "graveyard:corrupted_vindicator",
+    "graveyard:corrupted_pillager",
+    "graveyard:wraith",
+    "graveyard:reaper",
+    "graveyard:skeleton_creeper",
+    "minecraft:witch",
+    "minecraft:pillager"
+  ]
+}

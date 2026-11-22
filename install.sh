@@ -2,12 +2,12 @@
 # Installs or updates the Expedition pack into a Minecraft folder (Linux, macOS):
 #   curl -sL https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/install.sh | sh
 #   curl -sL .../install.sh | sh -s -- /path/to/game/folder     (default: ~/.minecraft)
-# Mods come from Modrinth (checked by hash), the pack's own files from the latest GitHub release. Mods the pack
+# Mods come from Modrinth (checked by hash), the pack's own files from Expedition.mrpack in the repository. Mods the pack
 # installed earlier and no longer has are removed; a mods folder from before the first install is kept aside.
 # NeoForge is installed too when Java is found; then pick the "NeoForge 1.21.1" profile in your launcher.
 set -e
 DIR=${1:-$HOME/.minecraft}
-PACK=${EXPEDITION_MRPACK:-https://github.com/somethink000/Create-rpg-mods-pack/releases/latest/download/Expedition.mrpack}
+PACK=${EXPEDITION_MRPACK:-https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/Expedition.mrpack}
 command -v python3 >/dev/null || { echo "Нужен python3"; exit 1; }
 mkdir -p "$DIR"
 exec python3 - "$DIR" "$PACK" <<'EOF'

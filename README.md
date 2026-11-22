@@ -19,7 +19,7 @@ curl -sL https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/mai
 
 ### Способ 2. Через Prism Launcher (Windows, Linux, macOS)
 1. Установите **[Prism Launcher](https://prismlauncher.org/download/)**.
-2. Скачайте **[Expedition.mrpack](https://github.com/somethink000/Create-rpg-mods-pack/releases/latest/download/Expedition.mrpack)**.
+2. Скачайте **[Expedition.mrpack](https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/Expedition.mrpack)**.
 3. Перетащите файл в окно Prism и нажмите **OK** — моды скачаются сами, NeoForge тоже.
 
 ### Сервер
@@ -31,7 +31,7 @@ curl -sL https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/mai
 ## Что в репозитории
 Здесь лежит всё, из чего сделана сборка, кроме модов с Modrinth: они скачиваются лаунчером по ссылкам из `.mrpack`. Моды, которых на Modrinth нет (ядро `expedition`, порт атласа, Catalyst Wear, Twilight Forest, AllTheLeaks), лежат в `instance/mods/`.
 
-Выпуск версии: `./release.sh 0.2.0 "что изменилось"` — собирает `.mrpack`, публикует релиз на GitHub и обновляет сервер (`deploy-vps.sh`).
+Выпуск версии: `./release.sh 0.2.0 "что изменилось"` — собирает `Expedition.mrpack`, коммитит и пушит его сюда и обновляет сервер (`deploy-vps.sh`).
 
 | Папка | Что это |
 |---|---|

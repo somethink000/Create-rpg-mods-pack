@@ -1,13 +1,13 @@
 # Installs or updates the Expedition pack into a Minecraft folder (Windows, PowerShell):
 #   irm https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/install.ps1 | iex
 # The folder is %APPDATA%\.minecraft unless $env:EXPEDITION_DIR says otherwise. Mods come from Modrinth (checked by
-# hash), the pack's own files from the latest GitHub release. Mods the pack installed earlier and no longer has are
+# hash), the pack's own files from Expedition.mrpack in the repository. Mods the pack installed earlier and no longer has are
 # removed; a mods folder from before the first install is kept aside. NeoForge is installed too when Java is found.
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $target = if ($env:EXPEDITION_DIR) { $env:EXPEDITION_DIR } else { Join-Path $env:APPDATA '.minecraft' }
-$pack = if ($env:EXPEDITION_MRPACK) { $env:EXPEDITION_MRPACK } else { 'https://github.com/somethink000/Create-rpg-mods-pack/releases/latest/download/Expedition.mrpack' }
+$pack = if ($env:EXPEDITION_MRPACK) { $env:EXPEDITION_MRPACK } else { 'https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/Expedition.mrpack' }
 New-Item -ItemType Directory -Force -Path $target | Out-Null
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 

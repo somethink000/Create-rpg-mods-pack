@@ -24,7 +24,7 @@ try {
     $mods = Join-Path $target 'mods'
     $marker = Join-Path $target '.expedition-files'
     if ((Test-Path $mods) -and -not (Test-Path $marker) -and (Get-ChildItem $mods | Select-Object -First 1)) {
-        Rename-Item $mods ($mods + '-before-expedition')
+        Rename-Item -LiteralPath $mods -NewName 'mods-before-expedition'
         Write-Host "Старые моды сохранены в $mods-before-expedition"
     }
     $previous = if (Test-Path $marker) { Get-Content $marker } else { @() }

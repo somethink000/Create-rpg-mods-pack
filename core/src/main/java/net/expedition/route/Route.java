@@ -497,8 +497,8 @@ public final class Route {
     }
 
     /**
-     * A player this close to a story dungeon for the first time hears the Tree on it; at a boss's place the camera turns to
-     * the boss (or its lair, if it hasn't risen yet) while she tells how to beat it.
+     * A player this close to a story dungeon for the first time hears the Tree on it (voice and subtitles only: no camera,
+     * no black screen, the player keeps moving - a held, filmed player was killed by whatever stood at the door).
      */
     /** Arrived: within this of the dungeon's frame (all three axes), or of a lair's place (a boss without a dungeon). */
     static final int ARRIVE_MARGIN = 6;
@@ -507,21 +507,6 @@ public final class Route {
     private static final int ARRIVE_LOOK = 256;
     /** The dungeons' frames, by dungeon key (a structure doesn't move). */
     private static final Map<String, BoundingBox> FRAMES = new HashMap<>();
-
-    /**
-     * The shot as a player arrives: the boss itself if it is there (within 64 blocks), else the dungeon from inside;
-     * null if neither can be filmed: then the scene is only heard.
-     */
-    private static Shots.Path arrivalShot(ServerLevel level, RouteData.Target target, RouteStep step) {
-        Shots.Path shot = step.boss().flatMap(boss -> level.getEntitiesOfClass(net.minecraft.world.entity.LivingEntity.class, new AABB(target.pos).inflate(64),
-            entity -> net.minecraft.world.entity.EntityType.getKey(entity.getType()).equals(boss)).stream().findFirst())
-            .map(entity -> Shots.ofEntity(level, entity)).orElse(null);
-        if (shot == null) {
-            Garrisons.Dungeon dungeon = Prologue.lairDungeon(level, target);
-            shot = dungeon == null ? null : Shots.inside(level, dungeon.start());
-        }
-        return shot;
-    }
 
     /** The player is at the place itself: in (or at the door of) its dungeon, not just over it or near it. */
     static boolean arrived(ServerPlayer player, RouteData.Target target) {
@@ -538,13 +523,12 @@ public final class Route {
         return frame != null && frame.inflatedBy(ARRIVE_MARGIN).isInside(player.blockPosition());
     }
 
-    /** The player at a step's dungeon: its guardian rises (or the dungeon's own boss becomes it) and the approach scene shows it. */
+    /** The player at a step's dungeon: its guardian rises (or the dungeon's own boss becomes it) and the approach scene is heard. */
     static void arrive(ServerPlayer player, RouteSteps.Entry entry, RouteData.Target target) {
         String id = id(entry);
-        LivingEntity guardian = Guardians.rise(player.serverLevel(), id, entry.step(), target);
+        Guardians.rise(player.serverLevel(), id, entry.step(), target);
         if (!entry.step().arriveSpeakers().isEmpty()) {
-            Shots.Path shot = guardian != null ? Shots.ofEntity(player.serverLevel(), guardian) : arrivalShot(player.serverLevel(), target, entry.step());
-            Cutscenes.play(player, target.pos, "expedition.story.arrive." + id, entry.step().arriveSpeakers(), false, shot);
+            Cutscenes.play(player, target.pos, "expedition.story.arrive." + id, entry.step().arriveSpeakers(), false);
         }
     }
 

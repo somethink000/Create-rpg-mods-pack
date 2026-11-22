@@ -7,7 +7,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.server.ServerStartedEvent;
 
 /**
- * Lighter defaults for a new world: no spawn chunks kept loaded (vanilla keeps a few hundred chunks around spawn
+ * Defaults for a new world: half the players asleep skip the night; no spawn chunks kept loaded (vanilla keeps a few hundred chunks around spawn
  * loaded and ticking with nobody there; the camp needs none of it). Only a world that hasn't run yet is changed: an
  * operator's own gamerule stays.
  * <p>
@@ -28,7 +28,9 @@ public final class ServerDefaults {
         ServerLevel overworld = event.getServer().overworld();
         if (overworld.getGameTime() < 200) {
             overworld.getGameRules().getRule(GameRules.RULE_SPAWN_CHUNK_RADIUS).set(0, event.getServer());
-            Expedition.LOG.info("New world: spawn chunks are not kept loaded (gamerule spawnChunkRadius 0)");
+            // A shared server: half the players asleep skip the night, not all of them.
+            overworld.getGameRules().getRule(GameRules.RULE_PLAYERS_SLEEPING_PERCENTAGE).set(50, event.getServer());
+            Expedition.LOG.info("New world: spawn chunks are not kept loaded (gamerule spawnChunkRadius 0), half the players sleeping skip the night");
         }
     }
 

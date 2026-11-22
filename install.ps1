@@ -1,4 +1,4 @@
-# Installs or updates the Expedition pack into a Minecraft folder (Windows, PowerShell):
+﻿# Installs or updates the Expedition pack into a Minecraft folder (Windows, PowerShell):
 #   irm https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/install.ps1 | iex
 # The folder is %APPDATA%\.minecraft unless $env:EXPEDITION_DIR says otherwise. Mods come from Modrinth (checked by
 # hash), the pack's own files from Expedition.mrpack in the repository. Mods the pack installed earlier and no longer has are

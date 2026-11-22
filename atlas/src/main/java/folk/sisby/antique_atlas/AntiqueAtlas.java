@@ -84,7 +84,11 @@ public class AntiqueAtlas {
 	public static Map<UUID, PlayerSummary> getOrderedFriends() {
 		Map<UUID, PlayerSummary> friends = SurveyorClient.getFriends();
 		PlayerSummary playerSummary = friends.remove(SurveyorClient.getClientUuid());
-		Map<UUID, PlayerSummary> orderedFriends = new LinkedHashMap<>(friends);
+		Map<UUID, PlayerSummary> orderedFriends = new LinkedHashMap<>();
+		// A shared player whose summary hasn't reached this client yet maps to null (multiplayer): left off the map.
+		friends.forEach((uuid, summary) -> {
+			if (summary != null) orderedFriends.put(uuid, summary);
+		});
 		if (playerSummary != null) orderedFriends.put(SurveyorClient.getClientUuid(), playerSummary);
 		return orderedFriends;
 	}

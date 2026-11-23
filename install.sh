@@ -49,18 +49,26 @@ if os.path.isdir(mods) and not os.path.exists(marker) and os.listdir(mods):
     os.rename(mods, mods + '-before-expedition')
     print(f'Старые моды сохранены в {mods}-before-expedition')
 previous = set(open(marker).read().split('\n')) if os.path.exists(marker) else set()
+# The marker goes down before the first download, so a run cut short is resumed, not taken for someone else's mods.
+if not os.path.exists(marker):
+    write(marker, b'')
 installed = []
 files = [f for f in index['files'] if f.get('env', {}).get('client') != 'unsupported']
 for n, f in enumerate(files, 1):
     path = os.path.join(target, f['path'])
     installed.append(f['path'])
-    if os.path.exists(path) and sha1(path) == f['hashes']['sha1']:
+    # The size is checked first: it costs nothing and rules out most changed files without hashing them.
+    if os.path.exists(path) and os.path.getsize(path) == f['fileSize'] and sha1(path) == f['hashes']['sha1']:
         continue
     print(f'[{n}/{len(files)}] {os.path.basename(path)}', flush=True)
-    body = fetch(f['downloads'][0])
-    if hashlib.sha1(body).hexdigest() != f['hashes']['sha1']:
+    for attempt in range(3):  # a broken or cut download is tried again
+        body = fetch(f['downloads'][0])
+        if hashlib.sha1(body).hexdigest() == f['hashes']['sha1']:
+            break
+    else:
         sys.exit(f'Файл повреждён при скачивании: {f["path"]}')
-    write(path, body)
+    write(path + '.part', body)
+    os.replace(path + '.part', path)
 for name in mr.namelist():
     for prefix in ('overrides/', 'client-overrides/'):
         if name.startswith(prefix) and not name.endswith('/'):

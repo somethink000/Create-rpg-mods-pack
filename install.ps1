@@ -1,5 +1,6 @@
-﻿# Installs or updates the Expedition pack (Windows, PowerShell):
+# Installs or updates the Expedition pack (Windows, PowerShell):
 #   irm https://raw.githubusercontent.com/somethink000/Create-rpg-mods-pack/main/install.ps1 | iex
+# Saved without a BOM: irm keeps a BOM in the text and iex then fails on line 1 (GitHub serves the file as UTF-8 anyway).
 # The pack gets its own folder, %APPDATA%\.minecraft\home\Expedition ($env:EXPEDITION_DIR overrides it), so it never mixes
 # with other mods. A version "Expedition" (NeoForge underneath) and a launcher profile pointing at that folder make it show
 # up in the official launcher and in Legacy Launcher (its "separate folder for each version" mode uses home\<version>).
@@ -25,6 +26,20 @@ $web.Headers.Add('User-Agent', 'expedition-installer/1.0')
 function Get-Sha1($path) { (Get-FileHash -Algorithm SHA1 -LiteralPath $path).Hash.ToLower() }
 function New-Dir($path) { [void][IO.Directory]::CreateDirectory($path) }
 function Get-File($url, $path) { New-Dir ([IO.Path]::GetDirectoryName($path)); $web.DownloadFile($url, $path) }
+# A mod goes to <name>.part and takes its place only once its hash matches; a broken or cut download is tried again.
+function Get-Mod($f, $path) {
+    $part = "$path.part"
+    for ($try = 1; $try -le 3; $try++) {
+        try { Get-File $f.downloads[0] $part } catch { if ($try -eq 3) { throw } else { continue } }
+        if ((Get-Sha1 $part) -eq $f.hashes.sha1) {
+            if (Test-Path -LiteralPath $path) { [IO.File]::Delete($path) }
+            [IO.File]::Move($part, $path)
+            return
+        }
+    }
+    [IO.File]::Delete($part)
+    throw "Файл повреждён при скачивании: $($f.path)"
+}
 
 Write-Host 'Скачиваю сборку…'
 New-Dir $target
@@ -41,6 +56,8 @@ try {
         Rename-Item -LiteralPath $mods -NewName 'mods-before-expedition'
         Write-Host "Старые моды сохранены в $mods-before-expedition"
     }
+    # The marker goes down before the first download, so a run cut short is resumed, not taken for someone else's mods.
+    if (-not (Test-Path -LiteralPath $marker)) { [IO.File]::WriteAllText($marker, '', $utf8) }
     $previous = if (Test-Path -LiteralPath $marker) { Get-Content -LiteralPath $marker } else { @() }
     $installed = New-Object System.Collections.Generic.List[string]
     $files = @($index.files | Where-Object { $_.env.client -ne 'unsupported' })
@@ -49,10 +66,10 @@ try {
         $n++
         $path = Join-Path $target $f.path
         $installed.Add($f.path)
-        if ((Test-Path -LiteralPath $path) -and (Get-Sha1 $path) -eq $f.hashes.sha1) { continue }
+        # The size is checked first: it costs nothing and rules out most changed files without hashing them.
+        if ((Test-Path -LiteralPath $path) -and (Get-Item -LiteralPath $path).Length -eq $f.fileSize -and (Get-Sha1 $path) -eq $f.hashes.sha1) { continue }
         Write-Host "[$n/$($files.Count)] $(Split-Path $f.path -Leaf)"
-        Get-File $f.downloads[0] $path
-        if ((Get-Sha1 $path) -ne $f.hashes.sha1) { throw "Файл повреждён при скачивании: $($f.path)" }
+        Get-Mod $f $path
     }
     foreach ($entry in $zip.Entries) {
         foreach ($prefix in 'overrides/', 'client-overrides/') {

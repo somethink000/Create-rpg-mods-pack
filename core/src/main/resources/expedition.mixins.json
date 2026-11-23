@@ -27,7 +27,8 @@
     "RadiationThrottleMixin",
     "AccessoriesThrottleMixin",
     "WitherFleeThrottleMixin",
-    "ConductorShipLeverMixin"
+    "ConductorShipLeverMixin",
+    "RegistrateListenerLockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

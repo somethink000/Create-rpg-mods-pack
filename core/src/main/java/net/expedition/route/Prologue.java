@@ -71,6 +71,18 @@ public final class Prologue {
     }
 
     private static final Map<UUID, Run> RUNS = new HashMap<>();
+    /**
+     * Each lair's shot, worked out once as the server starts: finding it loads the far chunks around the lair, which on
+     * a player's first login froze the server for seconds (and timed out everyone else). Lairs are placed once per world.
+     */
+    private static final Map<String, java.util.Optional<Shots.Path>> VIEWS = new HashMap<>();
+
+    private static Shots.Path view(ServerLevel level, String step, RouteData.Target lair) {
+        return VIEWS.computeIfAbsent(step, s -> {
+            BoundingBox box = lair == null ? null : lairBox(level, lair);
+            return java.util.Optional.ofNullable(box == null ? null : Shots.ofLair(level, box));
+        }).orElse(null);
+    }
 
     /** Starts the prologue for a player (act I's opening); false if their client can't show it. */
     /** Is the player in the prologue (carried around the lairs as a spectator)? */
@@ -178,8 +190,7 @@ public final class Prologue {
                 carried.addAll(actOneLines());
             } else {
                 RouteData.Target lair = run.lairs.get(shot.step());
-                BoundingBox box = lair == null ? null : lairBox(level, lair);
-                path = box == null ? null : Shots.ofLair(level, box);
+                path = view(level, shot.step(), lair);
                 if (path == null) {
                     Expedition.LOG.info("Prologue: no shot of {} ({}), its words go to the next", shot.step(), lair == null ? "not placed" : "no clear view");
                     continue;
@@ -321,10 +332,18 @@ public final class Prologue {
         }
         for (Shot shot : SHOTS) {
             if (shot.step() != null) {
-                Route.reserve(event.getServer(), shot.step(), target -> Expedition.LOG.info("Prologue: {} {}", shot.step(),
-                    target == null ? "could not be placed" : "stands at " + target.pos.toShortString()));
+                Route.reserve(event.getServer(), shot.step(), target -> {
+                    Expedition.LOG.info("Prologue: {} {}", shot.step(), target == null ? "could not be placed" : "stands at " + target.pos.toShortString());
+                    view(event.getServer().overworld(), shot.step(), target);
+                });
             }
         }
+    }
+
+    @SubscribeEvent
+    static void onServerStopped(net.neoforged.neoforge.event.server.ServerStoppedEvent event) {
+        VIEWS.clear(); // another world next (single player)
+        RUNS.clear();
     }
 
     /** A prologue cut short by a server stop: put the player back on their next login. */

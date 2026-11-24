@@ -28,7 +28,8 @@
     "AccessoriesThrottleMixin",
     "WitherFleeThrottleMixin",
     "ConductorShipLeverMixin",
-    "RegistrateListenerLockMixin"
+    "RegistrateListenerLockMixin",
+    "RegistrateEntryLockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

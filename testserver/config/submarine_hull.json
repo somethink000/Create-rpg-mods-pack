@@ -51905,6 +51905,50 @@
     "maxWaterDepth": 101,
     "implosionChance": 0.15540898
   },
+  "tinygates:and_gate_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:clock_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:counter_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:edge_detector_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:not_gate_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:or_gate_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:rs_latch_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:t_flip_flop_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinygates:xor_gate_block": {
+    "maxWaterDepth": 30,
+    "implosionChance": 0.57176787
+  },
+  "tinyredstone:block_chopper": {
+    "maxWaterDepth": 59,
+    "implosionChance": 0.39013878
+  },
+  "tinyredstone:redstone_panel": {
+    "maxWaterDepth": 59,
+    "implosionChance": 0.39013878
+  },
   "twilightforest:acacia_banister": {
     "maxWaterDepth": 44,
     "implosionChance": 0.36137056

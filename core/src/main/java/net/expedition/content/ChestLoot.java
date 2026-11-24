@@ -101,10 +101,14 @@ public final class ChestLoot extends LootModifier {
 
     // ------------------------------------------------------------------ classification
 
-    /** Chest-like loot: a position, but no killed entity, broken block or tool. */
+    /**
+     * Chest-like loot: a position, but no killed entity, broken block or tool, and opened by a player or by nobody.
+     * Equipment rolls (Artifacts' on every natural spawn, trial spawners) carry the mob itself and are not chests.
+     */
     static boolean isChest(LootContext context) {
         return context.hasParam(LootContextParams.ORIGIN) && !context.hasParam(LootContextParams.DAMAGE_SOURCE)
-            && !context.hasParam(LootContextParams.BLOCK_STATE) && !context.hasParam(LootContextParams.TOOL);
+            && !context.hasParam(LootContextParams.BLOCK_STATE) && !context.hasParam(LootContextParams.TOOL)
+            && (!context.hasParam(LootContextParams.THIS_ENTITY) || context.getParam(LootContextParams.THIS_ENTITY) instanceof net.minecraft.world.entity.player.Player);
     }
 
     static boolean isGear(ItemStack stack) {

@@ -40,6 +40,8 @@ public final class GarrisonRecord {
     public final List<ItemStack> specialDrops = new ArrayList<>();
     /** Chunks whose loot chests were already counted. */
     public final Set<Long> scannedChunks = new HashSet<>();
+    /** A boss dungeon's sections that already got their share of the garrison (Garrisons.fillSections). */
+    public final Set<Long> sections = new HashSet<>();
 
     /** After a NG+ reset: the dungeon is rebuilt, so everything is counted again and the garrison returns stronger. */
     public void reset() {
@@ -52,6 +54,7 @@ public final class GarrisonRecord {
         chests = 0;
         spawnerTypes.clear();
         scannedChunks.clear();
+        sections.clear();
         specialDrops.clear();
     }
 
@@ -77,6 +80,7 @@ public final class GarrisonRecord {
         mobs.forEach(mobTable::putInt);
         tag.put("mobs", mobTable);
         tag.put("scanned", new LongArrayTag(scannedChunks.stream().mapToLong(Long::longValue).toArray()));
+        tag.put("sections", new LongArrayTag(sections.stream().mapToLong(Long::longValue).toArray()));
         ListTag drops = new ListTag();
         specialDrops.forEach(stack -> drops.add(stack.save(registries)));
         tag.put("specialDrops", drops);
@@ -104,6 +108,9 @@ public final class GarrisonRecord {
         }
         for (long chunk : tag.getLongArray("scanned")) {
             record.scannedChunks.add(chunk);
+        }
+        for (long section : tag.getLongArray("sections")) {
+            record.sections.add(section);
         }
         for (Tag drop : tag.getList("specialDrops", Tag.TAG_COMPOUND)) {
             ItemStack.parse(registries, drop).ifPresent(record.specialDrops::add);

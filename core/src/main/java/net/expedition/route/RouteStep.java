@@ -8,8 +8,9 @@ import net.minecraft.resources.ResourceLocation;
 
 /**
  * One step of the expedition route (data: {@code data/<ns>/expedition_route/<name>.json}).
- * A step with structures is placed on demand when it opens and is done when its garrison is cleared or its boss
- * dies; a step without structures (Ender Dragon, Wither) is done when the boss dies anywhere.
+ * A step with structures is placed on demand when it opens and is done when its boss (or guardian) dies, which also
+ * frees its dungeon, or, with neither, when its garrison is cleared; a step without structures (Ender Dragon, Wither)
+ * is done when the boss dies anywhere.
  * {@code heart}: what the boss's heart crafts into; {@code loot}: the boss's other drops (both shown in the journal).
  */
 public record RouteStep(int order, String tier, List<ResourceLocation> structures, ResourceLocation dimension,

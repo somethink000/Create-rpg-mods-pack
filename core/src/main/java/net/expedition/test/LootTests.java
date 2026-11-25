@@ -45,40 +45,22 @@ public final class LootTests {
         helper.succeed();
     }
 
-    /** A mod's own chest table may list its mobs' drops (Aquamirae ships: angler fang): those stay with the mobs. */
+    /** Chests hold ingredients: no placed machine or its part (a block with a block entity), no gear, no cooked dish or potion. */
     @GameTest(template = "empty")
-    public static void modMobDropsStayWithMobs(GameTestHelper helper) {
-        var level = helper.getLevel();
-        BuiltInRegistries.ITEM.getOptional(ResourceLocation.parse("aquamirae:angler_fang"))
-            .ifPresent(fang -> helper.assertTrue(net.expedition.content.ChestLoot.isMobDrop(level, new net.minecraft.world.item.ItemStack(fang)), "angler fang counted as chest loot"));
-        helper.assertFalse(net.expedition.content.ChestLoot.isMobDrop(level, new net.minecraft.world.item.ItemStack(Items.STRING)), "string is chest loot");
-        helper.succeed();
-    }
-
-    /**
-     * Chests hold ingredients: no placed machine or its part (a block with a block entity), no gear, no cooked dish or
-     * potion, and no special mob drop (a mod's monster or boss material).
-     */
-    @GameTest(template = "empty")
-    public static void lootTableHasNoMadeThingsOrMobDrops(GameTestHelper helper) {
-        // Special mob drops (everyday string, leather, gunpowder, slime are ingredients like any other).
-        var mobDrops = new java.util.HashSet<net.minecraft.world.item.Item>(java.util.Set.of(Items.ROTTEN_FLESH, Items.SPIDER_EYE, Items.BLAZE_ROD,
-            Items.MAGMA_CREAM, Items.GHAST_TEAR, Items.SHULKER_SHELL, Items.PHANTOM_MEMBRANE, Items.NAUTILUS_SHELL));
-        for (String id : List.of("aquamirae:angler_fang", "aquamirae:ship_graveyard_echo", "cataclysm:lacrima", "block_factorys_bosses:dragon_bone",
-            "legendary_monsters:air_rune", "legendary_monsters:nature_crystal", "graveyard:corruption", "twilightforest:raven_feather",
-            "twilightforest:arctic_fur", "aether:swet_ball", "deeperdarker:soul_crystal", "deeperdarker:sculk_bone")) {
-            BuiltInRegistries.ITEM.getOptional(ResourceLocation.parse(id)).ifPresent(mobDrops::add);
-        }
+    public static void lootTableHasNoMadeThings(GameTestHelper helper) {
         for (int value = 0; value <= net.expedition.content.DungeonLoot.EPIC; value++) {
             for (var item : net.expedition.content.DungeonLoot.pool(value)) {
                 ItemStack stack = new ItemStack(item);
                 boolean machine = item instanceof net.minecraft.world.item.BlockItem block && block.getBlock() instanceof net.minecraft.world.level.block.EntityBlock;
                 boolean dish = stack.has(net.minecraft.core.component.DataComponents.FOOD) && !(item instanceof net.minecraft.world.item.ItemNameBlockItem)
                     && item != Items.CARROT && item != Items.POTATO && item != Items.CHORUS_FRUIT && !BuiltInRegistries.ITEM.getKey(item).getPath().matches("onion|torchberries");
-                helper.assertFalse(machine || net.expedition.content.ChestLoot.isGearPublic(stack) || dish || item == Items.POTION || mobDrops.contains(item),
+                helper.assertFalse(machine || net.expedition.content.ChestLoot.isGearPublic(stack) || dish || item == Items.POTION,
                     "not an ingredient in the loot table: " + BuiltInRegistries.ITEM.getKey(item));
             }
         }
+        // What gear is crafted of lies in chests: the pack's trophies.
+        var fang = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(Expedition.MOD_ID, "feral_fang"));
+        helper.assertTrue(net.expedition.content.DungeonLoot.pool(net.expedition.content.DungeonLoot.COMMON).contains(fang), "trophies are not chest loot");
         helper.succeed();
     }
 

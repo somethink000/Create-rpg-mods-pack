@@ -29,7 +29,8 @@
     "WitherFleeThrottleMixin",
     "ConductorShipLeverMixin",
     "RegistrateListenerLockMixin",
-    "RegistrateEntryLockMixin"
+    "RegistrateEntryLockMixin",
+    "KineticLoopGuardMixin"
   ],
   "injectors": {
     "defaultRequire": 1

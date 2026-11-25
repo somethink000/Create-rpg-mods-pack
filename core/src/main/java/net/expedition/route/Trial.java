@@ -98,10 +98,6 @@ public final class Trial {
     /** Every kind of packet the stand-in got this step (logged when no bar came, to tell a silent server from a missed bar). */
     private static final java.util.Map<String, Integer> SEEN = new java.util.TreeMap<>();
 
-    static boolean isStandIn(ServerPlayer player) {
-        return stand != null && player == stand;
-    }
-
     /** The kill time a chapter's boss should take with its chapter's sword, in seconds. */
     static double targetSeconds(int act) {
         return 30 + 15 * (act - 1);

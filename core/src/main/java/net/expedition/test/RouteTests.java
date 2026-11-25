@@ -222,7 +222,7 @@ public final class RouteTests {
 
     /**
      * The story: act 1 opens (its dungeon placed, not marked), clearing the dungeon and killing the act's boss complete
-     * their steps, and with three quarters of act 1 done act 2 opens by itself and its dungeon is placed.
+     * their steps, every act's dungeon stands from the start, and with three quarters of act 1 done act 2 opens by itself.
      */
     // A batch of its own: other tests swap the route (RouteSteps.setForTests) while theirs run side by side.
     @GameTest(template = "empty", timeoutTicks = 3600, batch = "story_acts")
@@ -253,7 +253,6 @@ public final class RouteTests {
             if (!cleared[0]) {
                 RouteData.Target target = progress.active.get("test_outpost");
                 helper.assertTrue(target != null, "act 1 dungeon not placed yet");
-                helper.assertTrue(!progress.active.containsKey("test_next"), "act 2 dungeon placed before its act opened");
                 BlockPos spawn = level.getSharedSpawnPos();
                 double distance = Math.sqrt(Math.pow(target.pos.getX() - spawn.getX(), 2) + Math.pow(target.pos.getZ() - spawn.getZ(), 2));
                 helper.assertTrue(distance > 200 && distance < 700, "dungeon at a wrong distance from spawn: " + (int) distance);

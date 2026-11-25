@@ -620,6 +620,10 @@
     {
       "id": "fdbosses:eye_of_malkuth",
       "required": false
+    },
+    {
+      "id": "apotheosis:mysterious_scrap_metal",
+      "required": false
     }
   ]
 }

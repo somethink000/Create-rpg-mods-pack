@@ -33,9 +33,9 @@ import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
 
 /**
- * Dungeon chests: their contents are generated (see {@link DungeonLoot}): low-level crafting materials by the
- * dungeon's tier, some junk among them. Gear never lies in chests; special mod items (uncraftable) only belong to a
- * dungeon of their own mod: its garrison carries them (in the chest once cleared); anywhere else they are dropped.
+ * Dungeon chests: their contents are generated (see {@link DungeonLoot}): crafting materials by the dungeon's tier,
+ * some junk among them. Gear never lies in chests; special mod items (uncraftable) a mod's own chest table puts in
+ * stay only in a dungeon of their own mod; anywhere else they are dropped.
  */
 public final class ChestLoot extends LootModifier {
     public static final MapCodec<ChestLoot> CODEC = RecordCodecBuilder.mapCodec(instance -> codecStart(instance).apply(instance, ChestLoot::new));
@@ -72,31 +72,46 @@ public final class ChestLoot extends LootModifier {
     }
 
     private static volatile Set<Item> mobDrops;
+    private static volatile Map<Item, Double> dropperHealth = Map.of();
+
+    /** Per mod item a mob's loot table names: the health of the weakest mob that drops it (DungeonLoot.gearMaterials). */
+    public static Map<Item, Double> dropperHealth(net.minecraft.server.MinecraftServer server) {
+        scanMobDrops(server);
+        return dropperHealth;
+    }
 
     /**
      * Mod items a mob's loot table names (fangs, fins, scales, boss metals): they come from fighting that mob, never from
      * a chest or another dungeon's garrison, even where a mod's own chest table lists them.
      */
     public static boolean isMobDrop(ServerLevel level, ItemStack stack) {
-        Set<Item> drops = mobDrops;
-        if (drops == null) {
-            java.util.Set<Item> found = new java.util.HashSet<>();
-            java.util.regex.Pattern name = java.util.regex.Pattern.compile("\"name\"\\s*:\\s*\"([a-z0-9_.-]+:[a-z0-9_/.-]+)\"");
-            level.getServer().getResourceManager().listResources("loot_table/entities", id -> id.getPath().endsWith(".json")).forEach((id, resource) -> {
-                try (var reader = resource.openAsReader()) {
-                    var matcher = name.matcher(reader.lines().collect(java.util.stream.Collectors.joining("\n")));
-                    while (matcher.find()) {
-                        ResourceLocation item = ResourceLocation.tryParse(matcher.group(1));
-                        if (item != null && !item.getNamespace().equals("minecraft")) {
-                            BuiltInRegistries.ITEM.getOptional(item).ifPresent(found::add);
-                        }
-                    }
-                } catch (java.io.IOException ignored) {
-                }
-            });
-            mobDrops = drops = Set.copyOf(found);
+        scanMobDrops(level.getServer());
+        return mobDrops.contains(stack.getItem());
+    }
+
+    private static void scanMobDrops(net.minecraft.server.MinecraftServer server) {
+        if (mobDrops != null) {
+            return;
         }
-        return drops.contains(stack.getItem());
+        Map<Item, Double> health = new java.util.HashMap<>();
+        java.util.regex.Pattern name = java.util.regex.Pattern.compile("\"name\"\\s*:\\s*\"([a-z0-9_.-]+:[a-z0-9_/.-]+)\"");
+        server.getResourceManager().listResources("loot_table/entities", id -> id.getPath().endsWith(".json")).forEach((id, resource) -> {
+            // loot_table/entities/<mob>.json (or <mob>/<variant>.json) belongs to the entity <namespace>:<mob>.
+            String mob = id.getPath().substring("loot_table/entities/".length()).replace(".json", "");
+            double mobHealth = Garrisons.baseHealth(id.getNamespace() + ":" + (mob.contains("/") ? mob.substring(0, mob.indexOf('/')) : mob));
+            try (var reader = resource.openAsReader()) {
+                var matcher = name.matcher(reader.lines().collect(java.util.stream.Collectors.joining("\n")));
+                while (matcher.find()) {
+                    ResourceLocation item = ResourceLocation.tryParse(matcher.group(1));
+                    if (item != null && !item.getNamespace().equals("minecraft")) {
+                        BuiltInRegistries.ITEM.getOptional(item).ifPresent(found -> health.merge(found, mobHealth, Math::min));
+                    }
+                }
+            } catch (java.io.IOException ignored) {
+            }
+        });
+        dropperHealth = Map.copyOf(health);
+        mobDrops = Set.copyOf(health.keySet());
     }
 
     // ------------------------------------------------------------------ classification
@@ -172,9 +187,10 @@ public final class ChestLoot extends LootModifier {
         double danger = dungeon ? Garrisons.dangerPerChest(level, BlockPos.containing(origin)) : 0;
         int extra = (int) Math.min(MAX_DANGER_ROLLS, danger / DANGER_PER_ROLL);
         double distance = tierDistance(level, origin);
+        String key = dungeon ? Garrisons.dungeonKeyAt(level, BlockPos.containing(origin)) : "";
         List<ItemStack> stacks = DungeonLoot.generate(random, distance, dungeon ? rolls + extra : Math.min(rolls, PEACEFUL_ROLLS),
-            dungeon ? DungeonLoot.EPIC : DungeonLoot.COMMON, realmAt(level, origin), DungeonLoot.tierBonus(danger),
-            dungeon ? Garrisons.dungeonKeyAt(level, BlockPos.containing(origin)) : "");
+            dungeon ? DungeonLoot.EPIC : DungeonLoot.COMMON, realmAt(level, origin), DungeonLoot.tierBonus(danger), key,
+            key.isEmpty() ? Set.of() : Set.copyOf(net.expedition.route.Route.trophiesFor(level.getServer(), key)));
         // An enchanted book line: a real book, enchanted as at a table of the place's tier (harder: stronger).
         int enchantLevel = 8 + 7 * DungeonLoot.tierAt(distance);
         stacks.replaceAll(stack -> stack.is(Items.ENCHANTED_BOOK) && !stack.has(net.minecraft.core.component.DataComponents.STORED_ENCHANTMENTS)

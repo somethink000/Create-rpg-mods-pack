@@ -8,6 +8,7 @@ import java.util.Set;
 import net.expedition.Expedition;
 import net.expedition.route.Route;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
@@ -61,7 +62,8 @@ import net.neoforged.neoforge.event.tick.ServerTickEvent;
  * Dungeon garrisons. Spawners are a farm, not a fight: they are removed, and every dungeon gets a fixed, saved number
  * of kills instead (the bar). Mobs come around players exploring it, a few at a time, preferably out of sight, as many
  * at the end as at the start, until the bar is empty. Then the dungeon is cleared and the
- * garrison's leftovers vanish. Until then the blocks it placed itself (DungeonBlocks) can't be broken or blown up and it can't be
+ * garrison's leftovers vanish. A story dungeon with a boss is different: its garrison stands in its sections, each
+ * filled once as a player comes near (fillSections), and the dungeon is cleared when its boss falls (bossFell). Until then the blocks it placed itself (DungeonBlocks) can't be broken or blown up and it can't be
  * built over (instant-break blocks like torches excepted); rock and trees inside its frame are the world's and can be dug.
  *
  * <p>Mob types and proportions (see {@link #mobWeights}): the core is the dungeon's spawners (3 skeleton + 1 zombie
@@ -393,32 +395,16 @@ public final class Garrisons {
     }
 
     /**
-     * Special (uncraftable mod) chest items belong to the dungeon of the same mod (a Cataclysm altar item in a Cataclysm
-     * structure): its garrison carries them, and once the dungeon is cleared they stay in the chest as the reward.
-     * Returns what may stay in the chest; everything else (a dragon bone some mod injected into village chests) is dropped.
+     * Special (uncraftable mod) chest items a mod's own chest table adds belong to a dungeon of the same mod (a Cataclysm
+     * altar item in a Cataclysm structure): they stay in its chest. Returns what may stay; everything else (a dragon
+     * bone some mod injected into village chests) is dropped.
      */
     public static List<ItemStack> handleSpecialLoot(ServerLevel level, BlockPos pos, List<ItemStack> loot) {
         for (Dungeon dungeon : dungeonsAt(level, pos)) {
-            if (!dungeon.box().isInside(pos)) {
-                continue;
+            if (dungeon.box().isInside(pos)) {
+                String mod = dungeon.id().substring(0, dungeon.id().indexOf(':'));
+                return loot.stream().filter(stack -> net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace().equals(mod)).toList();
             }
-            String mod = dungeon.id().substring(0, dungeon.id().indexOf(':'));
-            List<ItemStack> own = loot.stream()
-                .filter(stack -> net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace().equals(mod)).toList();
-            if (own.isEmpty()) {
-                return List.of();
-            }
-            GarrisonData data = GarrisonData.get(level);
-            GarrisonRecord record = data.getOrCreate(dungeon.key());
-            if (record.state == GarrisonRecord.State.CLEARED) {
-                return own;
-            }
-            if (!isEligible(record, dungeon)) {
-                return List.of();
-            }
-            own.forEach(stack -> record.specialDrops.add(stack.copy()));
-            data.setDirty();
-            return List.of();
         }
         return List.of();
     }
@@ -575,7 +561,7 @@ public final class Garrisons {
     private static final Map<String, Double> HEALTH = new java.util.concurrent.ConcurrentHashMap<>();
 
     @SuppressWarnings("unchecked")
-    private static double baseHealth(String id) {
+    public static double baseHealth(String id) {
         return HEALTH.computeIfAbsent(id, key -> net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE
             .getOptional(net.minecraft.resources.ResourceLocation.parse(key)).map(type -> {
                 try {
@@ -937,13 +923,122 @@ public final class Garrisons {
         }
     }
 
+    // ---------------------------------------------------------------- boss dungeons: section by section
+
+    /**
+     * A boss dungeon is held in sections this wide (a grid over the world): no stream of mobs around the player, as in
+     * other dungeons, but each section gets its share of the garrison once, when a player first comes near it. Clear it
+     * and move on: nothing comes back behind you.
+     */
+    static final int SECTION = 24;
+    /** A section fills when a player comes this close to it. */
+    static final int SECTION_WAKE = 8;
+    /** At most this many in one section: what doesn't fit goes on to the sections ahead. */
+    static final int SECTION_MAX = 8;
+
+    /** The sections the dungeon's pieces reach. */
+    static List<Long> sections(Dungeon dungeon) {
+        Set<Long> cells = new java.util.LinkedHashSet<>();
+        for (var piece : dungeon.start().getPieces()) {
+            BoundingBox box = piece.getBoundingBox();
+            for (int x = Math.floorDiv(box.minX(), SECTION); x <= Math.floorDiv(box.maxX(), SECTION); x++) {
+                for (int z = Math.floorDiv(box.minZ(), SECTION); z <= Math.floorDiv(box.maxZ(), SECTION); z++) {
+                    cells.add(ChunkPos.asLong(x, z));
+                }
+            }
+        }
+        return List.copyOf(cells);
+    }
+
+    static void fillSections(ServerLevel level, Dungeon dungeon, GarrisonRecord record, ServerPlayer player) {
+        BoundingBox frame = dungeon.box();
+        if (player.getY() < frame.minY() - SECTION_WAKE || player.getY() > frame.maxY() + SECTION_WAKE) {
+            return;
+        }
+        List<Long> all = sections(dungeon);
+        int open = (int) all.stream().filter(cell -> !record.sections.contains(cell)).count();
+        for (long cell : all) {
+            if (open == 0) {
+                return;
+            }
+            int x0 = ChunkPos.getX(cell) * SECTION;
+            int z0 = ChunkPos.getZ(cell) * SECTION;
+            double dx = Math.max(0, Math.max(x0 - player.getX(), player.getX() - (x0 + SECTION)));
+            double dz = Math.max(0, Math.max(z0 - player.getZ(), player.getZ() - (z0 + SECTION)));
+            if (record.sections.contains(cell) || dx * dx + dz * dz > SECTION_WAKE * SECTION_WAKE) {
+                continue;
+            }
+            record.sections.add(cell);
+            open--;
+            Map<String, Integer> weights = mobWeights(level, record, dungeon, player.blockPosition());
+            int unplaced = record.total - record.killed - record.alive;
+            int share = weights.isEmpty() ? 0 : Math.min(SECTION_MAX, (unplaced + open) / (open + 1));
+            for (int i = 0; i < share; i++) {
+                String type = pickWeighted(level, weights);
+                BlockPos pos = spotInSection(level, dungeon, player, x0, z0, swims(level, type));
+                if (pos != null && spawnMob(level, type, pos, dungeon.key(), record.ng) != null) {
+                    record.alive++;
+                }
+            }
+            if (open == 0) {
+                // The last section: the bar counts the mobs that are really there (some found no floor).
+                record.total = record.killed + record.alive;
+            }
+            GarrisonData.get(level).setDirty();
+        }
+    }
+
+    /** A floor (or water two deep, for a swimmer) in the dungeon's pieces within the section; out of the player's sight if it can be. */
+    private static BlockPos spotInSection(ServerLevel level, Dungeon dungeon, Player player, int x0, int z0, boolean water) {
+        List<BoundingBox> boxes = dungeon.start().getPieces().stream().map(piece -> piece.getBoundingBox())
+            .filter(box -> box.maxX() >= x0 && box.minX() < x0 + SECTION && box.maxZ() >= z0 && box.minZ() < z0 + SECTION).toList();
+        if (boxes.isEmpty()) {
+            return null;
+        }
+        for (int attempt = 0; attempt < 24; attempt++) {
+            BoundingBox box = boxes.get(level.random.nextInt(boxes.size()));
+            int minX = Math.max(box.minX(), x0);
+            int minZ = Math.max(box.minZ(), z0);
+            int x = minX + level.random.nextInt(Math.min(box.maxX(), x0 + SECTION - 1) - minX + 1);
+            int z = minZ + level.random.nextInt(Math.min(box.maxZ(), z0 + SECTION - 1) - minZ + 1);
+            int y = box.minY() + level.random.nextInt(box.getYSpan());
+            BlockPos pos = water ? new BlockPos(x, y, z) : floorNear(level, x, y, z, 4);
+            if (pos == null || !box.isInside(pos) || !level.isLoaded(pos)
+                || water && !(level.getFluidState(pos).is(net.minecraft.tags.FluidTags.WATER) && level.getFluidState(pos.above()).is(net.minecraft.tags.FluidTags.WATER))
+                || player.distanceToSqr(Vec3.atBottomCenterOf(pos)) < SMALL_DUNGEON_MIN_DISTANCE * SMALL_DUNGEON_MIN_DISTANCE) {
+                continue;
+            }
+            if (attempt >= 16 || !canSee(level, player, pos)) {
+                return pos;
+            }
+        }
+        return null;
+    }
+
     // ---------------------------------------------------------------- clearing
 
     static void tryClear(ServerLevel level, String key, GarrisonRecord record, BoundingBox box) {
-        if (record.state != GarrisonRecord.State.ACTIVE || record.remaining() > 0) {
+        // A boss dungeon falls with its boss (bossFell), not with its last soldier.
+        if (record.state != GarrisonRecord.State.ACTIVE || record.remaining() > 0 || Route.isBossDungeon(level.getServer(), key)) {
             return;
         }
+        clear(level, key, record, box);
+        Route.onDungeonCleared(level, key, box);
+    }
+
+    /** The boss of a story dungeon fell: the dungeon is free, whatever is left of its garrison goes with it. */
+    public static void bossFell(ServerLevel level, String key, BlockPos at) {
+        GarrisonRecord record = GarrisonData.get(level).find(key);
+        if (record == null || record.state == GarrisonRecord.State.CLEARED) {
+            return;
+        }
+        BoundingBox box = dungeonsAt(level, at).stream().filter(d -> d.key().equals(key)).map(Dungeon::box).findFirst().orElse(null);
+        clear(level, key, record, box);
+    }
+
+    private static void clear(ServerLevel level, String key, GarrisonRecord record, BoundingBox box) {
         record.state = GarrisonRecord.State.CLEARED;
+        GarrisonData.get(level).setDirty();
         GarrisonBars.remove(key);
         Expedition.LOG.info("Garrison {}: cleared", key);
         // The rest of the garrison (the ones still about when the bar emptied, stragglers elsewhere) is gone with it.
@@ -952,7 +1047,6 @@ public final class Garrisons {
             level.sendParticles(net.minecraft.core.particles.ParticleTypes.POOF, mob.getX(), mob.getY() + mob.getBbHeight() / 2, mob.getZ(), 12, 0.3, 0.4, 0.3, 0.02);
             mob.discard();
         }
-        Route.onDungeonCleared(level, key, box);
         if (box != null) {
             BoundingBox area = box.inflatedBy(64);
             for (ServerPlayer player : level.players()) {
@@ -983,7 +1077,11 @@ public final class Garrisons {
             }
             GarrisonBars.show(dungeon.key(), record, player);
             if (tick % SPAWN_INTERVAL == 0 && record.remaining() > 0) {
-                spawnWave(level, dungeon, record, player);
+                if (Route.isBossDungeon(level.getServer(), dungeon.key())) {
+                    fillSections(level, dungeon, record, player);
+                } else {
+                    spawnWave(level, dungeon, record, player);
+                }
             }
         }
     }
@@ -1065,6 +1163,10 @@ public final class Garrisons {
     @SubscribeEvent
     static void onBreak(BlockEvent.BreakEvent event) {
         if (!(event.getLevel() instanceof ServerLevel level) || event.getPlayer().isCreative() || event.getState().getDestroySpeed(level, event.getPos()) == 0) {
+            return;
+        }
+        // A player's grave holds their own things: a death inside an uncleared dungeon must not lock them in there.
+        if (BuiltInRegistries.BLOCK.getKey(event.getState().getBlock()).getNamespace().equals("gravestone")) {
             return;
         }
         if (isGuarded(level, event.getPos())) {

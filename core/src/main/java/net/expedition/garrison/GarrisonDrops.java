@@ -30,19 +30,7 @@ public final class GarrisonDrops {
     static final double PART_CHANCE = 0.35;
     static final double MECHANISM_CHANCE = 0.04;
     static final double SPECIAL_CHANCE = 0.4;
-    static final double TROPHY_CHANCE = 0.3;
 
-    /** Trophy by family: dimension or realm first (Nether, End), then undead, arthropod, raider, aquatic, else beast. */
-    public static Item trophyFor(LivingEntity entity) {
-        var realm = net.expedition.world.realm.RealmWorld.realmAt(entity.level(), entity.blockPosition());
-        String name = entity.level().dimension() == net.minecraft.world.level.Level.NETHER || realm == net.expedition.world.realm.Realm.NETHER ? "cinder_core"
-            : entity.level().dimension() == net.minecraft.world.level.Level.END || realm == net.expedition.world.realm.Realm.END ? "void_shard"
-            : entity.getType().is(net.minecraft.tags.EntityTypeTags.UNDEAD) ? "grave_dust"
-            : entity.getType().is(net.minecraft.tags.EntityTypeTags.ARTHROPOD) ? "chitin_plate"
-            : entity.getType().is(net.minecraft.tags.EntityTypeTags.RAIDERS) || entity.getType().is(net.minecraft.tags.EntityTypeTags.ILLAGER) ? "raider_insignia"
-            : entity.getType().is(net.minecraft.tags.EntityTypeTags.AQUATIC) ? "abyssal_scale" : "feral_fang";
-        return BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(Expedition.MOD_ID, name));
-    }
     /** NG+: +10% part chance per level. */
     static final double NG_PART_BONUS = 0.10;
 
@@ -127,16 +115,7 @@ public final class GarrisonDrops {
         List<ItemStack> loot = new java.util.ArrayList<>(drops(level.random, ChestLoot.tierDistance(level, entity.position()), ng));
         // The last kill (the death that emptied the bar has been counted already) carries what is left of the dungeon's loot.
         boolean last = record != null && record.remaining() <= 0;
-        // Trophies: the route dungeon's own set, otherwise by the mob's family.
-        int trophies = level.random.nextDouble() < TROPHY_CHANCE ? 1 : 0;
-        if (trophies > 0) {
-            List<Item> pool = net.expedition.route.Route.trophiesFor(level.getServer(), key);
-            for (int i = 0; i < trophies; i++) {
-                loot.add(new ItemStack(pool.isEmpty() ? trophyFor(entity) : pool.get(level.random.nextInt(pool.size()))));
-            }
-        }
-        // The dungeon's special loot (taken from its chests) is carried by the garrison: a piece sometimes, all that is
-        // left on the last kill.
+        // Special loot older garrisons took out of their chests: a piece sometimes, all that is left on the last kill.
         if (record != null && !record.specialDrops.isEmpty()) {
             int pieces = last ? record.specialDrops.size() : level.random.nextDouble() < SPECIAL_CHANCE ? 1 : 0;
             for (int i = 0; i < pieces && !record.specialDrops.isEmpty(); i++) {

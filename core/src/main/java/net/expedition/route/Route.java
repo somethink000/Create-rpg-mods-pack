@@ -161,7 +161,7 @@ public final class Route {
         }
     }
 
-    // ---- Placing the dungeons of opened acts ---------------------------------------------------------------------
+    // ---- Placing the dungeons: every chapter's at once -------------------------------------------------------------
 
     /** Steps waiting to be placed, per journal: one is placed at a time. */
     private static final Map<UUID, Deque<RouteSteps.Entry>> QUEUE = new HashMap<>();
@@ -169,7 +169,10 @@ public final class Route {
     /** The player each journal's placements are for (their map gets the marks). */
     private static final Map<UUID, UUID> OWNER = new HashMap<>();
 
-    /** Queues every step of the journal's opened acts that has neither a dungeon in the world nor is done. */
+    /**
+     * Queues every step of the route, of any chapter, that has neither a dungeon in the world nor is done: the whole
+     * world stands from the start; the chapters only order the story (and the fireseed leads to the easiest first).
+     */
     static void openSteps(ServerPlayer player, UUID journal) {
         RouteData.Progress progress = RouteData.get(player.getServer()).progress(journal);
         Deque<RouteSteps.Entry> queue = QUEUE.computeIfAbsent(journal, id -> new ArrayDeque<>());
@@ -177,7 +180,7 @@ public final class Route {
         for (RouteSteps.Entry entry : RouteSteps.all()) {
             String id = id(entry);
             boolean placeable = !entry.step().structures().isEmpty() || BossLair.applies(entry.step());
-            if (placeable && Acts.actOf(entry.step()) <= progress.act && !progress.done.contains(id) && !progress.active.containsKey(id)
+            if (placeable && !progress.done.contains(id) && !progress.active.containsKey(id)
                 && !queue.contains(entry)) {
                 queue.add(entry);
             }
@@ -299,7 +302,7 @@ public final class Route {
             for (RouteSteps.Entry entry : RouteSteps.all()) {
                 String id = id(entry);
                 RouteData.Target target = progress.active.get(id);
-                if (progress.done.contains(id) || Acts.actOf(entry.step()) > progress.act || !matches.test(entry, target)) {
+                if (progress.done.contains(id) || !matches.test(entry, target)) {
                     continue;
                 }
                 progress.done.add(id);
@@ -309,6 +312,9 @@ public final class Route {
                     ServerLevel markerLevel = server.getLevel(ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse(target.dimension)));
                     if (markerLevel != null) {
                         RouteMarkers.clear(markerLevel, journal, id);
+                        if (!target.dungeonKey.isEmpty()) {
+                            Garrisons.bossFell(markerLevel, target.dungeonKey, target.pos);
+                        }
                     }
                 }
                 StoryAdvancements.award(player, "story/step/" + id);
@@ -427,6 +433,12 @@ public final class Route {
             }
         }
         return null;
+    }
+
+    /** A story dungeon with a boss or a guardian: held section by section, cleared when the boss falls (Garrisons). */
+    public static boolean isBossDungeon(MinecraftServer server, String dungeonKey) {
+        RouteSteps.Entry entry = entryFor(server, dungeonKey);
+        return entry != null && (entry.step().boss().isPresent() || entry.step().guardian().isPresent());
     }
 
     /** The chapter of the story dungeon with this key, or 0 if it is no story dungeon. */

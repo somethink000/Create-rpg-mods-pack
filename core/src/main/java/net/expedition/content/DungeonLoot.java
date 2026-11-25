@@ -28,9 +28,9 @@ import net.minecraft.world.item.crafting.RecipeManager;
  * string, glass, coal) - nothing made of them: no sheets, tubes, wires, mechanisms or other parts (a player presses and
  * assembles those), no machines, tools, ammunition, dishes or potions. Andesite alloy, Create's base material, is the
  * one exception.</li>
- * <li>No special mob drops: a mod's monster and boss materials (fangs, runes, boss scales, the stuff its weapons are
- * made of) come from fighting them. Everyday materials that mobs drop too (string, leather, gunpowder, slime) are
- * ingredients like any other and lie in chests by how much they are used.</li>
+ * <li>What gear is crafted of lies in chests too: the pack's trophies, Apotheosis' materials and every mod material
+ * its gear recipes take ({@link #gearMaterials}: fangs, runes, dungeon keys), rarer and further out the tougher the
+ * mob that drops it. Only the story bosses' own drops stay with them.</li>
  * <li>Later industry's metals (TFMG steel, aluminium, lead; titanium) only from the second tier on, when it is built.</li>
  * </ul>
  * Each entry has a value (junk to epic: the dungeon's tier, by its difficulty and danger, shifts the odds towards valuable
@@ -118,9 +118,17 @@ public final class DungeonLoot {
         e("create_the_air_wars:titaniumnugget", UNCOMMON, 3, 3, 9, 1), e("create_the_air_wars:titaniumingot", UNCOMMON, 3, 1, 3, 1),
         e("createpropulsion:raw_platinum", UNCOMMON, 3, 1, 4, 1),
         e("galosphere:palladium_ingot", UNCOMMON, 3, 1, 3), e("galosphere:allurite_shard", UNCOMMON, 3, 1, 4), e("galosphere:pink_salt_shard", COMMON, 2, 2, 6),
-        // Apotheosis salvage: what gear is reforged with.
-        e("apotheosis:mysterious_scrap_metal", UNCOMMON, 3, 1, 3), e("apotheosis:timeworn_fabric", UNCOMMON, 3, 1, 3, 1),
-        e("apotheosis:luminous_crystal_shard", RARE, 2, 1, 2, 1),
+        // Apotheosis' materials (gems, artifacts, relics and Aether gear are crafted with them): found, not brewed.
+        // Weighted by use (loot_needs.tsv): the shard goes into 57 recipes, the fabric 42, the sands 40, the dust 23.
+        e("apotheosis:timeworn_fabric", UNCOMMON, 16, 1, 4), e("apotheosis:gem_dust", UNCOMMON, 10, 2, 6, 1),
+        e("apotheosis:luminous_crystal_shard", RARE, 14, 1, 4, 1), e("apotheosis:arcane_sands", RARE, 10, 1, 3, 2),
+        // The pack's trophies (gear and artifacts are crafted with them): in chests, no longer left to a mob's luck.
+        e("expedition:feral_fang", COMMON, 14, 1, 4), e("expedition:grave_dust", COMMON, 8, 1, 4), e("expedition:chitin_plate", COMMON, 6, 1, 4),
+        e("expedition:raider_insignia", COMMON, 6, 1, 4), e("expedition:abyssal_scale", COMMON, 6, 1, 4),
+        e("expedition:cinder_core", UNCOMMON, 4, 1, 3, 1), e("expedition:void_shard", RARE, 4, 1, 3, 2),
+        // Vanilla monsters' parts recipes take, no longer only theirs (blaze rods: 7 recipes, 4 each).
+        e("minecraft:prismarine_crystals", UNCOMMON, 3, 1, 4), e("minecraft:rabbit_foot", UNCOMMON, 2, 1, 2), e("minecraft:turtle_scute", RARE, 2, 1, 2),
+        e("minecraft:goat_horn", RARE, 1, 1, 1), e("minecraft:heart_of_the_sea", EPIC, 1, 1, 1, 1), e("minecraft:totem_of_undying", EPIC, 1, 1, 1, 1),
         // Rare: the classic rewards and the costlier finds, further out.
         e("aeronautics:levitite", RARE, 3, 1, 3, 1), e("minecraft:enchanted_book", RARE, 3, 1, 1), e("minecraft:experience_bottle", RARE, 3, 2, 6),
         e("minecraft:name_tag", RARE, 1, 1, 1), e("minecraft:saddle", RARE, 1, 1, 1), e("minecraft:ender_pearl", RARE, 2, 1, 2),
@@ -133,14 +141,20 @@ public final class DungeonLoot {
         in(Realm.NETHER, "minecraft:crimson_stem", COMMON, 5, 4, 12), in(Realm.NETHER, "minecraft:warped_stem", COMMON, 5, 4, 12),
         in(Realm.NETHER, "minecraft:blackstone", COMMON, 3, 4, 16), in(Realm.NETHER, "minecraft:soul_sand", COMMON, 3, 4, 12),
         in(Realm.NETHER, "minecraft:basalt", COMMON, 2, 4, 12), in(Realm.NETHER, "minecraft:magma_block", COMMON, 2, 2, 6),
+        in(Realm.NETHER, "expedition:cinder_core", COMMON, 14, 1, 4), in(Realm.NETHER, "minecraft:blaze_rod", UNCOMMON, 8, 1, 4),
+        in(Realm.NETHER, "minecraft:ghast_tear", RARE, 2, 1, 2), in(Realm.NETHER, "minecraft:wither_rose", RARE, 1, 1, 1),
         // The End's.
         in(Realm.END, "minecraft:chorus_fruit", COMMON, 5, 2, 6), in(Realm.END, "aeronautics:end_stone_powder", COMMON, 6, 2, 6),
         in(Realm.END, "aeronautics:levitite", UNCOMMON, 4, 1, 3), in(Realm.END, "minecraft:end_stone", COMMON, 3, 8, 16),
+        in(Realm.END, "expedition:void_shard", COMMON, 14, 1, 4),
         // The Aether's: its ores, amber, skyroot, holystone.
         in(Realm.AETHER, "aether:ambrosium_shard", COMMON, 10, 2, 8), in(Realm.AETHER, "aether:golden_amber", COMMON, 5, 1, 4),
         in(Realm.AETHER, "aether:skyroot_log", COMMON, 8, 4, 16), in(Realm.AETHER, "aether:holystone", COMMON, 4, 8, 16),
         in(Realm.AETHER, "aether:zanite_gemstone", UNCOMMON, 8, 1, 4), in(Realm.AETHER, "deep_aether:skyjade", UNCOMMON, 6, 1, 3),
         in(Realm.AETHER, "aether:enchanted_gravitite", RARE, 2, 1, 2),
+        // Its dungeon keys (Neptune, Valkyrie and Phoenix gear are made with them), by the dungeon they open.
+        in(Realm.AETHER, "aether:bronze_dungeon_key", RARE, 8, 1, 1), new Entry("aether:silver_dungeon_key", RARE, 10, 1, 1, 1, Realm.AETHER),
+        new Entry("deep_aether:brass_dungeon_key", RARE, 3, 1, 1, 1, Realm.AETHER), new Entry("aether:gold_dungeon_key", EPIC, 6, 1, 1, 2, Realm.AETHER),
         // The Twilight Forest's: its plants, ingots and wood.
         in(Realm.TWILIGHT, "twilightforest:torchberries", COMMON, 4, 2, 6), in(Realm.TWILIGHT, "twilightforest:liveroot", COMMON, 5, 1, 4),
         in(Realm.TWILIGHT, "twilightforest:twilight_oak_log", COMMON, 6, 4, 16), in(Realm.TWILIGHT, "twilightforest:canopy_log", COMMON, 4, 4, 12),
@@ -184,7 +198,7 @@ public final class DungeonLoot {
 
     /** Resolves the table (after every recipe reload) and counts recipe use for the audit. */
     @SuppressWarnings("unchecked")
-    static void rebuild(RecipeManager manager, HolderLookup.Provider registries) {
+    static void rebuild(RecipeManager manager, HolderLookup.Provider registries, Set<Item> made, Map<Item, Double> dropperHealth) {
         Map<Item, Integer> uses = new java.util.HashMap<>();
         Map<Item, Set<Item>> results = new java.util.HashMap<>();
         Map<Item, Set<String>> resultMods = new java.util.HashMap<>();
@@ -212,7 +226,12 @@ public final class DungeonLoot {
         Map<Item, Entry> next = new java.util.LinkedHashMap<>();
         List<Item>[] nextPool = new List[] {new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>()};
         List<Entry> resolved = new ArrayList<>();
-        for (Entry entry : TABLE) {
+        List<Entry> table = new ArrayList<>(TABLE);
+        List<Entry> materials = gearMaterials(manager, made, dropperHealth);
+        table.addAll(materials);
+        net.expedition.Expedition.LOG.info("Dungeon loot: {} mod materials of the pack's gear recipes: {}", materials.size(),
+            materials.stream().map(entry -> entry.id() + "=" + VALUE_NAMES[entry.value()] + "/t" + entry.minTier()).toList());
+        for (Entry entry : table) {
             Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse(entry.id()));
             if (item == Items.AIR) {
                 net.expedition.Expedition.LOG.warn("Dungeon loot: no item {} in this pack", entry.id());
@@ -229,6 +248,62 @@ public final class DungeonLoot {
         pool = nextPool;
         net.expedition.Expedition.LOG.info("Dungeon loot table: {} entries ({} junk, {} common, {} uncommon, {} rare, {} epic)", resolved.size(),
             nextPool[0].size(), nextPool[1].size(), nextPool[2].size(), nextPool[3].size(), nextPool[4].size());
+    }
+
+    /** Mods whose lands are a realm of the merged world: their materials lie in that realm's chests only. */
+    private static final Map<String, Realm> MOD_REALMS = Map.of("aether", Realm.AETHER, "deep_aether", Realm.AETHER,
+        "twilightforest", Realm.TWILIGHT, "deeperdarker", Realm.OTHERSIDE, "create_deep_dark", Realm.OTHERSIDE);
+
+    /**
+     * The mods' materials the pack's own recipes (its gear, artifacts and ammunition: the expedition namespace) are made
+     * of and no recipe makes (a mob's fang, a dungeon key, a rune): chest loot, so gear doesn't wait on a lucky drop. How
+     * rare and how far out goes by the weakest mob that drops it (a common beast's: uncommon from the start; a boss's:
+     * epic, far out); never the story bosses' own drops (their hearts and loot come from them).
+     */
+    static List<Entry> gearMaterials(RecipeManager manager, Set<Item> made, Map<Item, Double> dropperHealth) {
+        Set<Item> bossOwn = new HashSet<>();
+        for (var entry : net.expedition.route.RouteSteps.all()) {
+            entry.step().heart().forEach(id -> bossOwn.add(BuiltInRegistries.ITEM.get(id)));
+            entry.step().loot().forEach(id -> bossOwn.add(BuiltInRegistries.ITEM.get(id)));
+        }
+        Set<Item> listed = new HashSet<>();
+        TABLE.forEach(entry -> listed.add(BuiltInRegistries.ITEM.get(ResourceLocation.parse(entry.id()))));
+        // Per material: recipes taking it, and the most one recipe takes.
+        Map<Item, int[]> use = new java.util.LinkedHashMap<>();
+        for (RecipeHolder<?> holder : manager.getRecipes()) {
+            if (!holder.id().getNamespace().equals(net.expedition.Expedition.MOD_ID)) {
+                continue;
+            }
+            Map<Item, Integer> inThis = new java.util.HashMap<>();
+            for (Ingredient ingredient : holder.value().getIngredients()) {
+                ItemStack[] options = ingredient.getItems();
+                if (options.length != 1) {
+                    continue; // a tag (any plank, any wool) is an everyday thing, not a special find
+                }
+                Item item = options[0].getItem();
+                String mod = BuiltInRegistries.ITEM.getKey(item).getNamespace();
+                if (mod.equals("minecraft") || mod.equals("create") || mod.equals(net.expedition.Expedition.MOD_ID) || made.contains(item)
+                    || bossOwn.contains(item) || listed.contains(item) || ChestLoot.isGear(options[0])) {
+                    continue;
+                }
+                inThis.merge(item, 1, Integer::sum);
+            }
+            inThis.forEach((item, count) -> {
+                int[] u = use.computeIfAbsent(item, k -> new int[2]);
+                u[0]++;
+                u[1] = Math.max(u[1], count);
+            });
+        }
+        List<Entry> found = new ArrayList<>();
+        use.forEach((item, u) -> {
+            Double health = dropperHealth.get(item);
+            int value = health == null ? UNCOMMON : health <= 40 ? UNCOMMON : health <= 300 ? RARE : EPIC;
+            int minTier = health == null ? 1 : health <= 40 ? 0 : health <= 100 ? 1 : 2;
+            // Likelier the more recipes take it; a stack (halved when drawn) about one recipe's worth.
+            found.add(new Entry(BuiltInRegistries.ITEM.getKey(item).toString(), value, Math.min(8, 2 + u[0]), 1, Math.max(2, u[1]), minTier,
+                MOD_REALMS.get(BuiltInRegistries.ITEM.getKey(item).getNamespace())));
+        });
+        return found;
     }
 
     /** Mods a dungeon may lean to (its theme): their lines are this much likelier in all its chests. */
@@ -261,7 +336,7 @@ public final class DungeonLoot {
     }
 
     public static List<ItemStack> generate(RandomSource random, double distance, int rolls, int maxValue) {
-        return generate(random, distance, rolls, maxValue, Realm.OVERWORLD, 0, "");
+        return generate(random, distance, rolls, maxValue, Realm.OVERWORLD, 0, "", Set.of());
     }
 
     /** Danger per chest -> tiers above the distance's: a hard dungeon pays like a farther one (up to 2 tiers). */
@@ -271,10 +346,11 @@ public final class DungeonLoot {
 
     /**
      * Stacks for one chest: {@code rolls} weighted draws over the table's lines that fit (value at most {@code maxValue},
-     * the tier reached, the chest's realm), one stack per item; the lines of the dungeon's theme mods ({@link #theme}) are
-     * likelier, so two dungeons' chests differ.
+     * the tier reached, the chest's realm), one stack per item; the lines of the dungeon's theme mods ({@link #theme}) and
+     * its own trophies ({@code favored}) are likelier, so two dungeons' chests differ.
      */
-    public static List<ItemStack> generate(RandomSource random, double distance, int rolls, int maxValue, Realm realm, int tierBonus, String dungeonKey) {
+    public static List<ItemStack> generate(RandomSource random, double distance, int rolls, int maxValue, Realm realm, int tierBonus, String dungeonKey,
+                                           Set<Item> favored) {
         int tier = Math.min(RARITY.length - 1, tierAt(distance) + tierBonus);
         Set<String> theme = theme(dungeonKey);
         List<ItemStack> result = new ArrayList<>();
@@ -289,7 +365,8 @@ public final class DungeonLoot {
                     continue;
                 }
                 candidates.add(entry);
-                chances.add(entry.weight() * RARITY[tier][entry.value()] * (theme.contains(ResourceLocation.parse(entry.id()).getNamespace()) ? THEME_BOOST : 1));
+                chances.add(entry.weight() * RARITY[tier][entry.value()] * (theme.contains(ResourceLocation.parse(entry.id()).getNamespace()) ? THEME_BOOST : 1)
+                    * (favored.contains(item) ? THEME_BOOST : 1));
             }
             if (candidates.isEmpty()) {
                 break;
@@ -297,7 +374,8 @@ public final class DungeonLoot {
             Entry entry = candidates.get(pickWeighted(random, chances));
             Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse(entry.id()));
             used.add(item);
-            int amount = entry.min() + random.nextInt(entry.max() - entry.min() + 1);
+            // Half the table's stack: a dungeon's chests were a whole game's supply of ingots.
+            int amount = (entry.min() + random.nextInt(entry.max() - entry.min() + 1) + 1) / 2;
             result.add(new ItemStack(item, Math.min(item.getDefaultMaxStackSize(), amount)));
         }
         return result;

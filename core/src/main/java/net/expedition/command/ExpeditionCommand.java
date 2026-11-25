@@ -559,43 +559,127 @@ public final class ExpeditionCommand {
     }
 
     /**
-     * Simulates 1000 dungeon chests per tier (6 rolls each) and writes loot_sim.tsv: per item, how many chests of each
-     * tier hold it, its value class, and its usage (recipes, distinct results, mods of the results).
+     * Simulates 1000 dungeon chests (6 rolls) per realm and tier and writes loot_sim.tsv: per item and realm/tier, the
+     * share of chests holding it (%) and the mean amount there. Then loot_needs.tsv: every single-item ingredient of the
+     * pack's own recipes (its gear, artifacts, ammunition), how much a recipe takes, and where it comes from (a recipe, a
+     * story boss, chests: the best realm/tier and the chance per chest), MISSING if from nowhere.
      */
     private static int auditChests(CommandSourceStack source) {
         double[] distances = {500, 2000, 4000, 6000};
-        java.util.Map<net.minecraft.world.item.Item, int[]> chests = new java.util.TreeMap<>(
-            java.util.Comparator.comparing(item -> net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item).toString()));
+        var realms = net.expedition.world.realm.Realm.values();
+        int columns = realms.length * distances.length;
+        java.util.Map<net.minecraft.world.item.Item, int[]> chests = new java.util.HashMap<>();
+        java.util.Map<net.minecraft.world.item.Item, long[]> amounts = new java.util.HashMap<>();
         var random = net.minecraft.util.RandomSource.create(42);
-        for (int tier = 0; tier < distances.length; tier++) {
-            for (int chest = 0; chest < 1000; chest++) {
-                for (ItemStack stack : net.expedition.content.DungeonLoot.generate(random, distances[tier], 6)) {
-                    chests.computeIfAbsent(stack.getItem(), k -> new int[4])[tier]++;
+        for (int r = 0; r < realms.length; r++) {
+            for (int tier = 0; tier < distances.length; tier++) {
+                int column = r * distances.length + tier;
+                for (int chest = 0; chest < 1000; chest++) {
+                    for (ItemStack stack : net.expedition.content.DungeonLoot.generate(random, distances[tier], 6, net.expedition.content.DungeonLoot.EPIC,
+                        realms[r], 0, "", java.util.Set.of())) {
+                        chests.computeIfAbsent(stack.getItem(), k -> new int[columns])[column]++;
+                        amounts.computeIfAbsent(stack.getItem(), k -> new long[columns])[column] += stack.getCount();
+                    }
                 }
             }
         }
-        StringBuilder out = new StringBuilder("item\tvalue\tchests_t0\tchests_t1\tchests_t2\tchests_t3\trecipes\tresults\tresult_mods\n");
         String[] names = {"junk", "common", "uncommon", "rare", "epic"};
-        chests.forEach((item, counts) -> {
-            String value = "?";
+        java.util.function.Function<net.minecraft.world.item.Item, String> valueOf = item -> {
             for (int v = 0; v < names.length; v++) {
                 if (net.expedition.content.DungeonLoot.pool(v).contains(item)) {
-                    value = names[v];
+                    return names[v];
                 }
             }
-            int[] usage = net.expedition.content.DungeonLoot.usage(item);
-            out.append(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item)).append('\t').append(value);
-            for (int count : counts) {
-                out.append('\t').append(count);
+            return "-";
+        };
+        StringBuilder sim = new StringBuilder("item\tvalue");
+        for (var realm : realms) {
+            for (int tier = 0; tier < distances.length; tier++) {
+                sim.append('\t').append(realm.name().toLowerCase()).append("_t").append(tier).append("%/avg");
             }
-            out.append('\t').append(usage[0]).append('\t').append(usage[1]).append('\t').append(usage[2]).append('\n');
-        });
+        }
+        sim.append('\n');
+        chests.keySet().stream().sorted(java.util.Comparator.comparing(item -> net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item).toString()))
+            .forEach(item -> {
+                sim.append(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item)).append('\t').append(valueOf.apply(item));
+                int[] counts = chests.get(item);
+                long[] sums = amounts.get(item);
+                for (int c = 0; c < columns; c++) {
+                    sim.append('\t').append(counts[c] / 10.0).append('/').append(counts[c] == 0 ? 0 : Math.round(10.0 * sums[c] / counts[c]) / 10.0);
+                }
+                sim.append('\n');
+            });
+        // Where each ingredient of the pack's recipes comes from.
+        MinecraftServer server = source.getServer();
+        var registries = server.registryAccess();
+        java.util.Set<net.minecraft.world.item.Item> made = new java.util.HashSet<>();
+        server.getRecipeManager().getRecipes().forEach(holder -> made.add(holder.value().getResultItem(registries).getItem()));
+        java.util.Map<net.minecraft.world.item.Item, java.util.Set<String>> bosses = new java.util.HashMap<>();
+        for (var entry : RouteSteps.all()) {
+            String step = entry.id().getPath();
+            entry.step().heart().forEach(id -> bosses.computeIfAbsent(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(id), k -> new java.util.TreeSet<>()).add(step));
+            entry.step().loot().forEach(id -> bosses.computeIfAbsent(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(id), k -> new java.util.TreeSet<>()).add(step));
+        }
+        java.util.Map<net.minecraft.world.item.Item, int[]> needs = new java.util.TreeMap<>(
+            java.util.Comparator.comparing(item -> net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item).toString()));
+        for (var holder : server.getRecipeManager().getRecipes()) {
+            if (!holder.id().getNamespace().equals(Expedition.MOD_ID)) {
+                continue;
+            }
+            java.util.Map<net.minecraft.world.item.Item, Integer> inThis = new java.util.HashMap<>();
+            for (var ingredient : holder.value().getIngredients()) {
+                ItemStack[] options = ingredient.getItems();
+                if (options.length == 1) {
+                    inThis.merge(options[0].getItem(), options[0].getCount(), Integer::sum);
+                }
+            }
+            inThis.forEach((item, count) -> {
+                int[] need = needs.computeIfAbsent(item, k -> new int[2]);
+                need[0]++;
+                need[1] = Math.max(need[1], count);
+            });
+        }
+        StringBuilder out = new StringBuilder("item\trecipes\tmax_per_recipe\tsource\tbest_chest\tchance_per_chest%\n");
+        int missing = 0;
+        for (var entry : needs.entrySet()) {
+            var item = entry.getKey();
+            int[] counts = chests.get(item);
+            int best = -1;
+            if (counts != null) {
+                for (int c = 0; c < columns; c++) {
+                    if (best < 0 || counts[c] > counts[best]) {
+                        best = c;
+                    }
+                }
+            }
+            java.util.List<String> sources = new java.util.ArrayList<>();
+            if (made.contains(item)) {
+                sources.add("recipe");
+            }
+            if (bosses.containsKey(item)) {
+                sources.add("boss:" + String.join(",", bosses.get(item)));
+            }
+            if (counts != null) {
+                sources.add("chest");
+            }
+            if (sources.isEmpty()) {
+                sources.add("MISSING");
+                missing++;
+            }
+            out.append(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item)).append('\t').append(entry.getValue()[0]).append('\t')
+                .append(entry.getValue()[1]).append('\t').append(String.join(" ", sources)).append('\t')
+                .append(best < 0 ? "-" : realms[best / distances.length].name().toLowerCase() + "_t" + best % distances.length).append('\t')
+                .append(best < 0 ? "0" : String.valueOf(counts[best] / 10.0)).append('\n');
+        }
         try {
-            java.nio.file.Files.writeString(source.getServer().getServerDirectory().resolve("loot_sim.tsv"), out);
+            java.nio.file.Files.writeString(server.getServerDirectory().resolve("loot_sim.tsv"), sim);
+            java.nio.file.Files.writeString(server.getServerDirectory().resolve("loot_needs.tsv"), out);
         } catch (java.io.IOException e) {
             throw new RuntimeException(e);
         }
-        source.sendSuccess(() -> Component.literal("Loot simulation: " + chests.size() + " distinct items -> loot_sim.tsv"), false);
+        int lacking = missing;
+        source.sendSuccess(() -> Component.literal("Loot simulation: " + chests.size() + " items -> loot_sim.tsv; " + needs.size()
+            + " recipe ingredients, " + lacking + " from nowhere -> loot_needs.tsv"), false);
         return chests.size();
     }
 

@@ -395,6 +395,50 @@ public final class GarrisonTests {
         helper.succeed();
     }
 
+    /** A boss dungeon: each section gets its mobs once (no stream around the player), and the dungeon falls with its boss. */
+    @GameTest(template = "empty", timeoutTicks = 400)
+    public static void bossDungeonHoldsSectionsAndFallsWithItsBoss(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        StructureStart start = placeOutpost(helper, 4200);
+        BlockPos inside = floorInside(level, start);
+        Garrisons.Dungeon dungeon = Garrisons.dungeonsAt(level, inside).stream()
+            .filter(d -> d.id().equals("minecraft:pillager_outpost")).findFirst().orElseThrow();
+        var previous = net.expedition.route.RouteSteps.all();
+        net.expedition.route.RouteSteps.setForTests(List.of(new net.expedition.route.RouteSteps.Entry(
+            net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(Expedition.MOD_ID, "test_boss_lair"),
+            new net.expedition.route.RouteStep(1, "T0", List.of(), net.minecraft.resources.ResourceLocation.withDefaultNamespace("overworld"), 0, 0,
+                java.util.Optional.of(net.minecraft.resources.ResourceLocation.withDefaultNamespace("ravager")), List.of(), List.of(), java.util.Optional.empty(),
+                List.of(), false, false, "", List.of(), java.util.Optional.empty()))));
+        var reserved = net.expedition.route.RouteData.get(level.getServer()).reserved;
+        var target = new net.expedition.route.RouteData.Target();
+        target.dimension = "minecraft:overworld";
+        target.pos = inside;
+        target.dungeonKey = dungeon.key();
+        reserved.put("test_boss_lair", target);
+        try {
+            ServerPlayer player = helper.makeMockServerPlayerInLevel();
+            player.moveTo(inside.getX() + 0.5, inside.getY(), inside.getZ() + 0.5);
+            Garrisons.tickPlayer(level, player, 0);
+            GarrisonRecord record = GarrisonData.get(level).find(dungeon.key());
+            helper.assertTrue(record != null && record.state == GarrisonRecord.State.ACTIVE, "garrison did not start: " + record);
+            List<Mob> first = garrisonMobs(level, start, dungeon.key());
+            helper.assertTrue(!first.isEmpty() && !record.sections.isEmpty(), "the section around the player got no mobs");
+            first.forEach(Mob::kill);
+            // Standing in the same place: the cleared section stays clear.
+            for (int wave = 1; wave <= 5; wave++) {
+                Garrisons.tickPlayer(level, player, wave * 60L);
+            }
+            helper.assertTrue(garrisonMobs(level, start, dungeon.key()).isEmpty(), "mobs came back in a cleared section");
+            helper.assertTrue(record.state == GarrisonRecord.State.ACTIVE && Garrisons.isProtected(level, inside), "boss dungeon freed before its boss fell");
+            Garrisons.bossFell(level, dungeon.key(), inside);
+            helper.assertTrue(record.state == GarrisonRecord.State.CLEARED && !Garrisons.isProtected(level, inside), "boss fell, dungeon still held");
+        } finally {
+            reserved.remove("test_boss_lair");
+            net.expedition.route.RouteSteps.setForTests(previous);
+        }
+        helper.succeed();
+    }
+
     /** Loot follows how hard a place is, never how far it lies: far from spawn and outside dungeons is the lowest tier. */
     @GameTest(template = "empty")
     public static void lootTierIsDifficultyNotDistance(GameTestHelper helper) {

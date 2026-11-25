@@ -77,7 +77,7 @@ public final class RemovedItems {
             }
         }
         ChestLoot.setRecipeIndex(made, smelted);
-        DungeonLoot.rebuild(manager, registries);
+        DungeonLoot.rebuild(manager, registries, made, ChestLoot.dropperHealth(server));
         return removed;
     }
 

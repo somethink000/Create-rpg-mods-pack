@@ -31,14 +31,6 @@ public final class Tour {
 
     private static final Map<UUID, Integer> AT = new HashMap<>();
 
-    /**
-     * Touring this session (the author walking the route): later chapters' lairs aren't closed to them (LockedLairs),
-     * or every dungeon past the author's own chapter would be seen weakened, slowed and in the dark.
-     */
-    public static boolean touring(ServerPlayer player) {
-        return AT.containsKey(player.getUUID()) || Trial.isStandIn(player);
-    }
-
     /** Route steps that have a dungeon (a structure, or a boss lair), in story order: by chapter, then by their order. */
     static List<RouteSteps.Entry> stops() {
         return RouteSteps.all().stream().filter(entry -> !entry.step().structures().isEmpty() || BossLair.applies(entry.step()))
